@@ -1,0 +1,245 @@
+{
+  "title": "New chat",
+  "create_time": 1736512314.338159,
+  "update_time": 1736512326.480854,
+  "mapping": {
+    "aaa1da84-4e36-4865-98ce-4b2aaa3d59e7": {
+      "id": "aaa1da84-4e36-4865-98ce-4b2aaa3d59e7",
+      "message": null,
+      "parent": null,
+      "children": [
+        "d51352c5-1bb3-4f7a-b0da-651cde7ce0d0"
+      ]
+    },
+    "d51352c5-1bb3-4f7a-b0da-651cde7ce0d0": {
+      "id": "d51352c5-1bb3-4f7a-b0da-651cde7ce0d0",
+      "message": {
+        "id": "d51352c5-1bb3-4f7a-b0da-651cde7ce0d0",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1da84-4e36-4865-98ce-4b2aaa3d59e7",
+      "children": [
+        "4df49b69-53ce-4b08-a3f1-3f56e082d7ca"
+      ]
+    },
+    "4df49b69-53ce-4b08-a3f1-3f56e082d7ca": {
+      "id": "4df49b69-53ce-4b08-a3f1-3f56e082d7ca",
+      "message": {
+        "id": "4df49b69-53ce-4b08-a3f1-3f56e082d7ca",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512314.3373787,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [],
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d51352c5-1bb3-4f7a-b0da-651cde7ce0d0",
+      "children": [
+        "aaa2ed1d-ab1b-49cf-9071-cda679cd19a5"
+      ]
+    },
+    "aaa2ed1d-ab1b-49cf-9071-cda679cd19a5": {
+      "id": "aaa2ed1d-ab1b-49cf-9071-cda679cd19a5",
+      "message": {
+        "id": "aaa2ed1d-ab1b-49cf-9071-cda679cd19a5",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512314.349323,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "50% of your text is likely AI-generated\n\nNew version:\nCamille Douaud  \n2 Rue des Préfaudières  \n0788994438  \nCamille.douaud44@icloud.com  \nSaint-Nazaire, le 10 janvier 2025  \n\nEuklead – France  \n39 Route de Fondeline  \n44600 SAINT NAZAIRE  \n\nObjet : Candidature spontanée pour un stage Data Analyste (6 semaines – Été 2025)  \n\nMadame, Monsieur,\n\nActuellement en deuxième année d’informatique à Ynov Campus, je cherche à réaliser un stage de 6 semaines durant l’été 2025 afin de renforcer mes compétences dans le domaine des données, un secteur que je souhaite explorer davantage à partir de ma troisième année.\n\nRésidant à environ 20 minutes de vos bureaux à Saint-Nazaire, je peux être présent et ponctuel facilement.\n\nBien que je ne sois pas encore expert en Power BI, je suis déterminé à m'y former avant le début du stage à l'aide de ressources telles que LinkedIn Learning. Je possède déjà de bonnes bases en Excel, un outil que j'utilise régulièrement pour l'analyse et l'organisation de données, et je suis prêt à apprendre rapidement pour m'adapter aux exigences de vos projets.\n\nCe stage représente pour moi une occasion précieuse d'apprendre dans un cadre professionnel tout en apportant ma contribution à vos projets, notamment en intervenant sur l’amélioration de vos plateformes, l’intégration de données et l’automatisation des processus.\n\nJe serais enchanté d'avoir l'opportunité d'échanger avec vous pour vous faire part de ma motivation et de ma volonté de m'investir pleinement au sein de votre équipe.\n\nEn attendant votre retour, je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.\n\nCamille Douaud  \n0788994438  \nCamille.douaud44@icloud.com  "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8ffcafc799390190-CDG",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4df49b69-53ce-4b08-a3f1-3f56e082d7ca",
+      "children": [
+        "2df0791e-d29e-483b-91e0-033c76e0395f"
+      ]
+    },
+    "2df0791e-d29e-483b-91e0-033c76e0395f": {
+      "id": "2df0791e-d29e-483b-91e0-033c76e0395f",
+      "message": {
+        "id": "2df0791e-d29e-483b-91e0-033c76e0395f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512326.480637,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"text\": \"Camille Douaud\\n2 Rue des Pr\\u00e9faudi\\u00e8res\\n0788994438\\nCamille.douaud44@icloud.com\\nSaint-Nazaire, le 10 janvier 2025\\n\\nEuklead \\u2013 France\\n39 Route de Fondeline\\n44600 SAINT NAZAIRE\\n\\nObjet : Candidature spontan\\u00e9e pour un stage Data Analyste (6 semaines \\u2013 \\u00c9t\\u00e9 2025)\\n\\nMadame, Monsieur,\\n\\nActuellement en deuxi\\u00e8me ann\\u00e9e d\\u2019informatique \\u00e0 Ynov Campus, je cherche \\u00e0 r\\u00e9aliser un stage de 6 semaines durant l\\u2019\\u00e9t\\u00e9 2025 afin de renforcer mes comp\\u00e9tences dans le domaine des donn\\u00e9es, un secteur que je souhaite explorer davantage \\u00e0 partir de ma troisi\\u00e8me ann\\u00e9e.\\n\\nR\\u00e9sidant \\u00e0 environ 20 minutes de vos bureaux \\u00e0 Saint-Nazaire, je peux \\u00eatre pr\\u00e9sent et ponctuel facilement.\\n\\nBien que je ne sois pas encore expert en Power BI, je suis d\\u00e9termin\\u00e9 \\u00e0 m'y former avant le d\\u00e9but du stage \\u00e0 l'aide de ressources telles que LinkedIn Learning. Je poss\\u00e8de d\\u00e9j\\u00e0 de bonnes bases en Excel, un outil que j'utilise r\\u00e9guli\\u00e8rement pour l'analyse et l'organisation de donn\\u00e9es, et je suis pr\\u00eat \\u00e0 apprendre rapidement pour m'adapter aux exigences de vos projets.\\n\\nCe stage repr\\u00e9sente pour moi une occasion pr\\u00e9cieuse d'apprendre dans un cadre professionnel tout en apportant ma contribution \\u00e0 vos projets, notamment en intervenant sur l\\u2019am\\u00e9lioration de vos plateformes, l\\u2019int\\u00e9gration de donn\\u00e9es et l\\u2019automatisation des processus.\\n\\nJe serais enchant\\u00e9 d'avoir l'opportunit\\u00e9 d'\\u00e9changer avec vous pour vous faire part de ma motivation et de ma volont\\u00e9 de m'investir pleinement au sein de votre \\u00e9quipe.\\n\\nEn attendant votre retour, je vous prie d\\u2019agr\\u00e9er, Madame, Monsieur, l\\u2019expression de mes salutations distingu\\u00e9es.\\n\\nCamille Douaud\\n0788994438\\nCamille.douaud44@icloud.com\", \"id\": \"crl\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-2azCVmXdy",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "aaa2ed1d-ab1b-49cf-9071-cda679cd19a5",
+          "request_id": "8ffcafc799390190-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "plugin_gptinf_com__jit_plugin.paraphrase",
+        "channel": null
+      },
+      "parent": "aaa2ed1d-ab1b-49cf-9071-cda679cd19a5",
+      "children": [
+        "a913bf5c-9d2c-405c-8290-13d009029716"
+      ]
+    },
+    "a913bf5c-9d2c-405c-8290-13d009029716": {
+      "id": "a913bf5c-9d2c-405c-8290-13d009029716",
+      "message": {
+        "id": "a913bf5c-9d2c-405c-8290-13d009029716",
+        "author": {
+          "role": "tool",
+          "name": "plugin_gptinf_com__jit_plugin.paraphrase",
+          "metadata": {}
+        },
+        "create_time": 1736512326.480747,
+        "update_time": 1736512325.0577018,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "jit_plugin_data": {
+            "from_server": {
+              "type": "oauth_required",
+              "body": {
+                "domain": "plugin.gptinf.com",
+                "is_consequential": true,
+                "privacy_policy": "https://app.gptinf.com/privacy_policy.html",
+                "path": "/paraphrase",
+                "params": {
+                  "text": "Camille Douaud\n2 Rue des Préfaudières\n0788994438\nCamille.douaud44@icloud.com\nSaint-Nazaire, le 10 janvier 2025\n\nEuklead – France\n39 Route de Fondeline\n44600 SAINT NAZAIRE\n\nObjet : Candidature spontanée pour un stage Data Analyste (6 semaines – Été 2025)\n\nMadame, Monsieur,\n\nActuellement en deuxième année d’informatique à Ynov Campus, je cherche à réaliser un stage de 6 semaines durant l’été 2025 afin de renforcer mes compétences dans le domaine des données, un secteur que je souhaite explorer davantage à partir de ma troisième année.\n\nRésidant à environ 20 minutes de vos bureaux à Saint-Nazaire, je peux être présent et ponctuel facilement.\n\nBien que je ne sois pas encore expert en Power BI, je suis déterminé à m'y former avant le début du stage à l'aide de ressources telles que LinkedIn Learning. Je possède déjà de bonnes bases en Excel, un outil que j'utilise régulièrement pour l'analyse et l'organisation de données, et je suis prêt à apprendre rapidement pour m'adapter aux exigences de vos projets.\n\nCe stage représente pour moi une occasion précieuse d'apprendre dans un cadre professionnel tout en apportant ma contribution à vos projets, notamment en intervenant sur l’amélioration de vos plateformes, l’intégration de données et l’automatisation des processus.\n\nJe serais enchanté d'avoir l'opportunité d'échanger avec vous pour vous faire part de ma motivation et de ma volonté de m'investir pleinement au sein de votre équipe.\n\nEn attendant votre retour, je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.\n\nCamille Douaud\n0788994438\nCamille.douaud44@icloud.com",
+                  "id": "crl"
+                },
+                "actions": [
+                  {
+                    "type": "oauth_redirect",
+                    "oauth_redirect": {
+                      "gizmo_id": "g-2azCVmXdy",
+                      "gizmo_action_id": "g-0ea31795e7278ea69e069ffc6c33642f2ba9cef6",
+                      "domain": "plugin.gptinf.com",
+                      "target_message_id": "2df0791e-d29e-483b-91e0-033c76e0395f"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "gizmo_id": "g-2azCVmXdy",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "2df0791e-d29e-483b-91e0-033c76e0395f",
+          "request_id": "8ffcafc799390190-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "assistant",
+        "channel": null
+      },
+      "parent": "2df0791e-d29e-483b-91e0-033c76e0395f",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "a913bf5c-9d2c-405c-8290-13d009029716",
+  "plugin_ids": null,
+  "conversation_id": "67811339-9df0-800a-b3b5-71ce4cd67244",
+  "conversation_template_id": "g-2azCVmXdy",
+  "gizmo_id": "g-2azCVmXdy",
+  "gizmo_type": "gpt",
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-4o",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67811339-9df0-800a-b3b5-71ce4cd67244"
+}

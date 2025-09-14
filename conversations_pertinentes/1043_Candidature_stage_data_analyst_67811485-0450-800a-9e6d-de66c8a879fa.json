@@ -1,0 +1,351 @@
+{
+  "title": "Candidature stage data analyst",
+  "create_time": 1736512645.454788,
+  "update_time": 1736512797.673552,
+  "mapping": {
+    "aaa1bcf9-6019-4a22-9c1a-8e852666d864": {
+      "id": "aaa1bcf9-6019-4a22-9c1a-8e852666d864",
+      "message": null,
+      "parent": null,
+      "children": [
+        "559d8503-7445-4f62-aad4-1d5def9048b5"
+      ]
+    },
+    "559d8503-7445-4f62-aad4-1d5def9048b5": {
+      "id": "559d8503-7445-4f62-aad4-1d5def9048b5",
+      "message": {
+        "id": "559d8503-7445-4f62-aad4-1d5def9048b5",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1bcf9-6019-4a22-9c1a-8e852666d864",
+      "children": [
+        "0b718f0e-bbcc-40e1-bd6f-3992c2d11775"
+      ]
+    },
+    "0b718f0e-bbcc-40e1-bd6f-3992c2d11775": {
+      "id": "0b718f0e-bbcc-40e1-bd6f-3992c2d11775",
+      "message": {
+        "id": "0b718f0e-bbcc-40e1-bd6f-3992c2d11775",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512645.4541256,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [],
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "559d8503-7445-4f62-aad4-1d5def9048b5",
+      "children": [
+        "aaa23b2e-6882-4422-8e62-5652e7e66fa3"
+      ]
+    },
+    "aaa23b2e-6882-4422-8e62-5652e7e66fa3": {
+      "id": "aaa23b2e-6882-4422-8e62-5652e7e66fa3",
+      "message": {
+        "id": "aaa23b2e-6882-4422-8e62-5652e7e66fa3",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512645.466904,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Camille Douaud\n2 Rue des Préfaudières\n0788994438\nCamille.douaud44@icloud.com\n\nSaint-Nazaire, le 10 janvier 2025\n\nEuklead – France\n39 Route de Fondeline\n44600 SAINT-NAZAIRE\n\nObjet : Candidature spontanée pour un stage Data Analyst (6 semaines – Été 2025)\n\nMadame, Monsieur,\n\nActuellement étudiant en deuxième année d’informatique à Ynov Campus, je souhaite intégrer votre équipe dans le cadre d’un stage de 6 semaines pour l’été 2025. Mon objectif est de développer mes compétences en analyse de données, un domaine que j’ambitionne de maîtriser davantage dès ma troisième année d’études.\n\nRésidant à proximité de vos locaux à Saint-Nazaire, je suis disponible pour me rendre sur place rapidement et m’engage à être ponctuel et assidu tout au long du stage.\n\nSi je ne maîtrise pas encore Power BI, je suis résolu à me former à cet outil avant le début de mon intégration, notamment via des plateformes en ligne comme LinkedIn Learning. En parallèle, ma maîtrise avancée d’Excel, acquise lors de divers projets académiques et personnels, constitue déjà une base solide pour organiser et analyser efficacement des données. Je suis également enthousiaste à l’idée d’apprendre rapidement tout outil ou technique qui pourrait répondre à vos besoins spécifiques.\n\nIntégrer votre entreprise représente pour moi une occasion unique d’acquérir une expérience concrète et formatrice dans un environnement professionnel dynamique. Je suis convaincu de pouvoir contribuer positivement à vos projets, qu’il s’agisse d’améliorer vos plateformes, d’intégrer des données ou d’automatiser certains processus.\n\nJe serais honoré de vous rencontrer pour échanger davantage sur mes motivations et ma capacité à m’investir pleinement au sein de votre équipe.\n\nDans l’attente de votre réponse, je vous prie d’agréer, Madame, Monsieur, mes salutations distinguées.\n\nCamille Douaud\n0788994438\nCamille.douaud44@icloud.com"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8ffcb7deae120190-CDG",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0b718f0e-bbcc-40e1-bd6f-3992c2d11775",
+      "children": [
+        "cd920aa9-c40d-423e-ab1c-931602a904ea"
+      ]
+    },
+    "cd920aa9-c40d-423e-ab1c-931602a904ea": {
+      "id": "cd920aa9-c40d-423e-ab1c-931602a904ea",
+      "message": {
+        "id": "cd920aa9-c40d-423e-ab1c-931602a904ea",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512666.254206,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Votre lettre est bien rédigée et claire, mettant en avant vos compétences et votre motivation. Voici une version légèrement reformulée pour renforcer le professionnalisme et fluidifier le style, tout en conservant votre ton chaleureux et votre structure :\n\n---\n\n**Camille Douaud**  \n2 Rue des Préfaudières  \n0788994438  \nCamille.douaud44@icloud.com  \n\nSaint-Nazaire, le 10 janvier 2025  \n\n**Euklead – France**  \n39 Route de Fondeline  \n44600 SAINT-NAZAIRE  \n\n**Objet : Candidature spontanée pour un stage Data Analyst (6 semaines – Été 2025)**  \n\n**Madame, Monsieur,**  \n\nActuellement étudiant en deuxième année d’informatique à Ynov Campus, je souhaite intégrer votre équipe dans le cadre d’un stage de 6 semaines durant l’été 2025. Ce stage représente pour moi une opportunité idéale pour approfondir mes compétences en analyse de données, un domaine que je me prépare à maîtriser davantage dès ma troisième année d’études.  \n\nRésidant à proximité de vos locaux à Saint-Nazaire, je suis en mesure de m’impliquer rapidement et efficacement. De nature rigoureuse et ponctuelle, je m’engage à mener à bien les missions confiées tout au long de cette expérience.  \n\nBien que je ne maîtrise pas encore Power BI, je suis déterminé à me former sur cet outil en amont de mon intégration, notamment via des plateformes en ligne comme LinkedIn Learning. En parallèle, ma maîtrise avancée d’Excel, développée au cours de divers projets académiques et personnels, me permet d’ores et déjà d’organiser et d’analyser des données de manière structurée et pertinente. Je suis également enthousiaste à l’idée de découvrir et d’apprendre rapidement tout autre outil ou méthode répondant à vos besoins spécifiques.  \n\nRejoindre votre entreprise représente pour moi une chance unique de bénéficier d’une expérience enrichissante dans un environnement professionnel dynamique. Je suis convaincu de pouvoir apporter une contribution positive à vos projets, qu’il s’agisse d’améliorer vos plateformes, de traiter et d’intégrer des données ou d’automatiser certains processus.  \n\nJe serais ravi d’échanger avec vous pour vous présenter plus en détail mes motivations et discuter de la manière dont je pourrais contribuer à vos activités.  \n\nDans l’attente de votre retour, je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.  \n\n**Camille Douaud**  \n0788994438  \nCamille.douaud44@icloud.com  \n\n---\n\nCette version conserve votre intention initiale tout en renforçant la fluidité et en soulignant vos points forts. Bonne chance pour votre candidature !"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-TiS7zU3kO",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "aaa23b2e-6882-4422-8e62-5652e7e66fa3",
+          "request_id": "8ffcb7deae120190-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa23b2e-6882-4422-8e62-5652e7e66fa3",
+      "children": [
+        "aaa204c8-9728-4d95-a326-1c1b427d1b6b"
+      ]
+    },
+    "aaa204c8-9728-4d95-a326-1c1b427d1b6b": {
+      "id": "aaa204c8-9728-4d95-a326-1c1b427d1b6b",
+      "message": {
+        "id": "aaa204c8-9728-4d95-a326-1c1b427d1b6b",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512692.520584,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "humaniser le plus"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8ffcb902a9870190-CDG",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cd920aa9-c40d-423e-ab1c-931602a904ea",
+      "children": [
+        "0c19bfd0-d762-4c37-9302-a38287bb3009"
+      ]
+    },
+    "0c19bfd0-d762-4c37-9302-a38287bb3009": {
+      "id": "0c19bfd0-d762-4c37-9302-a38287bb3009",
+      "message": {
+        "id": "0c19bfd0-d762-4c37-9302-a38287bb3009",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512716.067559,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Voici une version encore plus humanisée de votre lettre, mettant en avant une approche personnelle et chaleureuse, tout en restant professionnelle :\n\n---\n\n**Camille Douaud**  \n2 Rue des Préfaudières  \n0788994438  \nCamille.douaud44@icloud.com  \n\nSaint-Nazaire, le 10 janvier 2025  \n\n**Euklead – France**  \n39 Route de Fondeline  \n44600 SAINT-NAZAIRE  \n\n**Objet : Candidature spontanée pour un stage Data Analyst (6 semaines – Été 2025)**  \n\n**Madame, Monsieur,**  \n\nActuellement en deuxième année d’informatique à Ynov Campus, je me permets de vous adresser ma candidature pour un stage de 6 semaines durant l’été 2025. Passionné par l’analyse de données et curieux de découvrir de nouveaux outils et environnements, je souhaite vivement rejoindre votre entreprise pour enrichir mes compétences et contribuer à vos projets.  \n\nRésidant à quelques minutes de vos locaux à Saint-Nazaire, je suis prêt à m’investir pleinement dans cette expérience. Ponctuel, assidu et motivé, je suis convaincu que cette proximité géographique, alliée à mon enthousiasme, pourra être un atout pour notre collaboration.  \n\nBien que je ne maîtrise pas encore Power BI, j’ai déjà commencé à planifier ma formation sur cet outil via des ressources en ligne comme LinkedIn Learning. Par ailleurs, ma maîtrise avancée d’Excel – développée à travers plusieurs projets académiques et personnels – me permet de structurer, analyser et interpréter des données avec rigueur. J’ai également à cœur d’apprendre rapidement tout autre outil ou méthode que vous jugerez utile à la réussite des missions.  \n\nCe stage serait pour moi une opportunité précieuse d’acquérir une expérience concrète au sein d’un environnement stimulant et d’apporter une réelle contribution à vos activités. Qu’il s’agisse d’améliorer vos plateformes, d’intégrer des données ou d’automatiser certains processus, je suis prêt à relever les défis avec énergie et engagement.  \n\nJe serais très heureux de vous rencontrer pour échanger davantage sur mes motivations et discuter de la manière dont je pourrais intégrer et enrichir votre équipe.  \n\nDans l’attente de votre retour, je vous adresse, Madame, Monsieur, mes salutations les plus respectueuses.  \n\n**Camille Douaud**  \n0788994438  \nCamille.douaud44@icloud.com  \n\n---\n\nCette version met en avant votre enthousiasme et votre implication personnelle tout en conservant une structure professionnelle. Elle donne une touche plus humaine et engageante à votre candidature. Bonne chance !"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-TiS7zU3kO",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "aaa204c8-9728-4d95-a326-1c1b427d1b6b",
+          "request_id": "8ffcb902a9870190-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa204c8-9728-4d95-a326-1c1b427d1b6b",
+      "children": [
+        "aaa2e45b-8a7c-4614-95e1-7f3edcefa93b"
+      ]
+    },
+    "aaa2e45b-8a7c-4614-95e1-7f3edcefa93b": {
+      "id": "aaa2e45b-8a7c-4614-95e1-7f3edcefa93b",
+      "message": {
+        "id": "aaa2e45b-8a7c-4614-95e1-7f3edcefa93b",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512736.696368,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "encore"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "8ffcba1738cb0190-CDG",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0c19bfd0-d762-4c37-9302-a38287bb3009",
+      "children": [
+        "334e896f-fce7-45f2-9b82-60a05b4e5260"
+      ]
+    },
+    "334e896f-fce7-45f2-9b82-60a05b4e5260": {
+      "id": "334e896f-fce7-45f2-9b82-60a05b4e5260",
+      "message": {
+        "id": "334e896f-fce7-45f2-9b82-60a05b4e5260",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1736512755.432163,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Voici une version encore plus humanisée et engageante, qui reflète un ton chaleureux et accessible tout en restant professionnelle :\n\n---\n\n**Camille Douaud**  \n2 Rue des Préfaudières  \n0788994438  \nCamille.douaud44@icloud.com  \n\nSaint-Nazaire, le 10 janvier 2025  \n\n**Euklead – France**  \n39 Route de Fondeline  \n44600 SAINT-NAZAIRE  \n\n**Objet : Candidature spontanée pour un stage Data Analyst (6 semaines – Été 2025)**  \n\n**Madame, Monsieur,**  \n\nJe me permets de vous écrire avec beaucoup d’enthousiasme pour vous proposer ma candidature à un stage de six semaines en tant que Data Analyst, durant l’été 2025. Actuellement en deuxième année d’informatique à Ynov Campus, j’ai à cœur de développer mes compétences et de découvrir, aux côtés de professionnels passionnés, ce qui fait la richesse et la complexité de l’analyse de données.  \n\nVivant à Saint-Nazaire, à quelques pas de vos locaux, je suis prêt à m’investir pleinement dans cette expérience. Ce stage représente pour moi bien plus qu’une ligne sur un CV : une occasion unique d’apprendre sur le terrain, de me confronter à des défis concrets et d’apporter ma contribution, même modeste, à vos projets.  \n\nSi je ne maîtrise pas encore Power BI, je prends dès à présent l’engagement de me former activement avant le début du stage. Ma maîtrise avancée d’Excel, acquise grâce à divers projets, me donne déjà une solide base pour manipuler et interpréter des données. Mais au-delà des outils, ce qui me motive vraiment, c’est de comprendre vos besoins et d’y répondre de manière créative et efficace.  \n\nJ’aime penser qu’un stage est un échange. Vous me confiez des missions, et en retour, je m’engage à m’impliquer pleinement, à apprendre rapidement, et à partager avec vous mon sérieux, ma curiosité et ma bonne humeur. Qu’il s’agisse de traiter des données, d’automatiser des processus ou de simplifier des analyses complexes, je suis prêt à m’adapter à vos attentes et à me dépasser pour être à la hauteur.  \n\nJ’aimerais beaucoup avoir l’opportunité de discuter avec vous de mes motivations et de ma vision pour ce stage. Merci d’avoir pris le temps de considérer ma candidature.  \n\nDans l’attente de votre réponse, je vous adresse mes salutations respectueuses et enthousiastes.  \n\n**Camille Douaud**  \n0788994438  \nCamille.douaud44@icloud.com  \n\n---\n\nCette version est plus personnelle et engageante, avec une touche d’enthousiasme et d’assurance qui pourrait séduire un recruteur. Elle met davantage en avant votre volonté de collaboration et votre personnalité. Bonne chance ! 😊"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-TiS7zU3kO",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "aaa2e45b-8a7c-4614-95e1-7f3edcefa93b",
+          "request_id": "8ffcba1738cb0190-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa2e45b-8a7c-4614-95e1-7f3edcefa93b",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "334e896f-fce7-45f2-9b82-60a05b4e5260",
+  "plugin_ids": null,
+  "conversation_id": "67811485-0450-800a-9e6d-de66c8a879fa",
+  "conversation_template_id": "g-TiS7zU3kO",
+  "gizmo_id": "g-TiS7zU3kO",
+  "gizmo_type": "gpt",
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://bypassgpt.ai/",
+    "https://bypassgpt.ai/pricing"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-4o",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67811485-0450-800a-9e6d-de66c8a879fa"
+}

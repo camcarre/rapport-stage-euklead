@@ -1,0 +1,616 @@
+{
+  "title": "Confirmation de rendez-vous",
+  "create_time": 1740651283.632238,
+  "update_time": 1740651630.564443,
+  "mapping": {
+    "3ca0aab2-b39d-45ad-993a-8d674c0437e2": {
+      "id": "3ca0aab2-b39d-45ad-993a-8d674c0437e2",
+      "message": null,
+      "parent": null,
+      "children": [
+        "cfbb1af4-5db7-4e3b-bc9f-0bcac401ebbe"
+      ]
+    },
+    "cfbb1af4-5db7-4e3b-bc9f-0bcac401ebbe": {
+      "id": "cfbb1af4-5db7-4e3b-bc9f-0bcac401ebbe",
+      "message": {
+        "id": "cfbb1af4-5db7-4e3b-bc9f-0bcac401ebbe",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3ca0aab2-b39d-45ad-993a-8d674c0437e2",
+      "children": [
+        "f97932bf-61e4-4549-bd95-681b0a28895c"
+      ]
+    },
+    "f97932bf-61e4-4549-bd95-681b0a28895c": {
+      "id": "f97932bf-61e4-4549-bd95-681b0a28895c",
+      "message": {
+        "id": "f97932bf-61e4-4549-bd95-681b0a28895c",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651283.6316762,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [],
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cfbb1af4-5db7-4e3b-bc9f-0bcac401ebbe",
+      "children": [
+        "389517ee-5f24-465f-9961-88d5e1393b1d"
+      ]
+    },
+    "389517ee-5f24-465f-9961-88d5e1393b1d": {
+      "id": "389517ee-5f24-465f-9961-88d5e1393b1d",
+      "message": {
+        "id": "389517ee-5f24-465f-9961-88d5e1393b1d",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:app-pairing"
+          }
+        },
+        "create_time": 1740651282.358897,
+        "update_time": null,
+        "content": {
+          "content_type": "app_pairing_content",
+          "workspaces": [
+            {
+              "id": "Visual Studio Code-aba0d6bb-c57b-46da-b6a0-4c77ee7cd16d",
+              "app_id": "com.microsoft.VSCode",
+              "app_name": "Code",
+              "title": "PHP-1",
+              "content_type": "window"
+            }
+          ],
+          "context_parts": [
+            {
+              "workspace_id": "Visual Studio Code-aba0d6bb-c57b-46da-b6a0-4c77ee7cd16d",
+              "text": "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse App\\Models\\Superhero;\nuse Illuminate\\Support\\Facades\\Storage;\n\nclass SuperheroController extends Controller\n{\n    public function create()\n    {\n        return view('new_hero');\n    }\n\n    public function store(Request $request)\n    {\n        $request->validate([\n            'pseudo' => 'required|string|max:100',\n            'nom_reel' => 'required|string|max:100',\n            'planete_origine' => 'required|string|max:100',\n            'pouvoirs' => 'required|string|max:255',\n            'ville_protegee' => 'required|string|max:100',\n            'description' => 'required|string',\n        ]);\n\n        Superhero::create([\n            'pseudo' => $request->pseudo,\n            'nom_reel' => $request->nom_reel,\n            'planete_origine' => $request->planete_origine,\n            'pouvoirs' => $request->pouvoirs,\n            'ville_protegee' => $request->ville_protegee,\n            'description' => $request->description,\n        ]);\n\n        return redirect()->route('superheros.index')\n            ->with('success', 'Super-héros créé avec succès!');\n    }\n\n    public function edit($id)\n    {\n        $superhero = Superhero::findOrFail($id);\n        return view('heroedit', compact('superhero'));\n    }\n\n    public function update(Request $request, $id)\n    {\n        $superhero = Superhero::findOrFail($id);\n        \n        $validated = $request->validate([\n            'pseudo' => 'required|string|max:100',\n            'nom_reel' => 'required|string|max:100',\n            'planete_origine' => 'required|string|max:100',\n            'pouvoirs' => 'required|string|max:255',\n            'ville_protegee' => 'required|string|max:100',\n            'description' => 'required|string',\n            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048'\n        ]);\n\n        if ($request->hasFile('image')) {\n            if ($superhero->image) {\n                Storage::disk('public')->delete($superhero->image);\n            }\n            $validated['image'] = $request->file('image')->store('heroes', 'public');\n        }\n\n        $superhero->update($validated);\n\n        return redirect()->route('superheros.index')\n            ->with('success', 'Super-héros modifié avec succès!');\n    }\n\n    public function index()\n    {\n        $heroes = Superhero::all();\n        return view('superheros.index', compact('heroes'));\n    }\n\n    public function editor()\n    {\n        $heroes = Superhero::all();\n        return view('editor', compact('heroes'));\n    }\n}\n",
+              "textfield_id": "0",
+              "path": "/Users/camcam/Documents/taffpro/php/PHP-1/LARAVEL/app/Http/Controllers/SuperheroController.php",
+              "path_hash": null,
+              "annotations": null,
+              "content_type": "text",
+              "truncated_head_lines": 0,
+              "truncated_tail_lines": 0,
+              "supports_editing": false
+            }
+          ],
+          "custom_instructions": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "app_pairing": {
+            "type": "context",
+            "shared_workspaces": [
+              {
+                "app_id": "com.microsoft.VSCode",
+                "text_fields": [
+                  {
+                    "name": "SuperheroController.php",
+                    "truncated_tail_lines": 0,
+                    "truncated_head_lines": 0,
+                    "id": "/Users/camcam/Documents/taffpro/php/PHP-1/LARAVEL/app/Http/Controllers/SuperheroController.php"
+                  }
+                ],
+                "title": "PHP-1",
+                "app_name": "Code",
+                "id": "Visual Studio Code-aba0d6bb-c57b-46da-b6a0-4c77ee7cd16d"
+              }
+            ],
+            "total_context_length": 2552
+          },
+          "exclusive_key": "app-pairing-whisper",
+          "is_visually_hidden_from_conversation": true,
+          "request_id": "918768d86e37b5ef-CDG",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f97932bf-61e4-4549-bd95-681b0a28895c",
+      "children": [
+        "e2494027-72ce-423f-bddb-16819f43a8b0"
+      ]
+    },
+    "e2494027-72ce-423f-bddb-16819f43a8b0": {
+      "id": "e2494027-72ce-423f-bddb-16819f43a8b0",
+      "message": {
+        "id": "e2494027-72ce-423f-bddb-16819f43a8b0",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651282.376371,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Fait une réponse a sa \n\nLe 27 févr. 2025 à 09:37, Bertrand Sanséau <bsanseau@euklead.com> a écrit :\n\nBonjour Camille\nLa convention est complétée.\nNous vous attendons le 16 juin à 8h30.\nBertrand\n \n \n \n<image001.jpg>\nBertrand Sanséau\n39 Route de Fondeline\nParc de Brais\n44 600 SAINT NAZAIRE\nTel : 02 40 66 92 37\nPortable : 06 12 25 04 52\nbsanseau@euklead.com\nwww.euklead.fr<image002.jpg>\n"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "gizmo_id": "g-cStsvQbjd",
+          "app_pairing": {
+            "type": "user",
+            "shared_workspaces": [
+              {
+                "app_id": "com.microsoft.VSCode",
+                "app_name": "Code"
+              }
+            ]
+          },
+          "dictation": false,
+          "request_id": "918768d86e37b5ef-CDG",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "389517ee-5f24-465f-9961-88d5e1393b1d",
+      "children": [
+        "7a6722cb-765e-49d0-8fac-7706fbf823d1"
+      ]
+    },
+    "7a6722cb-765e-49d0-8fac-7706fbf823d1": {
+      "id": "7a6722cb-765e-49d0-8fac-7706fbf823d1",
+      "message": {
+        "id": "7a6722cb-765e-49d0-8fac-7706fbf823d1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651283.79795,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Objet : Confirmation de rendez-vous – 16 juin à 8h30**  \n\nBonjour Bertrand,  \n\nMerci pour votre message. Je vous confirme ma présence le 16 juin à 8h30.  \n\nN’hésitez pas à me faire savoir si vous avez besoin d’autres informations d’ici là.  \n\nÀ bientôt,  \nCamille"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-cStsvQbjd",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "e2494027-72ce-423f-bddb-16819f43a8b0",
+          "request_id": "918768d86e37b5ef-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e2494027-72ce-423f-bddb-16819f43a8b0",
+      "children": [
+        "203f09c7-737b-4d60-87ed-61d60754b84c"
+      ]
+    },
+    "203f09c7-737b-4d60-87ed-61d60754b84c": {
+      "id": "203f09c7-737b-4d60-87ed-61d60754b84c",
+      "message": {
+        "id": "203f09c7-737b-4d60-87ed-61d60754b84c",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651295.0471363,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "rebase_system_message": true,
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7a6722cb-765e-49d0-8fac-7706fbf823d1",
+      "children": [
+        "df6bdf98-5613-419b-ab87-00173e7d157f"
+      ]
+    },
+    "df6bdf98-5613-419b-ab87-00173e7d157f": {
+      "id": "df6bdf98-5613-419b-ab87-00173e7d157f",
+      "message": {
+        "id": "df6bdf98-5613-419b-ab87-00173e7d157f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651294.711141,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Soit un peux plus conviale"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "dictation": false,
+          "request_id": "91876920ac78b5ef-CDG",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "203f09c7-737b-4d60-87ed-61d60754b84c",
+      "children": [
+        "fe48549a-e398-4a70-bd1a-7106bd9fac97"
+      ]
+    },
+    "fe48549a-e398-4a70-bd1a-7106bd9fac97": {
+      "id": "fe48549a-e398-4a70-bd1a-7106bd9fac97",
+      "message": {
+        "id": "fe48549a-e398-4a70-bd1a-7106bd9fac97",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651303.791858,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "rebase_system_message": true,
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "df6bdf98-5613-419b-ab87-00173e7d157f",
+          "request_id": "91876920ac78b5ef-CDG",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "df6bdf98-5613-419b-ab87-00173e7d157f",
+      "children": [
+        "8907ea7c-beb3-46e1-aef6-5b7c9658f0b2"
+      ]
+    },
+    "8907ea7c-beb3-46e1-aef6-5b7c9658f0b2": {
+      "id": "8907ea7c-beb3-46e1-aef6-5b7c9658f0b2",
+      "message": {
+        "id": "8907ea7c-beb3-46e1-aef6-5b7c9658f0b2",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651303.792038,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "rebase_developer_message": true,
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "fe48549a-e398-4a70-bd1a-7106bd9fac97",
+          "request_id": "91876920ac78b5ef-CDG",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fe48549a-e398-4a70-bd1a-7106bd9fac97",
+      "children": [
+        "21bc8085-fc31-4f17-9af3-71666e38844c"
+      ]
+    },
+    "21bc8085-fc31-4f17-9af3-71666e38844c": {
+      "id": "21bc8085-fc31-4f17-9af3-71666e38844c",
+      "message": {
+        "id": "21bc8085-fc31-4f17-9af3-71666e38844c",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1740651295.39038,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Composant une réponse plus amicale**\n\nD'accord, je réfléchis à une manière de rendre la réponse plus amicale. Le message de Bertrand est plutôt formel, donc je vais trouver un bon équilibre. Il faut que je garde un ton respectueux, mais en ajoutant un peu plus de chaleur.\n\nJe vais commencer par remercier Bertrand pour la convocation tout en ajoutant quelque chose de plus engageant, comme en exprimant mon impatience à le rencontrer. Je vais revoir le message pour être à la fois professionnel et amical !"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Raisonnement terminé pendant 6 secondes",
+          "initial_text": "Raisonnement",
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "8907ea7c-beb3-46e1-aef6-5b7c9658f0b2",
+          "request_id": "91876920ac78b5ef-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8907ea7c-beb3-46e1-aef6-5b7c9658f0b2",
+      "children": [
+        "cd84e2a8-294c-4039-8e30-e04c45a1a8f1"
+      ]
+    },
+    "cd84e2a8-294c-4039-8e30-e04c45a1a8f1": {
+      "id": "cd84e2a8-294c-4039-8e30-e04c45a1a8f1",
+      "message": {
+        "id": "cd84e2a8-294c-4039-8e30-e04c45a1a8f1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651295.122899,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Objet : Confirmation de rendez-vous – 16 juin à 8h30**\n\nBonjour Bertrand,\n\nMerci beaucoup pour votre message et pour l'excellente nouvelle ! Je suis ravie que la convention soit finalisée et je vous confirme avec plaisir ma présence le 16 juin à 8h30.\n\nJ'apprécie votre organisation et j'ai hâte de vous retrouver. N'hésitez pas à me contacter si besoin d'ici là.\n\nBelle journée et à très bientôt,\n\nCamille"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "21bc8085-fc31-4f17-9af3-71666e38844c",
+          "request_id": "91876920ac78b5ef-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "21bc8085-fc31-4f17-9af3-71666e38844c",
+      "children": [
+        "862612f6-2fa9-4b1c-a6c7-c997da36ec2f"
+      ]
+    },
+    "862612f6-2fa9-4b1c-a6c7-c997da36ec2f": {
+      "id": "862612f6-2fa9-4b1c-a6c7-c997da36ec2f",
+      "message": {
+        "id": "862612f6-2fa9-4b1c-a6c7-c997da36ec2f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651607.674834,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Bertrand Sanséau\n"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "dictation": false,
+          "request_id": "918770c7d9d86f69-CDG",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cd84e2a8-294c-4039-8e30-e04c45a1a8f1",
+      "children": [
+        "3827ed32-b760-4518-9331-c4aa558ef1d5"
+      ]
+    },
+    "3827ed32-b760-4518-9331-c4aa558ef1d5": {
+      "id": "3827ed32-b760-4518-9331-c4aa558ef1d5",
+      "message": {
+        "id": "3827ed32-b760-4518-9331-c4aa558ef1d5",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1740651608.930653,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Interprétant \"Bertrand Sanséau\"**\n\nD'accord, l'utilisateur mentionne \"Bertrand Sanséau\". Il semble qu'on doive créer une réponse convenable et professionnelle, peut-être en incluant sa signature. Je me demande s'il faut seulement l'utiliser comme intitulé, ou si ça signifie qu'on doit s'adresser spécifiquement à cette personne dans le message. Le fait que l'utilisateur ait simplement écrit \"Bertrand Sanséau\" pourrait signifier qu'il veut qu'on référence cette personne de manière appropriée dans le contexte de notre réponse. Je vais explorer cela.\n\n**Analyser \"Bertrand Sanséau\"**\n\nD’accord, le message de l'utilisateur est juste \"Bertrand Sanséau\". Je pense qu'il pourrait vouloir ajouter son nom à la signature de la réponse, ou alors commencer l'email avec son nom. Cela pourrait aussi indiquer qu'il souhaite que l'email soit adressé spécifiquement à lui, ou que son nom soit mentionné à la fin. Je devrais peut-être juste l'inclure comme signature, comme dans un format plus formel. Mais je vais m'assurer que je n’ajoute rien d’innutile – faut que ça reste clair.\n\n**Répondre avec \"Bertrand Sanséau\"**\n\nL'utilisateur a écrit juste \"Bertrand Sanséau\". Je pense qu'il veut que j'intègre son nom dans l'email, notamment dans la salutation ou comme signature. Dans notre dernière réponse, on l'a déjà adressé par \"Bonjour Bertrand\", ce qui semble suffisant. Mais peut-être qu'il veut une version avec son nom complet, donc \"Bonjour Bertrand Sanséau\", ou peut-être qu'il souhaite qu'on ajoute sa signature complète à la fin. Je vais revisiter l'email et ajouter son nom d'une manière plus conviviale."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Raisonné à propos de Bertrand Sanséau pendant 18 secondes",
+          "initial_text": "Raisonnement",
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "862612f6-2fa9-4b1c-a6c7-c997da36ec2f",
+          "finished_duration_sec": 18,
+          "request_id": "918770c7d9d86f69-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "862612f6-2fa9-4b1c-a6c7-c997da36ec2f",
+      "children": [
+        "18d47823-e2c8-422d-9149-63a9a4fa8d3b"
+      ]
+    },
+    "18d47823-e2c8-422d-9149-63a9a4fa8d3b": {
+      "id": "18d47823-e2c8-422d-9149-63a9a4fa8d3b",
+      "message": {
+        "id": "18d47823-e2c8-422d-9149-63a9a4fa8d3b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740651608.64644,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Objet : Confirmation de rendez-vous – 16 juin à 8h30**\n\nBonjour Bertrand Sanséau,\n\nMerci pour votre message et pour l'excellente nouvelle ! Je suis ravie de savoir que la convention est finalisée et je vous confirme avec plaisir ma présence le 16 juin à 8h30.\n\nJ'apprécie beaucoup votre organisation et j’ai hâte de vous retrouver. N’hésitez pas à me contacter si vous avez besoin de quoi que ce soit d’ici là.\n\nBonne journée et à très bientôt,\n\nBien cordialement,  \nCamille"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "3827ed32-b760-4518-9331-c4aa558ef1d5",
+          "request_id": "918770c7d9d86f69-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3827ed32-b760-4518-9331-c4aa558ef1d5",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "18d47823-e2c8-422d-9149-63a9a4fa8d3b",
+  "plugin_ids": null,
+  "conversation_id": "67c03b13-59e8-800a-b66b-66a1ba0aa4d1",
+  "conversation_template_id": "g-cStsvQbjd",
+  "gizmo_id": "g-cStsvQbjd",
+  "gizmo_type": "gpt",
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "o3-mini-high",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67c03b13-59e8-800a-b66b-66a1ba0aa4d1"
+}

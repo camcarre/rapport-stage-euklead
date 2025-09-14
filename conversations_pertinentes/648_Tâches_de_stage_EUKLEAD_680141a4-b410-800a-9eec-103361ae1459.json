@@ -1,0 +1,310 @@
+{
+  "title": "Tâches de stage EUKLEAD",
+  "create_time": 1744912804.848229,
+  "update_time": 1744912824.030069,
+  "mapping": {
+    "677dcd49-9dd8-4281-bc1b-125bed334789": {
+      "id": "677dcd49-9dd8-4281-bc1b-125bed334789",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c5c6fae3-c7ac-4024-90d1-1b9ec4b519d7"
+      ]
+    },
+    "c5c6fae3-c7ac-4024-90d1-1b9ec4b519d7": {
+      "id": "c5c6fae3-c7ac-4024-90d1-1b9ec4b519d7",
+      "message": {
+        "id": "c5c6fae3-c7ac-4024-90d1-1b9ec4b519d7",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "677dcd49-9dd8-4281-bc1b-125bed334789",
+      "children": [
+        "c71077ac-2af9-4b6d-b698-51f2593be4e5"
+      ]
+    },
+    "c71077ac-2af9-4b6d-b698-51f2593be4e5": {
+      "id": "c71077ac-2af9-4b6d-b698-51f2593be4e5",
+      "message": {
+        "id": "c71077ac-2af9-4b6d-b698-51f2593be4e5",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1744912804.499254,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "dit moi les tache que je vais effectué"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "dictation": false,
+          "attachments": [
+            {
+              "size": 256960,
+              "name": "3c512ae1-b64e-4322-94cf-a63e26d36ece-2.pdf",
+              "id": "file-5yQQ9RTSuDt4pZVytPEpKM",
+              "mime_type": "application/pdf"
+            }
+          ],
+          "request_id": "931dd1e5295abb28-CDG",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c5c6fae3-c7ac-4024-90d1-1b9ec4b519d7",
+      "children": [
+        "d83adc04-27f7-40d2-bdb9-a50e6478584e"
+      ]
+    },
+    "d83adc04-27f7-40d2-bdb9-a50e6478584e": {
+      "id": "d83adc04-27f7-40d2-bdb9-a50e6478584e",
+      "message": {
+        "id": "d83adc04-27f7-40d2-bdb9-a50e6478584e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1744912816.860013,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "c71077ac-2af9-4b6d-b698-51f2593be4e5",
+          "request_id": "931dd1e5295abb28-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c71077ac-2af9-4b6d-b698-51f2593be4e5",
+      "children": [
+        "77a15db7-cbe5-40ea-9680-2c87aefa054a"
+      ]
+    },
+    "77a15db7-cbe5-40ea-9680-2c87aefa054a": {
+      "id": "77a15db7-cbe5-40ea-9680-2c87aefa054a",
+      "message": {
+        "id": "77a15db7-cbe5-40ea-9680-2c87aefa054a",
+        "author": {
+          "role": "tool",
+          "name": "myfiles_browser",
+          "metadata": {}
+        },
+        "create_time": 1744912816.860115,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_browsing_display",
+          "result": "",
+          "summary": "",
+          "assets": null,
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "command": "spinner",
+          "status": "running",
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "d83adc04-27f7-40d2-bdb9-a50e6478584e",
+          "request_id": "931dd1e5295abb28-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d83adc04-27f7-40d2-bdb9-a50e6478584e",
+      "children": [
+        "f93eee5c-de03-4a81-8339-c118d00130fa"
+      ]
+    },
+    "f93eee5c-de03-4a81-8339-c118d00130fa": {
+      "id": "f93eee5c-de03-4a81-8339-c118d00130fa",
+      "message": {
+        "id": "f93eee5c-de03-4a81-8339-c118d00130fa",
+        "author": {
+          "role": "tool",
+          "name": "myfiles_browser",
+          "metadata": {}
+        },
+        "create_time": 1744912816.860184,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-5yQQ9RTSuDt4pZVytPEpKM",
+          "domain": "3c512ae1-b64e-4322-94cf-a63e26d36ece-2.pdf",
+          "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConvention de stage\n\nLa présente convention règle les rapports entre :\n\nL’ORGANISME D’ACCUEIL :\n\nRaison sociale : EUKLEAD\n\nAdresse : 39 ROUTE DE FONDELINE 44600 SAINT-NAZAIRE\n\nImmatriculé sous le numéro SIRET : 52274931600058\n\nTél : +33612250452 E-mail : bsanseau@euklead.com\n\nReprésentée par : SANSEAU Bertrand\n\nAgissant en qualité de : gérant\n\nEt\n\nL’ÉCOLE :\n\nDénomination : Nantes Ynov Campus\n\nAdresse : 20 BOULEVARD DU GENERAL DE GAULLE 44200 NANTES\n\nImmatriculé sous le numéro SIRET : 80442673200033\n\nReprésenté par : MENARD Anaïs\n\nAgissant en qualité de : Directrice Ajdointe\n\nEt\n\nLE STAGIAIRE :\n\nNom Prénom du stagiaire : DOUAUD Camille\n\nDate de naissance : 28/06/2004 Lieu de naissance : ST NAZAIRE\n\nAdresse : 2 RUE DES PRÉFAUDIERES 44770 LA PLAINE SUR MER\n\nTél : +33788994438 E-mail : camille.douaud@ynov.com\n\nFormation : Ynov Informatique\n\nCursus : Bachelor2 Ynov Informatique\n\nAnnée : 2024/2025 Volume horaire annuel de la formation : 700\n\nLE MAÎTRE DE STAGE :\n\nNom du maître de stage : MOLIN Marie\n\nFonction du maître de stage : Consultante\n\nTél : +637426654 E-mail : mmolin@euklead.com\n\nLE RÉFÉRENT ÉCOLE :\n\nNom du référent école : ....................\n\nFonction du référent école : ....................\n\nTél : .................... E-mail : ....................\n\nLe maître de stage assure l’élaboration et le suivi de la formation en Organisme d’accueil, en collaboration avec le référent école. Le maître de\n\nstage et le référent école de l’établissement se tiendront mutuellement informés de la progression du stagiaire comme des difficultés qui pourraient\n\nnaître de l’application de la présente convention, et prendront, d’un commun accord et en liaison avec l’équipe pédagogique, les dispositions propres à\n\nPage 1/6\n\nDocusign Envelope ID: 2EB74BCA-286C-43D9-8997-DB6F4958801B\n\n\n\nles résoudre, notamment en cas de manquement à la discipline.\n\nARTICLE 1 — OBJET DU STAGE\n\nLe stage correspond à une période temporaire de mise en situation en milieu professionnel au cours de laquelle l’étudiant(e) acquiert des\n\ncompétences professionnelles et met en œuvre les acquis de sa formation en vue de l’obtention d’un diplôme ou d’une certification et de favoriser son\n\ninsertion professionnelle. Le stagiaire se voit confier une ou des missions conformes au projet pédagogique défini par son établissement\n\nd’enseignement et approuvées par l’Organisme d’accueil.\n\nLes compétences à acquérir ou à développer au cours de la période de formation en milieu professionnel ou du stage sont les suivantes :\n\nMise en œuvre d'une plateforme dédiée aux client et fournisseurs, amélioration et développement de la plateforme, proposition d'indicateurs\n\ninnovants , traitement et intégration de la data, automatisation du process, sécurisation des accès et démonstration auprès des clients et fournisseurs\n\nEn fin de stage, l’Organisme d’accueil remettra à l’étudiant une attestation indiquant la nature et la durée du stage effectué et en précisera les\n\ndates de début et de fin.\n\nLe chef d’établissement demandera au représentant de l’Organisme d’accueil son appréciation sur le travail du stagiaire et s’il y a lieu, sur\n\ncertains points particuliers, qu’il jugera nécessaires.\n\nARTICLE 2 — MODALITÉS DU STAGE\n\nLa durée du stage est appréciée en tenant compte de la présence effective du stagiaire dans l’Organisme d’accueil. Chaque période au moins\n\négale à 7 heures de présence consécutives ou non est considérée comme équivalente à 1 jour et chaque période au moins égale à 22 jours de\n\nprésence, consécutifs ou non est comptée comme équivalente à 1 mois.\n\nLe stage se déroulera obligatoirement dans le cadre de l’année d’enseignement telle que définie par l’école pour la formation suivie par le\n\nstagiaire. À ce titre, le stage devra débuter avant le terme de l’année d’enseignement et ne pourra se poursuivre en tout état de cause au-delà du 31\n\naoût suivant l’année d’enseignement considérée ou au plus tard la veille du dernier jour de formation si la formation se termine après le 31 août\n\nsuivant l’année d’enseignement considérée.\n\nLe stage ne pourra avoir une durée supérieure à 6 mois calendaires dans le cadre d’un stage à temps plein continu ou dans le cadre d’un stage\n\ndiscontinu, une durée supérieure à 924h (132 journées de 7h) de présence au sein de l’Organisme d’accueil.\n\nLa convention prend effet le 16/06/2025\n\npour se terminer le 25/07/2025\n\nLa durée de la présente convention de stage est donc de 6 semaines, correspondant à 210 heures effectuées au sein de l’organisme d’accueil\n\nsur cette période.\n\nLa durée hebdomadaire de présence du stagiaire dans l’Organisme d’accueil sera de 35 heures par semaine sur la base d’un temps complet.\n\nSi le stagiaire doit être présent dans l’Organisme d’accueil la nuit, le dimanche ou un jour férié, préciser les cas particuliers :\n\nNon applicable\n\n-Cf calendrier annexé à la présente convention, si nécessaire.\n\nLieu de déroulement du stage : 39 Rte de Fondeline Saint-Nazaire FR 44600\n\nLe stagiaire effectuera dans ledit Organisme d’accueil les missions suivantes :\n\nMise en œuvre d'une plateforme dédiée aux client et fournisseurs, amélioration et développement de la plateforme, proposition d'indicateurs\n\ninnovants , traitement et intégration de la data, automatisation du process, sécurisation des accès et démonstration auprès des clients et fournisseurs\n\nARTICLE 3 — ENCADREMENT DU STAGIAIRE\n\nLe Stagiaire est suivi par le Référent école désigné dans la présente convention ainsi que par le service de l’Ecole en charge des stages. Le Maître\n\nde stage désigné par l’Organisme d’accueil dans la présente convention est chargé d’assurer le suivi du Stagiaire et d’optimiser les conditions de\n\nréalisation du stage conformément aux stipulations pédagogiques définies.\n\nToute difficulté survenue dans la réalisation et le déroulement du stage, qu’elle soit constatée par le Stagiaire ou par le Maître de stage, doit être\n\nportée à la connaissance de l’enseignant-référent et de l’Ecole afin d’être résolue au plus vite.\n\nModalités d’encadrement : Selon l’année de formation du Stagiaire, le suivi du stage pourra être effectué par le service de l’Ecole en charge des\n\nstages par questionnaire en ligne, visite en entreprise et/ou rendez-vous téléphonique.\n\nARTICLE 4 — STATUT DU STAGIAIRE\n\nLe Stagiaire demeure, durant son stage en Organisme d’accueil, sous statut étudiant. Il reste sous l’autorité et la responsabilité du chef de\n\nl’établissement d’enseignement.\n\nPage 2/6\n\nDocusign Envelope ID: 2EB74BCA-286C-43D9-8997-DB6F4958801B\n\n\n\nIl ne doit pas être pris en compte pour l’appréciation de l’effectif de l’Organisme d’accueil et ne peut participer à une quelconque élection\n\nprofessionnelle.\n\nLe Stagiaire est soumis à la discipline et aux clauses du règlement intérieur qui lui sont applicables et qui sont portées à sa connaissance avant\n\nle début du stage, notamment en ce qui concerne les horaires et les règles d’hygiène et de sécurité en vigueur dans l’Organisme d’accueil, sous\n\nréserve des dispositions de l’article 7 de la présente convention.\n\nToute sanction disciplinaire ne peut être décidée que par l’Ecole. Dans ce cas, l’Organisme d’accueil informe l’Ecole des manquements et fournit\n\néventuellement les éléments constitutifs.\n\nLe Stagiaire bénéficie des protections et droits mentionnés aux articles L.1121-1, L.1152-1 et L.1153-1 du code du travail, dans les mêmes\n\nconditions que les salariés.\n\nL’Organisme d’accueil ne pourra pas confier au Stagiaire des tâches dangereuses pour sa santé ou sa sécurité.\n\nLe Stagiaire a accès au restaurant d’entreprise ou aux titres-restaurants prévus à l’article L.3262-1 du code du travail, dans les mêmes\n\nconditions que les salariés de l’Organisme d’accueil. Il bénéficie également de la prise en charge des frais de transport prévue à l’article L.3261-2 du\n\nmême code. Le Stagiaire accède aux activités sociales et culturelles mentionnées à l’article L.2323-83 du code du travail dans les mêmes conditions\n\nque les salariés.\n\nARTICLE 5 — INDEMNITÉ DE STAGE\n\nLorsque le stage est d’une durée supérieure à deux mois consécutifs ou non (ou supérieure à 308h ou 44 jours effectués en entreprise), il doit\n\nfaire l’objet d’une gratification ; et ce, dès le premier jour du stage. Afin de calculer le montant de la gratification, l’Organisme d’accueil doit décompter\n\nle nombre d’heures de présence effective du Stagiaire. Le temps de présence total comprend les heures réellement effectuées.\n\nL’organisme d’accueil versera au stagiaire une gratification de stage brute égale à 4.35€ par heure de stage.\n\nLa gratification sera versée au Stagiaire mensuellement et à terme échu par l’Organisme d’accueil.\n\nEn complément de cette indemnité de stage, l’Organisme d’accueil prendra à sa charge l’ensemble des achats éventuels demandés par lui-\n\nmême dans le cadre du stage. Les frais de logement et de transport durant les déplacements seront intégralement remboursés.\n\nLorsque la participation patronale à l’acquisition des titres restaurant respecte la réglementation relative aux titres restaurant, elle est exclue de\n\nl’assiette, et ce, indépendamment du montant de la gratification versée au Stagiaire.\n\nEn cas de suspension ou de résiliation de la convention de stage, le montant de la gratification due au Stagiaire est proratisé en fonction de la\n\ndurée réelle de stage effectuée.\n\nLes cotisations salariales et patronales, plus les CSG et CRDS, sont dues sur la totalité de la gratification (avantage en nature + indemnité\n\nmensuelle) dès que le palier de 15 % du plafond de la sécurité sociale est atteint (pour une durée légale de travail hebdomadaire de 35 heures et ceci\n\nau prorata temporis de la présence du stagiaire en organisme d’accueil).\n\nLes frais de stage engagés par l’Organisme d’accueil constituent une dépense exonératoire de la taxe d’apprentissage. Le montant déductible,\n\ncalculé sur la base d’un montant forfaitaire par jour ouvrable fixé par circulaire de l’Éducation Nationale est toutefois limité à 4% du montant de la taxe\n\nbrute.\n\nEn application de l’article N° 261.4 du Code Général des Impôts, sont exonérés de la taxe sur la valeur ajoutée les prestations de service\n\neffectuées dans le cadre de l’enseignement supérieur dispensé dans les établissements publics et privés régis par les lois des 15 mars 1850, 12 juillet\n\n1875 et 30 octobre 1886, de l’enseignement technique ou professionnel réglementé par la loi du 25 juillet 1919 et le décret du 14 septembre 1956.\n\nInformation relative à une éventuelle prise en charge des frais de scolarité du stagiaire par l’Organisme d’accueil : \n\nLa prise en charge par l’Organisme d’accueil de tout ou partie des frais de scolarité correspondant au cursus suivi par le Stagiaire au sein de l’Ecole,\n\nconstitue un avantage en nature octroyé au Stagiaire. A ce titre, l’avantage en nature devra être intégré dans l’assiette des cotisations et des\n\ncontributions de sécurité sociale. L’Organisme d’accueil déclare en être parfaitement informé.\n\nARTICLE 6 — DURÉE ET HORAIRE DU STAGE\n\nLa durée de présence de l’étudiant ne peut excéder trente-neuf heures par semaine, ni huit heures par jour. \n\nLe repos hebdomadaire de l’étudiant doit avoir une durée minimale de deux jours, si possible consécutifs (la période minimale de repos\n\nhebdomadaire doit comprendre le dimanche).\n\nPour chaque période de vingt-quatre heures, l’étudiant doit bénéficier d’une période minimale de repos fixée à onze heures consécutives.\n\nAu-delà de quatre heures et demie de présence quotidienne, l’étudiant doit bénéficier d’une pause d’au moins trente minutes, si possible\n\nconsécutives.\n\nL’horaire journalier ne peut prévoir la présence de l’étudiant sur son lieu de stage avant six heures du matin et après vingt-deux heures le soir.\n\nLe Stagiaire est autorisé à s’absenter pour passer les examens, contrôles et devoirs fixés par l’Ecole qui en justifiera à l’Organisme d’accueil à la\n\npremière demande. Il en va de même si le Stagiaire est convoqué par l’Ecole, auquel cas la convocation tiendra lieu de justificatif.\n\nLe Stagiaire bénéficiera de droit à des congés en cas de grossesse, de paternité et d’adoption avec une durée équivalente d’absence à celle\n\nprévue pour les salariés de l’organisme d’accueil ;\n\nConformément à l’article L 124-13 alinéa 2 du code de l’éducation le Stagiaire aura la possibilité de congés et d’autorisations d’absences au\n\ncours de la période de stage dès lors que le stage aura une durée supérieure à 2 mois. La convention de stage sera suspendue pendant les congés ou\n\nautorisations d’absences. L’Organisme d’accueil choisira de rémunérer ou non cette période d’absence\n\nPage 3/6\n\nDocusign Envelope ID: 2EB74BCA-286C-43D9-8997-DB6F4958801B\n\n\n\nNombre de jours de congés autorisés : 0\n\nARTICLE 7 — PROTECTION SOCIALE / ACCIDENTS DU TRAVAIL\n\nLe Stagiaire conserve sa protection sociale dans le cadre de l’assurance maladie dont il est le bénéficiaire à titre personnel ou en qualité d’ayant\n\ndroit de parents ou de conjoint. Par ailleurs, il est aussi bénéficiaire de la législation sur les accidents du travail, en application de l’article L 412.8.2a et\n\nde l’article D 412.6 du nouveau code de la sécurité sociale, tant pour l’accident dans l’Organisme d’accueil que pour le trajet aller et retour, en France\n\nou à l’étranger.\n\nEn cas d’accident dans l’Organisme d’accueil ou en cours de trajet, le chef de l’Organisme d’accueil établit une déclaration d’accident comme\n\npour un salarié et l’envoie immédiatement à la caisse d’assurance maladie et dans les quarante-huit heures au plus tard et fait parvenir une copie à\n\nl’établissement scolaire. Le Stagiaire reçoit aussitôt les feuilles d’accident nécessaires, lui donnant accès à la gratuité des soins médicaux et annexes,\n\ncomme pour un salarié.\n\nARTICLE 8 — RESPONSABILITÉ CIVILE\n\nChacune des trois parties (Entreprise, École, Stagiaire) déclare être garantie au titre de la responsabilité civile.\n\nARTICLE 9 — SUSPENSION - RUPTURE ANTICIPÉE\n\nSuspension :\n\nEn cas de survenance d’un fait extérieur à la volonté du Stagiaire l’empêchant de poursuivre son stage pendant une durée déterminée, la\n\nconvention peut être suspendue. Un avenant est émis par l’établissement précisant les conditions et la durée de la suspension. Cet avenant est signé\n\npar tous les signataires de la convention. Pendant la suspension, aucune gratification n’est versée au Stagiaire.\n\nRupture Anticipée :\n\nEn cas de difficulté, l’Ecole, l’Organisme d’accueil et le Stagiaire prendront immédiatement contact avec afin d’aménager des conditions de\n\nrupture aussi peu pénalisantes que possible, tant pour l’Organisme d’accueil que pour le stagiaire. Cette rupture sera notifiée par voie d’avenant\n\nsigné par l’ensemble des parties. \n\nCompte tenu du caractère obligatoire du stage dans la formation suivie, et sauf cas de force majeure, le respect mutuel d’un « délai de courtoisie » de\n\n2 semaines est souhaitable, pour permettre au stagiaire de retrouver un nouvel Organisme d’accueil.\n\nModalités de validation du stage en cas d’interruption :\n\nLorsque le Stagiaire interrompt son stage pour l’un des motifs mentionnés à l’article L124-15 du code de l’éducation, l’Ecole valide le stage,\n\nmême s’il n’a pas atteint la durée prévue dans le cursus. En cas de rupture de la convention à l’initiative de l’Organisme d’accueil, le Stagiaire ne valide\n\nque partiellement le stage et doit trouver un organisme d’accueil dont la durée est au moins égale à celle restant à courir.\n\nEn cas d’accord des parties à la convention, un report de la fin du stage, en tout ou partie, est également possible, dans la limite du cadre légal.\n\nDe même, une prolongation du stage sur demande conjointe de l’Organisme d’accueil et du Stagiaire est possible dans la limite du respect de la durée\n\nmaximale légale de stage. Dans les deux cas, un avenant à la convention de stage sera établi et signé par l’ensemble des parties.\n\nARTICLE 10 — RAPPORT DE STAGE / MÉMOIRE DE FIN D’ÉTUDES\n\nA l’issue de sa formation, si les exigences pédagogiques de l’établissement l’imposent, le Stagiaire remettra à l’équipe pédagogique un rapport\n\nde stage (les formats et la date de rendu seront spécifiés par l’École) préalablement validé par le représentant légal de l’Organisme d’accueil.\n\nDans le cas où le Stagiaire, au cours de sa formation, aurait suivi consécutivement des stages dans plusieurs organismes d’accueil, son rapport\n\nde stage couvrira la période de stage la plus importante et sera visé et validé par le représentant légal de l’Organisme d’accueil dont est issu le\n\nrapport.\n\nARTICLE 11 — CONFIDENTIALITÉ\n\nLe Stagiaire est soumis à l’obligation absolue du secret professionnel. En particulier, il ne pourra transmettre à aucun tiers, et sous quelque\n\nforme que ce soit, sans l’accord préalable écrit du représentant de l’Organisme d’accueil, les savoir-faire, documents, résultats d’études, dossiers,\n\nlogiciels, maquettes, procédures d’accès qu’il sera amené à élaborer ou dont il prendrait connaissance dans le cadre de l’exécution de son stage.\n\nLe rapport de stage, une fois approuvé par le représentant de l’Organisme d’accueil, sera considéré comme propriété du Stagiaire et ne sera\n\npas soumis aux règles ci-dessus. Si pour des raisons de confidentialité, l’Organisme d’accueil souhaite que certaines informations ne soient pas\n\nmentionnées dans le rapport du Stagiaire, elle devra en informer l’Ecole par écrit avant remise du rapport à l’Ecole.\n\nDe même toute publication dans une revue scientifique ou technique ou toute autre publication à caractère non confidentiel, faite après accord\n\npréalable du représentant de l’Organisme d’accueil pourra être diffusée sans restriction par le stagiaire.\n\nARTICLE 12 — PROPRIETE INTELECTUELLE\n\nLes règles du Code de la Propriété Intellectuelle s’appliquent à toutes les productions du Stagiaire. Le cas échéant, un contrat de cession de\n\nPage 4/6\n\nDocusign Envelope ID: 2EB74BCA-286C-43D9-8997-DB6F4958801B\n\n\n\ndroits de propriété intellectuelle devra être signé entre le Stagiaire et l’Organisme d’accueil dans le respect des conditions édictées par le Code de la\n\nPropriété Intellectuelle.\n\nARTICLE 13 — DONNÉES PERSONNELLES\n\nDans le cadre de la présente convention de stage, l’Organisme d’accueil, l’Ecole et la société YNOV, société par actions simplifiée au capital de 30\n\n517,10 euros dont le siège social est 3-5 Allée des Acacias – Immeuble la Tour – 33700 MERIGNAC, immatriculée au Registre du Commerce et des\n\nSociétés de BORDEAUX sous le numéro 530 562 115, s’engagent à respecter la confidentialité des données personnelles collectées, et à les traiter\n\ndans le respect du Règlement (UE) 2016/679 sur la protection des données personnelles et de la Loi Informatique et Libertés n°78-17 du 6 janvier\n\n1978 modifiée.\n\nLes données à caractère personnel font l’objet d’un traitement informatique aux fins d’exécuter le traitement (la convention de stage),\n\nl’exécution, la gestion de la formation, le suivi du stagiaire en entreprise, la gestion et le suivi RH.\n\nConcernant l’Ecole, pour plus de précisions, une liste des traitements mentionnant leurs finalités et la durée de conservation des données\n\npersonnelles est à la disposition des personnes dont les données sont collectées à l’occasion de la présente convention, à l’adresse suivante :\n\nhttp://privacy.ynov.com/processing.\n\nLes parties sont informées que les données personnelles collectées à l’occasion de la présente convention sont partagées avec les services\n\nconcernés du groupe YNOV dont l’Ecole fait partie, et transférées aux sous-traitants et prestataires ainsi qu’aux Organismes Publics dans le cadre des\n\nfinalités spécifiques à chaque traitement. Les données personnelles sont stockées au sein de l’Union Européenne, dans des pays reconnus comme\n\nprésentant un degré de protection adéquat ou auprès de prestataires respectant les règles du Privacy Shield européen.\n\nLes parties disposent d’un droit d’accès, d’opposition pour motifs légitimes, de rectification, de limitation, de portabilité et d’effacement de ses\n\ndonnées à caractère personnel. Ces droits peuvent s’exercer à tout moment et indifféremment, en joignant la copie d’une pièce d’identité en cours de\n\nvalidité, à l’une des adresses suivantes :\n\n- pour l’Organisme d’accueil : par courrier envoyé à son adresse telle que figurant en tête des présentes,\n\n- pour l’Ecole : par courrier envoyé à l’adresse suivante : YNOV CAMPUS - Service Juridique – CS 90021 - 3-5 Allée des Acacias – Immeuble la Tour\n\n– 33693 MERIGNAC Cedex. Également, par le biais du formulaire en ligne mis à disposition sur le lien suivant : http://privacy.ynov.com/.\n\nPour toute réclamation, les parties peuvent contacter la CNIL directement sur son site internet ou par courrier à l’adresse suivante :\n\nCommission Nationale de l’Informatique et des Libertés (CNIL), 3 Place de Fontenoy – TSA 8715 – 75334 PARIS CEDEX 07.\n\nChaque personne physique peut donner des directives générales ou particulières à un tiers de confiance certifié par la CNIL ou à notre société,\n\nrelatives à la conservation, à l’effacement et à la communication de ses données personnelles après son décès. Chaque personne physique peut\n\ndésigner une personne chargée de leur exécution et les modifier à tout moment. En l’absence de directives données de son vivant, ses héritiers auront\n\nla possibilité d’exercer certains droits, en particulier le droit d’accès.\n\nARTICLE 14 — PARTENARIAT\n\nL’Organisme d’accueil, grâce à cette convention, participe à la formation des étudiants et devient partenaire de l’Ecole. L’Organisme d’accueil\n\nautorise l’Ecole à communiquer sur ce partenariat non commercial notamment par l’utilisation du logos sur ses outils de présentation.\n\nLa durée de ce partenariat est indéterminée et prendra fin à première demande d’une des deux parties. L’Ecole s’engage, à première demande\n\nde l’Organisme d’accueil à supprimer toute référence à celle-ci dans ces documents de présentation.\n\nARTICLE 15 — RECRUTEMENT\n\nS’il advenait qu’un contrat de travail prenant effet avant la date de fin de stage soit signé avec l’Organisme d’accueil, la présente convention\n\ndeviendrait caduque. Cependant, cela n’exonèrerait pas l’étudiant de ses obligations académiques. L’Ecole devrait en être impérativement avertie\n\navant signature du contrat.\n\nARTICLE 16 — DISPOSITIONS DIVERSES\n\nL’étudiant ne peut prétendre utiliser les services informatiques de l’Ecole pour toutes activités liées à son stage.\n\nARTICLE 17 — DIFFÉRENDS\n\nEn cas de litige sur l’exécution de cette convention, les parties tenteront de régler entre elles leur différend à l’amiable, ou demanderont\n\nl’arbitrage d’un tiers choisi d’un commun accord.\n\nA défaut de parvenir à un règlement amiable ou de s’entendre sur le choix d’un arbitre, les parties conviennent que le Tribunal de Commerce\n\nde Nantes sera seul compétent.\n\nFait à NANTES, le 25/02/2025\n\nEn trois exemplaires originaux.\n\nLe Responsable de l’Organisme d’accueil, (signature et cachet)\n\nPage 5/6\n\nDocusign Envelope ID: 2EB74BCA-286C-43D9-8997-DB6F4958801B\n\n\n\nLe Stagiaire (signature)\n\nLe Chef d’Etablissement P/O\n\nPage 6/6\n\nDocusign Envelope ID: 2EB74BCA-286C-43D9-8997-DB6F4958801B\n\n\n\tConvention de stage\n\tL’ORGANISME D’ACCUEIL :\n\tL’ÉCOLE :\n\tLE STAGIAIRE :\n\tLE MAÎTRE DE STAGE :\n\tLE RÉFÉRENT ÉCOLE :\n\tARTICLE 1 — OBJET DU STAGE\n\tARTICLE 2 — MODALITÉS DU STAGE\n\tARTICLE 3 — ENCADREMENT DU STAGIAIRE\n\tARTICLE 4 — STATUT DU STAGIAIRE\n\tARTICLE 5 — INDEMNITÉ DE STAGE\n\tARTICLE 6 — DURÉE ET HORAIRE DU STAGE\n\tARTICLE 7 — PROTECTION SOCIALE / ACCIDENTS DU TRAVAIL\n\tARTICLE 8 — RESPONSABILITÉ CIVILE\n\tARTICLE 9 — SUSPENSION - RUPTURE ANTICIPÉE\n\tARTICLE 10 — RAPPORT DE STAGE / MÉMOIRE DE FIN D’ÉTUDES\n\tARTICLE 11 — CONFIDENTIALITÉ\n\tARTICLE 12 — PROPRIETE INTELECTUELLE\n\tARTICLE 13 — DONNÉES PERSONNELLES\n\tARTICLE 14 — PARTENARIAT\n\tARTICLE 15 — RECRUTEMENT\n\tARTICLE 16 — DISPOSITIONS DIVERSES\n\tARTICLE 17 — DIFFÉRENDS\n\n\n\t\t2025-03-04T03:24:12-0800\n\tDigitally verifiable PDF exported from www.docusign.com\n\n\n\n\n",
+          "title": "3c512ae1-b64e-4322-94cf-a63e26d36ece-2.pdf",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "77a15db7-cbe5-40ea-9680-2c87aefa054a",
+          "request_id": "931dd1e5295abb28-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "77a15db7-cbe5-40ea-9680-2c87aefa054a",
+      "children": [
+        "b2369799-55ab-4f5b-9e6e-15c826cddf72"
+      ]
+    },
+    "b2369799-55ab-4f5b-9e6e-15c826cddf72": {
+      "id": "b2369799-55ab-4f5b-9e6e-15c826cddf72",
+      "message": {
+        "id": "b2369799-55ab-4f5b-9e6e-15c826cddf72",
+        "author": {
+          "role": "tool",
+          "name": "myfiles_browser",
+          "metadata": {}
+        },
+        "create_time": 1744912816.860243,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "All the files uploaded by the user have been fully loaded. Searching won't provide additional information."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": false,
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "f93eee5c-de03-4a81-8339-c118d00130fa",
+          "request_id": "931dd1e5295abb28-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f93eee5c-de03-4a81-8339-c118d00130fa",
+      "children": [
+        "ed8dfd83-a15b-40d9-925f-12365bc587aa"
+      ]
+    },
+    "ed8dfd83-a15b-40d9-925f-12365bc587aa": {
+      "id": "ed8dfd83-a15b-40d9-925f-12365bc587aa",
+      "message": {
+        "id": "ed8dfd83-a15b-40d9-925f-12365bc587aa",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1744912805.591021,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Voici les tâches que tu vas effectuer durant ton stage chez **EUKLEAD**, comme mentionné dans ta convention :\n\n### 🎯 **Objectifs et missions principales** :\n1. **Mise en œuvre d’une plateforme dédiée aux clients et fournisseurs** :\n   - Création ou amélioration d'une interface ou d'un outil numérique pour faciliter les échanges ou la gestion entre EUKLEAD et ses partenaires.\n\n2. **Amélioration et développement de la plateforme** :\n   - Amélioration continue (UX/UI, fonctionnalités) selon les retours et les besoins métiers.\n   - Ajout de nouvelles fonctionnalités selon les spécifications.\n\n3. **Proposition d’indicateurs innovants** :\n   - Création de KPIs ou dashboards intelligents permettant de suivre l’activité ou la performance.\n\n4. **Traitement et intégration de données (\"data\")** :\n   - Manipulation, structuration, et éventuellement visualisation de données clients/fournisseurs ou internes.\n\n5. **Automatisation des processus** :\n   - Automatiser certaines tâches manuelles répétitives pour améliorer l’efficacité.\n   - Par exemple, automatiser la collecte ou l’analyse de données, ou la génération de rapports.\n\n6. **Sécurisation des accès** :\n   - Veiller à ce que seuls les utilisateurs autorisés aient accès aux bons niveaux d’information.\n   - Implémentation ou amélioration de systèmes d’authentification ou d’autorisation.\n\n7. **Démonstration de la plateforme aux clients et fournisseurs** :\n   - Préparer des présentations ou maquettes.\n   - Participer à des démonstrations, tests utilisateurs ou retours terrain.\n\n---\n\n💡 **Durée :** du **16 juin au 25 juillet 2025** (6 semaines – 210h)  \n📍 **Lieu :** 39 route de Fondeline, Saint-Nazaire  \n👩‍🏫 **Maître de stage :** Marie Molin (Consultante)  \n\nSi tu veux, je peux t'aider à te préparer pour chacune de ces tâches (exemples de technologies, projets types, ou supports). Tu veux qu’on les détaille ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "gpt-4o",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "b2369799-55ab-4f5b-9e6e-15c826cddf72",
+          "request_id": "931dd1e5295abb28-CDG",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b2369799-55ab-4f5b-9e6e-15c826cddf72",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "ed8dfd83-a15b-40d9-925f-12365bc587aa",
+  "plugin_ids": null,
+  "conversation_id": "680141a4-b410-800a-9eec-103361ae1459",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "http://privacy.ynov.com/",
+    "http://privacy.ynov.com/processing"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-4o",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "680141a4-b410-800a-9eec-103361ae1459"
+}

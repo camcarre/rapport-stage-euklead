@@ -1,0 +1,1167 @@
+{
+  "title": "Corriger faute fichier",
+  "create_time": 1756903310.242494,
+  "update_time": 1756908898.589551,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "be967d3f-0730-4e36-bb90-8b6c1d1773f6"
+      ]
+    },
+    "be967d3f-0730-4e36-bb90-8b6c1d1773f6": {
+      "id": "be967d3f-0730-4e36-bb90-8b6c1d1773f6",
+      "message": {
+        "id": "be967d3f-0730-4e36-bb90-8b6c1d1773f6",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "ca910ffb-6577-440e-b94d-e33514873e6e"
+      ]
+    },
+    "ca910ffb-6577-440e-b94d-e33514873e6e": {
+      "id": "ca910ffb-6577-440e-b94d-e33514873e6e",
+      "message": {
+        "id": "ca910ffb-6577-440e-b94d-e33514873e6e",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756903309.9406116,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file-5ygRkfLuEzefJvJn5wf2N9",
+              "name": "index.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 920
+            },
+            {
+              "id": "file-JYN1gncDW5yQqNPFH2EGJN",
+              "name": "blog.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 860
+            },
+            {
+              "id": "file-1xGQzmXY9nY7rVJCEpyLnG",
+              "name": "bilan.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 1142
+            },
+            {
+              "id": "file-Gh6o3DbQA5MVq3Nin5EMAy",
+              "name": "competence.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 1733
+            },
+            {
+              "id": "file-6y1w8uiM5Qw3Qvib6QQnz6",
+              "name": "missions.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 973
+            },
+            {
+              "id": "file-9VnnceDc55rvbZwQqqzj7y",
+              "name": "contact.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 618
+            },
+            {
+              "id": "file-EyCEheuNQ1YufjJGUhM8TB",
+              "name": "projet.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 2466
+            },
+            {
+              "id": "file-FvZ6mjZN3SBnSo1nehaYLs",
+              "name": "merci.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 315
+            },
+            {
+              "id": "file-TSzAv49f2vzo3K6crZ2sRP",
+              "name": "presentation.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 1724
+            }
+          ],
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "be967d3f-0730-4e36-bb90-8b6c1d1773f6",
+      "children": [
+        "d263f845-d464-47be-9287-0c9e10c21041"
+      ]
+    },
+    "d263f845-d464-47be-9287-0c9e10c21041": {
+      "id": "d263f845-d464-47be-9287-0c9e10c21041",
+      "message": {
+        "id": "d263f845-d464-47be-9287-0c9e10c21041",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756903308.306,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "import os\r\nimport shutil\r\nimport time\r\nimport customtkinter as ctk\r\nfrom tkinter import filedialog\r\n\r\n# === IMPORT TES FONCTIONS ===\r\nfrom DEPOSE.Traitement_1 import convert_pdf_folder\r\nfrom DEPOSE.Traitement_2 import Traitement_2\r\nfrom DEPOSE.Traitemnet_3 import Traitemnet_3\r\n\r\n\r\n# --- CERCLE PROGRESSION ---\r\nclass CircularProgress(ctk.CTkCanvas):\r\n    def __init__(self, master, size=100, width=10, fg=\"#62EDC5\", bg=\"#243148\", **kwargs):\r\n        super().__init__(master, width=size, height=size, bg=bg, highlightthickness=0, **kwargs)\r\n        self.size = size\r\n        self.width = width\r\n        self.fg = fg\r\n        self.label = self.create_text(size // 2, size // 2, text=\"\", fill=\"#62EDC5\", font=(\"Arial\", 17, \"bold\"))\r\n\r\n    def set(self, percent):\r\n        self.delete(\"arc\")\r\n        extent = percent * 359.9\r\n        self.create_arc(\r\n            self.width // 2, self.width // 2,\r\n            self.size - self.width // 2, self.size - self.width // 2,\r\n            start=90, extent=-extent, style=\"arc\",\r\n            outline=self.fg, width=self.width, tags=\"arc\"\r\n        )\r\n        self.itemconfig(self.label, text=f\"{int(percent * 100)}%\")\r\n\r\n\r\n# --- PAGE DEPOSE ---\r\nclass DeposePage(ctk.CTkFrame):\r\n    def __init__(self, master, *args, **kwargs):\r\n        super().__init__(master, *args, **kwargs)\r\n        self.base_dir = os.path.dirname(os.path.abspath(__file__))\r\n        self.pdf_base = None\r\n        self.pdf_source = None\r\n        self.skip_source = False\r\n        self.final_file = None\r\n\r\n        # Dossiers temporaires\r\n        self.temp_dirs = [\r\n            os.path.join(self.base_dir, \"PDF_TMP\"),\r\n            os.path.join(self.base_dir, \"DB_TMP\"),\r\n            os.path.join(self.base_dir, \"CLEAN_TMP\")\r\n        ]\r\n\r\n        self.configure(fg_color=\"#192233\")\r\n        self.grid_columnconfigure(0, weight=1)\r\n\r\n        # === Titre ===\r\n        ctk.CTkLabel(self, text=\"Dépose\", font=(\"Helvetica\", 38, \"bold\"), text_color=\"#62EDC5\")\\\r\n            .grid(row=0, column=0, pady=(24, 16))\r\n\r\n        # === Zone fichiers ===\r\n        self.file_box = ctk.CTkFrame(self, fg_color=\"#243148\", corner_radius=20)\r\n        self.file_box.grid(row=1, column=0, padx=80, pady=(0, 18), sticky=\"ew\")\r\n\r\n        ctk.CTkLabel(self.file_box, text=\"Sélectionnez vos fichiers PDF\",\r\n                     font=(\"Arial\", 20), text_color=\"#62EDC5\").pack(pady=10)\r\n\r\n        # Base\r\n        ctk.CTkButton(self.file_box, text=\"Choisir PDF Base\", font=(\"Arial\", 16),\r\n                      fg_color=\"#415AA2\", command=self.select_pdf_base).pack(pady=4)\r\n        self.label_base = ctk.CTkLabel(self.file_box, text=\"Non sélectionné\", font=(\"Arial\", 14),\r\n                                       text_color=\"#F0D48A\", wraplength=900)\r\n        self.label_base.pack()\r\n\r\n        # Source\r\n        ctk.CTkButton(self.file_box, text=\"Choisir PDF Source\", font=(\"Arial\", 16),\r\n                      fg_color=\"#417AA2\", command=self.select_pdf_source).pack(pady=4)\r\n        self.label_source = ctk.CTkLabel(self.file_box, text=\"Non sélectionné\", font=(\"Arial\", 14),\r\n                                         text_color=\"#F0D48A\", wraplength=900)\r\n        self.label_source.pack()\r\n\r\n        # Passer source\r\n        self.skip_btn = ctk.CTkButton(self.file_box, text=\"Passer PDF Source\",\r\n                                      font=(\"Arial\", 14), fg_color=\"#666666\",\r\n                                      command=self.skip_source_file)\r\n        self.skip_btn.pack(pady=6)\r\n\r\n        # Cercle progression\r\n        self.progress_circle = CircularProgress(self, size=100, fg=\"#62EDC5\")\r\n        self.progress_circle.grid(row=2, column=0, pady=(0, 10))\r\n        self.progress_circle.grid_remove()\r\n\r\n        # Bouton start (vert)\r\n        self.start_btn = ctk.CTkButton(self, text=\"🚀 Lancer le traitement\",\r\n                                       font=(\"Arial\", 22, \"bold\"),\r\n                                       fg_color=\"#62EDC5\", text_color=\"#112232\",\r\n                                       hover_color=\"#36D399\", corner_radius=36, height=64,\r\n                                       state=\"disabled\", command=self.start_process)\r\n        self.start_btn.grid(row=3, column=0, pady=26, padx=220, sticky=\"ew\")\r\n\r\n        # Label progression\r\n        self.progress_label = ctk.CTkLabel(self, text=\"\", font=(\"Arial\", 18, \"bold\"), text_color=\"#A8F0E2\")\r\n        self.progress_label.grid(row=4, column=0, pady=(10, 10))\r\n\r\n        # Bouton téléchargement (jaune)\r\n        self.download_btn = ctk.CTkButton(self, text=\"📥 Télécharger Résultat FINAL.xlsx\",\r\n                                          font=(\"Arial\", 20, \"bold\"),\r\n                                          fg_color=\"#FFD966\", text_color=\"#112232\",\r\n                                          hover_color=\"#E6C200\", corner_radius=36,\r\n                                          height=54, command=self.download_results)\r\n        self.download_btn.grid(row=5, column=0, pady=(20, 20))\r\n        self.download_btn.grid_remove()\r\n\r\n        # Bouton terminer (rouge) — affiché uniquement après téléchargement\r\n        self.finish_btn = ctk.CTkButton(self, text=\"✅ Terminer\",\r\n                                        font=(\"Arial\", 22, \"bold\"),\r\n                                        fg_color=\"#FF4C4C\", text_color=\"white\",\r\n                                        hover_color=\"#CC0000\", corner_radius=36, height=64,\r\n                                        command=self.quit_page)\r\n        self.finish_btn.grid(row=6, column=0, pady=(20, 20))\r\n        self.finish_btn.grid_remove()\r\n\r\n    # --- Sélection fichiers ---\r\n    def select_pdf_base(self):\r\n        file = filedialog.askopenfilename(filetypes=[(\"PDF files\", \"*.pdf\")])\r\n        if file:\r\n            self.pdf_base = file\r\n            self.label_base.configure(text=f\"Base: {os.path.basename(file)}\")\r\n        self.update_start_button()\r\n\r\n    def select_pdf_source(self):\r\n        file = filedialog.askopenfilename(filetypes=[(\"PDF files\", \"*.pdf\")])\r\n        if file:\r\n            self.pdf_source = file\r\n            self.skip_source = False\r\n            self.label_source.configure(text=f\"Source: {os.path.basename(file)}\")\r\n        self.update_start_button()\r\n\r\n    def skip_source_file(self):\r\n        self.pdf_source = None\r\n        self.skip_source = True\r\n        self.label_source.configure(text=\"PDF source ignoré ✅\")\r\n        self.update_start_button()\r\n\r\n    def update_start_button(self):\r\n        if self.pdf_base and (self.pdf_source or self.skip_source):\r\n            self.start_btn.configure(state=\"normal\")\r\n        else:\r\n            self.start_btn.configure(state=\"disabled\")\r\n\r\n    # --- Lancer le traitement ---\r\n    def start_process(self):\r\n        start_global = time.time()\r\n        self.start_btn.configure(state=\"disabled\")\r\n        self.progress_circle.grid()\r\n        self.progress_circle.set(0.0)\r\n        self.update()\r\n\r\n        # Nettoyer / recréer dossiers temporaires\r\n        for d in self.temp_dirs:\r\n            if os.path.exists(d):\r\n                shutil.rmtree(d)\r\n            os.makedirs(d, exist_ok=True)\r\n\r\n        # Copier fichiers\r\n        shutil.copy(self.pdf_base, os.path.join(self.temp_dirs[0], \"base.pdf\"))\r\n        if self.pdf_source:\r\n            shutil.copy(self.pdf_source, os.path.join(self.temp_dirs[0], \"source.pdf\"))\r\n\r\n        # Étape 1\r\n        self.progress_label.configure(text=\"⏳ Conversion PDF...\")\r\n        self.update()\r\n        convert_pdf_folder(self.temp_dirs[0], self.temp_dirs[1])\r\n        self.progress_circle.set(0.33)\r\n\r\n        # Étape 2\r\n        self.progress_label.configure(text=\"⏳ Classification / Nettoyage...\")\r\n        self.update()\r\n        Traitement_2(self.temp_dirs[1], self.temp_dirs[2])\r\n        self.progress_circle.set(0.66)\r\n\r\n        # Étape 3\r\n        self.progress_label.configure(text=\"⏳ Extraction Excel...\")\r\n        self.update()\r\n        Traitemnet_3(self.temp_dirs[2])   # génère FINAL.xlsx\r\n        self.final_file = os.path.join(os.getcwd(), \"FINAL.xlsx\")\r\n        self.progress_circle.set(1.0)\r\n\r\n        elapsed = time.time() - start_global\r\n        mins, secs = divmod(int(elapsed), 60)\r\n        self.progress_label.configure(text=f\"✅ Terminé en {mins}m {secs}s\")\r\n\r\n        self.download_btn.grid()\r\n\r\n    def download_results(self):\r\n        if not self.final_file or not os.path.exists(self.final_file):\r\n            self.progress_label.configure(text=\"⚠️ Aucun fichier FINAL.xlsx trouvé.\")\r\n            return\r\n        save_path = filedialog.asksaveasfilename(defaultextension=\".xlsx\",\r\n                                                 initialfile=os.path.basename(self.final_file))\r\n        if save_path:\r\n            shutil.copy(self.final_file, save_path)\r\n            self.progress_label.configure(text=\"📥 FINAL.xlsx téléchargé ✅\")\r\n            self.finish_btn.grid()  # afficher le bouton Terminer uniquement après téléchargement\r\n\r\n    def quit_page(self):\r\n        # Supprimer tous les dossiers temporaires\r\n        for d in self.temp_dirs:\r\n            shutil.rmtree(d, ignore_errors=True)\r\n        if self.final_file and os.path.exists(self.final_file):\r\n            os.remove(self.final_file)  # supprimer FINAL.xlsx aussi\r\n        self.master.destroy()\r\n\r\n\r\n# --- MAIN ---\r\nif __name__ == \"__main__\":\r\n    ctk.set_appearance_mode(\"dark\")\r\n    ctk.set_default_color_theme(\"dark-blue\")\r\n    root = ctk.CTk()\r\n    root.title(\"Dépose\")\r\n    root.geometry(\"1200x820\")\r\n    page = DeposePage(root)\r\n    page.pack(fill=\"both\", expand=True)\r\n    root.mainloop()Using CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\n🖥️ Utilisation de : cuda\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nC:\\Python\\Python310\\lib\\site-packages\\torch\\_utils.py:99: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\c10/cuda/CUDAAllocatorConfig.h:28.)\r\n  untyped_storage = torch.UntypedStorage(self.size(), device=device)\r\n❌ Erreur import: cannot import name 'Traitemnet_3' from 'DEPOSE.Traitemnet_3' (c:\\Users\\DELPORTE_T\\Desktop\\Version_7\\Version_7\\DEPOSE\\Traitemnet_3.py)\r\nPS C:\\Users\\DELPORTE_T\\Desktop\\Version_7\\Version_7> ce script fait partie d'un projet, j'ai lancé seuelement celui ci et j'obtiens cette erreur"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ca910ffb-6577-440e-b94d-e33514873e6e",
+      "children": [
+        "ef091860-aeba-4f88-aff4-e66fc9714bd8"
+      ]
+    },
+    "ef091860-aeba-4f88-aff4-e66fc9714bd8": {
+      "id": "ef091860-aeba-4f88-aff4-e66fc9714bd8",
+      "message": {
+        "id": "ef091860-aeba-4f88-aff4-e66fc9714bd8",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.058837,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_browsing_display",
+          "result": "",
+          "summary": "",
+          "assets": null,
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "command": "spinner",
+          "status": "running",
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "d263f845-d464-47be-9287-0c9e10c21041",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d263f845-d464-47be-9287-0c9e10c21041",
+      "children": [
+        "7bfd33bf-9b42-442e-932a-7dab12e8f4d4"
+      ]
+    },
+    "7bfd33bf-9b42-442e-932a-7dab12e8f4d4": {
+      "id": "7bfd33bf-9b42-442e-932a-7dab12e8f4d4",
+      "message": {
+        "id": "7bfd33bf-9b42-442e-932a-7dab12e8f4d4",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.5971568,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-5ygRkfLuEzefJvJn5wf2N9",
+          "domain": "index.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Accueil - Mon Stage chez SEGULA Technologies</title>\r\n\r\n  <meta name=\"description\" content=\"Blog de stage de Théo Delporte chez SEGULA Technologies : missions, projets, compétences, bilan et billets d'expérience.\" />\r\n  <meta property=\"og:title\" content=\"Blog de stage - Théo Delporte\" />\r\n  <meta property=\"og:description\" content=\"Missions, projets, compétences, bilan et billets.\" />\r\n  <meta property=\"og:type\" content=\"website\" />\r\n  <meta property=\"og:image\" content=\"https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80\" />\r\n  <meta property=\"og:locale\" content=\"fr_FR\" />\r\n\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>\r\n    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }\r\n  </script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Bienvenue sur mon Blog de Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\">\r\n      <h2>Qui suis-je ?</h2>\r\n      <p>Je m'appelle Théo Delporte, étudiant passionné par l'informatique, l’intelligence artificielle et les nouvelles technologies. Ce blog est le fruit de mon stage chez SEGULA Technologies.</p>\r\n\r\n      <p class=\"mt-2\">\r\n        <a class=\"btn\" href=\"https://www.linkedin.com/in/th%C3%A9o-undefined-a157b3309/\" target=\"_blank\" rel=\"noopener\">Mon LinkedIn</a>\r\n        <a class=\"btn\" href=\"https://github.com/theod-maker\" target=\"_blank\" rel=\"noopener\"> Mon GitHub</a>\r\n        <a class=\"btn\" href=\"../pdf/CV_Theo_Delporte.pdf\" target=\"_blank\">Télécharger mon CV</a>\r\n      </p>\r\n\r\n      <h3>Ce que vous trouverez ici :</h3>\r\n      <ul>\r\n        <li>La présentation de l’entreprise SEGULA</li>\r\n        <li>Mes missions réalisées en stage</li>\r\n        <li>Un bilan complet de mon expérience</li>\r\n        <li>Un aperçu de mes compétences techniques et humaines</li>\r\n        <li>Des billets réguliers sur mon apprentissage (<a class=\"btn\" href=\"blog.html\">voir les billets</a>)</li>\r\n      </ul>\r\n\r\n      <div class=\"carousel\">\r\n  <img src=\"../icons/yolo_example.png\" alt=\"Exemple YOLO\" loading=\"lazy\">\r\n  <img src=\"../icons/Capture d’écran 2025-09-01 092143.png\" alt=\"Illustration stage 2\" loading=\"lazy\">\r\n  <img src=\"../icons/roboflow.png\" alt=\"Illustration stage 3\" loading=\"lazy\">\r\n  </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "index.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "ef091860-aeba-4f88-aff4-e66fc9714bd8",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ef091860-aeba-4f88-aff4-e66fc9714bd8",
+      "children": [
+        "84f7941d-86f1-4956-b0b0-592a71a47a42"
+      ]
+    },
+    "84f7941d-86f1-4956-b0b0-592a71a47a42": {
+      "id": "84f7941d-86f1-4956-b0b0-592a71a47a42",
+      "message": {
+        "id": "84f7941d-86f1-4956-b0b0-592a71a47a42",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.6011395,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-JYN1gncDW5yQqNPFH2EGJN",
+          "domain": "blog.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Blog - Mon Stage chez SEGULA Technologies</title>\r\n  <meta name=\"description\" content=\"Billets réguliers sur mon stage : intégration, difficultés rencontrées, solutions techniques et apprentissages.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Blog de Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt; <a href=\"blog.html\">Blog</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section blog-list\">\r\n      <h2>Billets</h2>\r\n\r\n      <article>\r\n        <h3>Mon intégration chez SEGULA</h3>\r\n        <time datetime=\"2025-06-16\">12 juin 2025</time>\r\n        <p>Présentation de l’équipe et des bureau, besoin d'aide sur le proget Roboflow, mon premier défis à donc été d'apporté l'aide sur l'annotation des images d'entraienement la première semaines.</p>\r\n      </article>\r\n\r\n      <article>\r\n        <h3>Lancement du projet de mon stage</h3>\r\n        <time datetime=\"2025-06-20\">23 juin 2025</time>\r\n        <p>Réception du jeux de données, le défi aujourd'hui à été de comprendre les données et lancer tous le processus de nettoyage pour une exploitation pour la suite. J'ai donc utilisé Power Query et vais apprendre à l'utiliser.</p>\r\n      </article>\r\n\r\n      <article>\r\n        <h3>Technique : pipeline Power BI, DAX & KPI</h3>\r\n        <time datetime=\"2025-06-30\">01 juillet 2025</time>\r\n        <p>Le défis aujourd'hui à été avec les données trier, de trouver la solution pour atteindre les KPI's demandées. Je vais bien évidemment utiliser les données, mais au vu de ce que j'ai je vais devoir utiliser le DAX et approfondire mes connaissances sur celui-ci.</p>\r\n      </article>\r\n\r\n      <article>\r\n        <h3>Mise en forme et présentation du rapport</h3>\r\n        <time datetime=\"2025-06-30\">15 juillet 2025</time>\r\n        <p>J'ai la plupart de mes graphiues et mes données sont propres, mais il va falloir que je travail la mis en forme, l'armonisation et l'organisation des pages. Il faut que ça soit le plus optimisé possible, et surtout présentable.</p>\r\n      </article>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "blog.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "7bfd33bf-9b42-442e-932a-7dab12e8f4d4",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7bfd33bf-9b42-442e-932a-7dab12e8f4d4",
+      "children": [
+        "f5222a3b-72d5-4977-9e95-2a8bbd6228e8"
+      ]
+    },
+    "f5222a3b-72d5-4977-9e95-2a8bbd6228e8": {
+      "id": "f5222a3b-72d5-4977-9e95-2a8bbd6228e8",
+      "message": {
+        "id": "f5222a3b-72d5-4977-9e95-2a8bbd6228e8",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.6064472,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-1xGQzmXY9nY7rVJCEpyLnG",
+          "domain": "bilan.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Bilan - Mon Stage chez SEGULA Technologies</title>\r\n  <meta name=\"description\" content=\"Bilan de stage : apprentissages, points forts, axes d'amélioration, impact sur mon projet professionnel.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\">\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Bilan de mon Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"bilan.html\">Bilan</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\">\r\n      <h2>Mon bilan personnel et professionnel</h2>\r\n      <p>Ce stage chez SEGULA Technologies m'a permis d'acquérir de nombreuses compétences technique, et de mettre savoirs au profit d'un projet concrets. Egalement d'en découvrir plus sur le fonctionnement d'un bureau d'études, et de faire des rencontres d'autres étudiants en IA. C'était aussis bien évidemment l'ocassion pour moi de voir l'entreprise dans laquel je suis en alteranance à partir de cette années</p>\r\n\r\n      <h3>Ce que j'ai appris</h3>\r\n      <ul>\r\n        <li>Analyse et trie de données complexes pour interprétation des résultats et meilleurs utilisation</li>\r\n        <li>Travail en équipe pluridisciplinaire</li>\r\n        <li>Utilisation des méthodes agiles et gestion de projets</li>\r\n        <li>Savoir gérer sont temps, et avancer en autonomie sur un projet à long therme</li>\r\n        <li>Prendre des décisions et certains risque</li>\r\n        <li>Travailler avec de nouveaux outils, logiciels</li>\r\n      </ul>\r\n\r\n      <h3>Mes points forts révélés</h3>\r\n      <ul>\r\n        <li>Autonomie et sens de l'initiative</li>\r\n        <li>Curiosité technologique</li>\r\n        <li>Capacité d’analyse et de synthèse sur des jeux de données inconnue</li>\r\n      </ul>\r\n\r\n      <h3>Difficulté marquante & solution</h3>\r\n      <p>La consolidation d’Excel hétérogènes (colonnes instables, encodages) a été la difficulté principale ainsi que la liaison des données. J’ai mis en place un nettoyage Power Query (typage/normalisation), une modélisation claire (relations, tables dimensions) et des mesures DAX pour fiabiliser les KPI. Cela a amélioré la qualité des décisions et facilité l'exploitation des données</p>\r\n      <p>Réaliser les KPi's précis demandées, car des fois la données n'était paq toujours disponible ou je n'avais pâs le nécesssaire pour réaliser la mesure DAX. Mais le plus souvent soit j'y arrivais, soit je trouvais la mesure ou la formule DAX la plus proche ou adappté, pour répondre aux attendus</Data></p>\r\n      <h3>Axes d'amélioration</h3>\r\n      <ul>\r\n        <li>Approfondir le processus de trie et de nettoyage de données.</li>\r\n        <li>Approfondir les techniques de visualisation avancées (Power BI, design UX des dashboards)</li>\r\n        <li>Approfondir le processus de déploiement, pour utilisation</li>\r\n      </ul>\r\n\r\n      <h3>Impact sur mon projet professionnel</h3>\r\n      <p>Cette expérience confirme mon intérêt pour la data et IA. Je souhaite poursuivre vers des postes alliant ingénierie de données et aide à la décision, en consolidant mes compétences Python/Power BI et mes pratiques de gouvernance des données.</p>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "bilan.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "84f7941d-86f1-4956-b0b0-592a71a47a42",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "84f7941d-86f1-4956-b0b0-592a71a47a42",
+      "children": [
+        "8ef722ba-e1f9-4d9b-90e5-c8e9b09ade72"
+      ]
+    },
+    "8ef722ba-e1f9-4d9b-90e5-c8e9b09ade72": {
+      "id": "8ef722ba-e1f9-4d9b-90e5-c8e9b09ade72",
+      "message": {
+        "id": "8ef722ba-e1f9-4d9b-90e5-c8e9b09ade72",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.609809,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-Gh6o3DbQA5MVq3Nin5EMAy",
+          "domain": "competence.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Compétences - Stage SEGULA</title>\r\n  <meta name=\"description\" content=\"Compétences techniques et humaines acquises pendant le stage, avec preuves, réalisations et impacts.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Compétences Acquises</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"competence.html\">Compétences</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\" class=\"skills-section\">\r\n    <h2>Mes compétences acquises lors du stage</h2>\r\n    <p class=\"intro\">\r\n      Étudiant orienté Data & IA, j’aime utiler les données pour exploiter tous leurs potentiels.\r\n      Niveau global : <strong>intermédiaire</strong> en Power BI & Python, avec une sensibilité produit (lisibilité, pertinence des KPI).\r\n    </p>\r\n\r\n    <h3>Compétences techniques</h3>\r\n    <div class=\"skills-container\">\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/powerbi.png\" alt=\"Logo Power BI\" loading=\"lazy\">\r\n        <h4>Power BI (Power Query & DAX)</h4>\r\n        <p>Modèle en étoile, mesures KPI (taux de conversion, cycle moyen), pages de synthèse métier.</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 80%;\"></div></div>\r\n      </div>\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/roboflow.jpg\" alt=\"Logo roboflow\" loading=\"lazy\">\r\n        <h4>Roboflow et YOLO</h4>\r\n        <p>Découverte de Roboflow et YOLO et apport d'aide</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 45%;\"></div></div>\r\n      </div>\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/github.png\" alt=\"Logo GitHub\" loading=\"lazy\">\r\n        <h4>Git & GitHub</h4>\r\n        <p>Versionnage des scripts, branches simples, README et suivi des évolutions.</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 70%;\"></div></div>\r\n      </div>\r\n    </div>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Compétences techniques – preuves ciblées</h3>\r\n      <ul>\r\n        <li><strong>Power Query / DAX :</strong> normalisation d’Excel hétérogènes (typage, relations), mesures KPI et publication d’un dashboard fiable pour l’Avant-vente <p>(<a href=\"projet.html?projet=1\" class=\"btn\">Voir le projet</a>)</p>.</li>\r\n        <li><strong>YOLO / Roboflow :</strong> annotation & entraînement pour détection de symboles électriques sur plans (<a href=\"projet.html?projet=3\" class=\"btn\">Voir le projet</a>).</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <h3>Compétences humaines</h3>\r\n    <ul class=\"soft-skills\">\r\n      <li><strong>Travail en équipe :</strong> échanges réguliers avec l’équipe IA et l’Avant-vente (recueil du besoin, itérations rapides).</li>\r\n      <li><strong>Résolution de problèmes :</strong> adaptation des données aux KPI attendus (règles de contrôle, mapping de colonnes).</li>\r\n      <li><strong>Autonomie :</strong> conduite d’un POC de bout en bout (collecte → modélisation → restitution).</li>\r\n      <li><strong>Communication :</strong> synthèse claire en réunion (objectifs, résultats, limites, prochaines étapes).</li>\r\n    </ul>\r\n\r\n    <h3>Outils & technologies utilisés</h3>\r\n    <div class=\"tools-container\" aria-label=\"Outils et technologies\">\r\n      <div><img src=\"../icons/python.png\" alt=\"Python\" loading=\"lazy\"><p>Python</p></div>\r\n      <div><img src=\"../icons/powerbi.png\" alt=\"Power BI\" loading=\"lazy\"><p>Power BI</p></div>\r\n      <div><img src=\"../icons/roboflow.jpg\" alt=\"Roboflow\" loading=\"lazy\"><p>Roboflow</p></div>\r\n      <div><img src=\"../icons/github.png\" alt=\"GitHub\" loading=\"lazy\"><p>GitHub</p></div>\r\n    </div>\r\n\r\n    <h3>Mes acquis professionnels</h3>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>présenter des résultats d’analyse</strong> en réunion projet.</div>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>concevoir un outils de modélisation</strong> sur des données Excel réelles.</div>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>réaliser un projet de bout en bout</strong> avec des contrainte et critère particulié</div>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Impacts et résultats</h3>\r\n      <ul>\r\n        <li>Accès plus simple rapide aux données d'avant ventes, meilleurs compréhension pour les personnes extérieur</li>\r\n        <li>Diminution des erreurs de lecture pour une meilleur interprétation et gain de temps.</li>\r\n        <li>Aide au chiffrage : premier score de probabilité “Go / No Go” pour prioriser les offres.</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Langues & liens</h3>\r\n      <p>Français (natif) – Anglais (intermédiaire, technique).</p>\r\n      <div class=\"center-btn\" style=\"margin-top:18px\">\r\n        <a class=\"btn\" href=\"https://www.linkedin.com/in/ton-profil\" target=\"_blank\" rel=\"noopener\">Mon LinkedIn</a>\r\n        <a class=\"btn\" href=\"../pdf/CV_Theo_Delporte.pdf\" target=\"_blank\" rel=\"noopener\">📄 Télécharger mon CV</a>\r\n      </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "competence.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "f5222a3b-72d5-4977-9e95-2a8bbd6228e8",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f5222a3b-72d5-4977-9e95-2a8bbd6228e8",
+      "children": [
+        "d4748a69-3f40-4d6b-bea4-63e63c78aed6"
+      ]
+    },
+    "d4748a69-3f40-4d6b-bea4-63e63c78aed6": {
+      "id": "d4748a69-3f40-4d6b-bea4-63e63c78aed6",
+      "message": {
+        "id": "d4748a69-3f40-4d6b-bea4-63e63c78aed6",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.6120656,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-6y1w8uiM5Qw3Qvib6QQnz6",
+          "domain": "missions.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Missions - Mon Stage chez SEGULA Technologies</title>\r\n  <meta name=\"description\" content=\"Missions de stage : analyse de données, modèle prédictif, IA Roboflow.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>\r\n    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }\r\n    function toggleDetails(element) {\r\n      const details = element.querySelector('.mission-details');\r\n      if (details.style.maxHeight) { details.style.maxHeight = null; }\r\n      else { details.style.maxHeight = details.scrollHeight + \"px\"; }\r\n    }\r\n    document.addEventListener('DOMContentLoaded', () => {\r\n      const blocks = document.querySelectorAll('.mission-block');\r\n      blocks.forEach((block, i) => {\r\n        block.style.animationDelay = `${i * 0.2}s`;\r\n        block.classList.add('animate');\r\n      });\r\n    });\r\n  </script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Missions de Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"missions.html\">Missions</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"missions-container\">\r\n\r\n      <div class=\"mission-block\" onclick=\"toggleDetails(this)\">\r\n        <div class=\"mission-img-wrapper\">\r\n          <img src=\"../icons/power.png\" alt=\"Analyse de données\" class=\"mission-img\" loading=\"lazy\">\r\n        </div>\r\n        <div class=\"mission-text\">\r\n          <h3>Projet principal - Création d'un outils d'analyse des données commerciales</h3>\r\n          <p>Dans un but de compréhension et manipulation des bases de données pour mieux gérer les offres futures, et faire de meilleiurs prédiction.</p>\r\n          <div class=\"mission-details\">\r\n            <p>J’ai mis en place un <strong>pipeline Power BI</strong> (Power Query + DAX), conçu des <strong>KPI</strong>, et automatisé la <strong>visualisation</strong> des données commerciales. Rôle : collecte, modélisation, restitution. Collaboration : avant-vente et direction commerciale.</p>\r\n            <a href=\"projet.html?projet=1\" class=\"btn\">Voir le projet</a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"mission-block\" onclick=\"toggleDetails(this)\">\r\n        <div class=\"mission-img-wrapper\">\r\n          <img src=\"../icons/roboflow.png\" alt=\"Projet IA\" class=\"mission-img\" loading=\"lazy\">\r\n        </div>\r\n        <div class=\"mission-text\">\r\n          <h3>Projet secondaire -  IA d’annotation automatique</h3>\r\n          <p>Automatisation de l’annotation de plans techniques grâce à l’IA.</p>\r\n          <div class=\"mission-details\">\r\n            <p>Entraînement d’un modèle <strong>YOLO</strong> pour détecter des symboles électriques sur des folios (Total Montoir). Rôle : annotation, entraînement, analyse d’erreurs et itérations.</p>\r\n            <a href=\"projet.html?projet=3\" class=\"btn\">Voir le projet</a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "missions.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "8ef722ba-e1f9-4d9b-90e5-c8e9b09ade72",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8ef722ba-e1f9-4d9b-90e5-c8e9b09ade72",
+      "children": [
+        "b94a6336-5eed-4703-854a-6b142d8ab47a"
+      ]
+    },
+    "b94a6336-5eed-4703-854a-6b142d8ab47a": {
+      "id": "b94a6336-5eed-4703-854a-6b142d8ab47a",
+      "message": {
+        "id": "b94a6336-5eed-4703-854a-6b142d8ab47a",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.6130836,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-9VnnceDc55rvbZwQqqzj7y",
+          "domain": "contact.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Contact - Mon Stage chez SEGULA Technologies</title>\r\n  <meta name=\"description\" content=\"Contactez-moi pour toute question ou remarque à propos de mon blog de stage.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Contactez-moi</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"contact.html\">Contact</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section>\r\n      <h2>Me contacter</h2>\r\n      <p>Pour toute question ou remarque, merci de remplir le formulaire ci-dessous. Vous serez redirigé vers une page de confirmation après l’envoi.</p>\r\n\r\n      <form action=\"https://formspree.io/f/movwoykz\" method=\"POST\" class=\"contact-form\">\r\n        <input type=\"hidden\" name=\"_next\" value=\"https://theod-maker.github.io/merci.html\">\r\n\r\n        <label for=\"name\">Nom :</label>\r\n        <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Votre nom\" required autocomplete=\"name\">\r\n\r\n        <label for=\"email\">Email :</label>\r\n        <input type=\"email\" id=\"email\" name=\"_replyto\" placeholder=\"Votre email\" required autocomplete=\"email\">\r\n\r\n        <label for=\"message\">Message :</label>\r\n        <textarea id=\"message\" name=\"message\" placeholder=\"Votre message\" ></textarea>\r\n\r\n        <button type=\"submit\">Envoyer</button>\r\n      </form>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "contact.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "d4748a69-3f40-4d6b-bea4-63e63c78aed6",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d4748a69-3f40-4d6b-bea4-63e63c78aed6",
+      "children": [
+        "2c6e061b-6a8d-4f00-a390-3ad8e60d7e5d"
+      ]
+    },
+    "2c6e061b-6a8d-4f00-a390-3ad8e60d7e5d": {
+      "id": "2c6e061b-6a8d-4f00-a390-3ad8e60d7e5d",
+      "message": {
+        "id": "2c6e061b-6a8d-4f00-a390-3ad8e60d7e5d",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.616229,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-EyCEheuNQ1YufjJGUhM8TB",
+          "domain": "projet.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Projets détaillés - Stage SEGULA</title>\r\n  <meta name=\"description\" content=\"Projets détaillés du stage : pipelines BI, modèle prédictif, IA Roboflow.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Projets de Stage</h1>\r\n    <button onclick=\"document.body.classList.toggle('dark-mode')\" class=\"dark-mode-toggle\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\" class=\"project-container\">\r\n\r\n    <details class=\"project-item\" id=\"projet-1\">\r\n  <summary>Projet principal - Création d'un outils d'analyse des données commerciales</summary>\r\n  <div class=\"project-content\">\r\n    <p>Ce projet à pour but de répondre à un besoins du service avant ventes. Toute les données classifier dans excel ne sont pas lié et difficillement exploitable et présentable. Mon sujet de stage à donc consister à développer un outils pour le suivi des performances des offres commerciales.<p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 125417.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    </div>\r\n\r\n    <figcaption>Aperçu d'une source de données</figcaption>\r\n    <p>Pour cela il était donc nécessaire que je récupère les données, ici ce sera celle de l'année 2024. Ensuite j'ai du analyser les données, essayer déja moi même de les comprendes pour aussi avoir une meilleur visualisation, il y avait évidemment plusieurs sources de données. Egalement essayer d'étudier les liens potentiels entre elles pour la suite. \r\n    Une fois cette étape et compte tenu des données, j'ai décider d'importer ces données dans Power BI qui est un logiciel réputé pour les projets à traitement de données et qui facilite grandement leur exploitation. Une fois importer j'ai utiliser Power Query, déja intégré à Power BI pour mettre en forme les données, suprimé les valeurs null, ajuster les valeurs ou format de données correcte. En fait il permet de passer de données brute à des données beaucoup plus exploitatble par la suite dans power BI. Cela ma aussi permis de réaliser des liens entre les différentes source de données.<p>\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 130448.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Power Query - utilisé pour la gestion des données</figcaption>\r\n    <p>Lorsqu'ont ma présenté le projet, le service avant ventes attendais des KPI particulier pour explloiter des données précises. Une fois ce premier processus fait, j'ai commencer à étudier la manière dont j'allais réaliser les graphiques, mais pour certains je n'avais pas les données nécessaires où il restait encore certaines choses à extraire ou filter. \r\n    <p>C'est ici que va entrer en jeux le DAX, comme vous aller le voir, ça va être une partie importantes de mon projet de stage.\r\n    Le DAX c'est quoi ? C'est en fait une collection de fonctions, d'opérateurs et de constatntes qui peuvent être utilisées dans une formule ou une expression, pour calculer et retourner une ou plusieurs valeurs. Le DAX va vous permettre de créer des informations à partir des données qui se trouvent déja dans votre modèle.\r\n    </p> Voici quelque exemple de formule DAX, réalisé pendant ce stage:</p>\r\n\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120344.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120442.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120513.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>Exemple de DAX - utilisé pour de nombreux KPI</figcaption>\r\n    </div>\r\n\r\n    </p>En géneral je faisais une page pour un KPI que j'agrémmentais avec des tabelaux où encore des données qui me parraissait pertinantes, en plus des graphiques. Le défis sur cette partie à été de projeter la réalisation des KPI demandées sur la plateforme Power BI. La plus part était évidemment réalisable étant la large game proposé par Power BI.</p>\r\n    <p> Les données se trouvent comme vous pouvez le voir sur les illustrations, dans la section \"Données\" à droite de l'espace de travail. J'ai donc en fonction des KPI demandées, pris les données qui me semblais utilie pour les intégrer à celui-ci. Voici par exemple le fonctionnement de ce premier graphique. </p>\r\n\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 131747.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Interface Power BI - utilisé pour réaliser les KPI's</figcaption>\r\n\r\n    <p>Ensuite il y a des KPI ou je n'ai pas la données, ou elles sont tous simplement trop brute, aussi parfois il fallait la calculer à l'aide d'une autre données. Pour avoir un exemple concrets, voivi le graphique attendu et le KPI final, au vu des données que j'avais, j'ai utiliser du DAX, Les voicis: </p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120641.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120718.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 132305.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>KPI's attendu VS réalisé - à l'aide du DAX</figcaption>\r\n    </div>\r\n\r\n    <p> J'ai donc réalisé cela pour tous les KPI et mis en forme le rapport, vous pourrez trouver des captures ainsi que le lien télechargeable du rapport en bas de page. Ce projet est bien évidemment à continuer et ne demande que des améliorations, il est également possible de le déployer pour avoir une vu présentation grâce aux outils microsoft.</p>\r\n    <div class=\"stack\">\r\n      <strong>Technos :</strong>\r\n      <span>Excel</span><span>Power BI</span><span>Power Query</span><span>Python</span>\r\n    </div>\r\n  </div>\r\n</details>\r\n\r\n\r\n    <details class=\"project-item\" id=\"projet-3\">\r\n      <summary>Projet secondaire -  IA d’annotation automatique</summary>\r\n      <div class=\"project-content\">\r\n        <p>Quand je suis arrivé ici, d'autres étudiant IA travaillais déja sur un projet. Ce projet à pour but d'automatiser les annotations des schémas électrque par l'IA. (Ici folio du client TOTAL ENERGIES). Il fallait entrainer le modèle et l'aider à comprendre ce qu'il devait repéré sur les schémas, nous avons donc utilisé le logiciel roboflow qui est un outils d'étiquetage d'image. </p>\r\n        <p>C'est un processus plutôt long, de réaliser cela sur les nombreux folio d'entrainement, donc j'ai apporté de l'aide sur la première semaine sur cette partie annotation. Puis une fois ce processuce réalisé, ils ont técupéré les données et ont pu entrainer le modèles et apportées les modifications nécessaires.</p>\r\n        <img src=\"../icons/Capture d’écran 2025-09-02 101820.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Aperçu de l'outils Roboflow</figcaption>\r\n        <img src=\"../icons/yolo_example.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Outils de détection yolo</figcaption>\r\n        <p>Pour passer les données dans le modèle, l'outils utilisé était YOLO, qui est un véritable détecteur d'objets. Il est courrament utilisé car il est simple à installer, puissant et rapide.<p>\r\n        </p>Une fois ces données passé dans le modèle nous avions le résulats dans un fichier excel, pour voir si cela fonctionnais et surtous voir la précisions, comparer à nos données d'annotations réeels, repérer les différentes erreur et les annotées dans un tableaux. Cela a permis au étudiants de corriger leurs erreurs par la suite</p>\r\n        <img src=\"../icons/roboflow.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Tableau de détection des erreur du modèle</figcaption>\r\n        <div class=\"stack\">\r\n          <strong>Technos :</strong>\r\n          <span>YOLO</span><span>Roboflow</span><span>Python</span>\r\n        </div>\r\n      </div>\r\n    </details>\r\n\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n\r\n  <script>\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n    const params = new URLSearchParams(window.location.search);\r\n    const projet = params.get(\"projet\");\r\n\r\n    const projet1 = document.getElementById(\"projet-1\");\r\n    const projet3 = document.getElementById(\"projet-3\");\r\n\r\n    if (projet === \"1\") {\r\n      projet1.style.display = \"block\";\r\n      projet3.style.display = \"none\";\r\n    } else if (projet === \"3\") {\r\n      projet1.style.display = \"none\";\r\n      projet3.style.display = \"block\";\r\n    }\r\n  });\r\n </script>\r\n\r\n</body>\r\n</html>",
+          "title": "projet.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "b94a6336-5eed-4703-854a-6b142d8ab47a",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b94a6336-5eed-4703-854a-6b142d8ab47a",
+      "children": [
+        "c6ba024e-10c7-4cdf-820e-27ed76a68546"
+      ]
+    },
+    "c6ba024e-10c7-4cdf-820e-27ed76a68546": {
+      "id": "c6ba024e-10c7-4cdf-820e-27ed76a68546",
+      "message": {
+        "id": "c6ba024e-10c7-4cdf-820e-27ed76a68546",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.617305,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-FvZ6mjZN3SBnSo1nehaYLs",
+          "domain": "merci.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Merci pour votre message</title>\r\n  <meta name=\"description\" content=\"Confirmation d'envoi du message.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\">\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Merci pour votre message !</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <a href=\"index.html\">Retour à l'accueil</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\">\r\n      <p>Votre message a bien été envoyé. Je vous répondrai dès que possible.</p>\r\n      <div class=\"center-btn\">\r\n        <a href=\"index.html\" class=\"btn\">🏠 Retour à l'accueil</a>\r\n      </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "merci.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "2c6e061b-6a8d-4f00-a390-3ad8e60d7e5d",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2c6e061b-6a8d-4f00-a390-3ad8e60d7e5d",
+      "children": [
+        "e8fed898-029d-4f45-9bac-79307fe4e93b"
+      ]
+    },
+    "e8fed898-029d-4f45-9bac-79307fe4e93b": {
+      "id": "e8fed898-029d-4f45-9bac-79307fe4e93b",
+      "message": {
+        "id": "e8fed898-029d-4f45-9bac-79307fe4e93b",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.6188583,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-TSzAv49f2vzo3K6crZ2sRP",
+          "domain": "presentation.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Présentation de l'entreprise</title>\r\n  <meta name=\"description\" content=\"Présentation de l'entreprise SEGULA Technologies et cadre du stage de Théo Delporte.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>\r\n    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }\r\n    document.addEventListener('DOMContentLoaded', () => {\r\n      const counters = document.querySelectorAll('.counter');\r\n      counters.forEach(counter => {\r\n        const target = +counter.getAttribute('data-target');\r\n        const speed = 50;\r\n        const updateCount = () => {\r\n          const count = +counter.innerText;\r\n          const increment = Math.ceil(target / speed);\r\n          if (count < target) { counter.innerText = count + increment; setTimeout(updateCount, 50); }\r\n          else { counter.innerText = target; }\r\n        };\r\n        updateCount();\r\n      });\r\n    });\r\n  </script>\r\n</head>\r\n\r\n<body> \r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Présentation de l'entreprise</h1>\r\n\r\n    <div class=\"header-tools\">\r\n      <div class=\"stats-banner\">\r\n        <div class=\"stat-item\">\r\n          <h3 class=\"counter\" data-target=\"6\">0</h3>\r\n          <p>Semaines de stage</p>\r\n        </div>\r\n        <div class=\"stat-item\">\r\n          <h3 class=\"counter\" data-target=\"4\">0</h3>\r\n          <p>Projets réalisés</p>\r\n        </div>\r\n        <div class=\"stat-item\">\r\n          <h3 class=\"counter\" data-target=\"3\">0</h3>\r\n          <p>Compétences clés</p>\r\n        </div>\r\n      </div>\r\n\r\n      <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    </div>\r\n\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"presentation.html\">Présentation</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\" aria-labelledby=\"cadre-stage\">\r\n      <h2 id=\"cadre-stage\">Cadre du stage</h2>\r\n      <ul>\r\n        <li><strong>Entreprise :</strong> SEGULA Technologies – Site de Montoir-de-Bretagne</li>\r\n        <li><strong>Secteur :</strong> Ingénierie (énergie, aéronautique, naval…)</li>\r\n        <li><strong>Durée :</strong> 6 semaines – du 16 juin au 25 juillet 2025</li>\r\n        <li><strong>Tuteur :</strong>LAZREK Yassine</li>\r\n        <li><strong>Rôle :</strong> Stagiaire Data/BI – analyse, modélisation, dashboards</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <section class=\"content-section\">\r\n      <h2>Présentation de l'entreprise SEGULA Technologies</h2>\r\n\r\n      <h3>1.1 Historique de l'entreprise</h3>\r\n      <p>Créée en 1985, SEGULA Technologies est une entreprise française spécialisée dans l'ingénierie. Dans les années 90, l'entreprise a consolidé sa présence en France avant de s'étendre à l'international dans les années 2000. Depuis 2010, SEGULA n'a cessé de diversifier ses activités et d'innover pour devenir un acteur majeur du secteur. Aujourd'hui, avec plus de 15 000 collaborateurs répartis dans plus de 30 pays, le groupe accompagne plus de 300 clients industriels dans des secteurs stratégiques. L'innovation est au cœur de sa stratégie, de la phase d'étude à la production industrielle.</p>\r\n\r\n      <h3>1.2 Activités principales</h3>\r\n      <p>SEGULA Technologies intervient dans de nombreux secteurs :</p>\r\n      <ul>\r\n        <li><strong>Aéronautique et Spatial :</strong> Conception de systèmes complexes et soutien à l'innovation technologique.</li>\r\n        <li><strong>Automobile :</strong> Développement des véhicules de demain avec les plus grands constructeurs.</li>\r\n        <li><strong>Énergie :</strong> Solutions innovantes pour la transition énergétique et la préservation de l'environnement.</li>\r\n        <li><strong>Ferroviaire :</strong> Optimisation des infrastructures et développement de technologies pour les transports.</li>\r\n        <li><strong>Naval :</strong> Conception et maintenance de navires en mettant l'accent sur l'innovation.</li>\r\n        <li><strong>Oil & Gas :</strong> Ingénierie pour l'exploration, la production et la distribution d'énergie.</li>\r\n        <li><strong>Pharmacie :</strong> Optimisation des procédés de production pour garantir la qualité des produits pharmaceutiques.</li>\r\n      </ul>\r\n\r\n      <h3>1.3 Le site SEGULA Technologies de Montoir-de-Bretagne</h3>\r\n      <p>Racheté en 2016, le site de Montoir-de-Bretagne (anciennement SECOMAT) joue un rôle clé au sein de SEGULA. Ce bureau d'études intervient dans les domaines de l'énergie, de l'aéronautique et du naval, en partenariat avec des grands comptes comme Airbus ou Total Energies. Le site se distingue par son expertise en automatisme et informatique industrielle.</p>\r\n\r\n      <h3>1.4 Organisation du Bureau d'Études</h3>\r\n      <p>L'organisation repose sur plusieurs pôles :</p>\r\n      <ul>\r\n        <li><strong>Direction de Pôle :</strong> Supervision des activités et des projets.</li>\r\n        <li><strong>Direction QHSE :</strong> Gestion de la Qualité, de l'Hygiène, de la Sécurité et de l'Environnement.</li>\r\n        <li><strong>Direction Technique :</strong> Développement et innovation technique.</li>\r\n        <li><strong>Direction Commerciale :</strong> Stratégies de vente et relations clients.</li>\r\n      </ul>\r\n\r\n      <p>Les métiers sont variés et couvrent :</p>\r\n      <ul>\r\n        <li>Avant-Vente et Chiffrage</li>\r\n        <li>Gestion de projets et achats</li>\r\n        <li>Inspection, réalisation et mise en service (Commissioning)</li>\r\n        <li>Électricité, instrumentation, automatisme et informatique industrielle</li>\r\n        <li>Génie civil, procédés, structure et tuyauterie</li>\r\n      </ul>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "presentation.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "c6ba024e-10c7-4cdf-820e-27ed76a68546",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c6ba024e-10c7-4cdf-820e-27ed76a68546",
+      "children": [
+        "2f67d935-3980-4aec-84af-89a2b49f97e8"
+      ]
+    },
+    "2f67d935-3980-4aec-84af-89a2b49f97e8": {
+      "id": "2f67d935-3980-4aec-84af-89a2b49f97e8",
+      "message": {
+        "id": "2f67d935-3980-4aec-84af-89a2b49f97e8",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756903310.620019,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "All the files uploaded by the user have been fully loaded. Searching won't provide additional information."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "e8fed898-029d-4f45-9bac-79307fe4e93b",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e8fed898-029d-4f45-9bac-79307fe4e93b",
+      "children": [
+        "992eb5d0-db00-4b42-962b-fa1ba7198d21"
+      ]
+    },
+    "992eb5d0-db00-4b42-962b-fa1ba7198d21": {
+      "id": "992eb5d0-db00-4b42-962b-fa1ba7198d21",
+      "message": {
+        "id": "992eb5d0-db00-4b42-962b-fa1ba7198d21",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756903310.6208105,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "2f67d935-3980-4aec-84af-89a2b49f97e8",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2f67d935-3980-4aec-84af-89a2b49f97e8",
+      "children": [
+        "187ae369-7eaa-4018-b633-c2ff4a29ed6c"
+      ]
+    },
+    "187ae369-7eaa-4018-b633-c2ff4a29ed6c": {
+      "id": "187ae369-7eaa-4018-b633-c2ff4a29ed6c",
+      "message": {
+        "id": "187ae369-7eaa-4018-b633-c2ff4a29ed6c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756903310.605026,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "L’erreur vient directement de cette ligne :\n\n```python\nfrom DEPOSE.Traitemnet_3 import Traitemnet_3\n```\n\n👉 Le module et la fonction sont orthographiés **`Traitemnet_3`** (avec le *m* et le *n* inversés).  \nC’est probablement une faute de frappe, le fichier s’appelle sûrement **`Traitement_3.py`** et la fonction **`Traitement_3`**.\n\n---\n\n### ✅ Correctif\n\nModifie l’import ainsi :\n\n```python\nfrom DEPOSE.Traitement_3 import Traitement_3\n```\n\nEt dans ton code, à l’endroit où tu appelles la fonction :\n\n```python\nTraitement_3(self.temp_dirs[2])   # génère FINAL.xlsx\n```\n\n---\n\n### 🔍 Vérifie aussi\n1. Que le fichier **`Traitement_3.py`** existe bien dans ton dossier `DEPOSE/`.\n2. Que la fonction s’appelle bien `Traitement_3` dedans.\n3. Qu’il n’y a pas un doublon avec un fichier mal orthographié (`Traitemnet_3.py`) dans ton projet.\n\n---\n\nVeux-tu que je te propose un petit script Python pour **scanner ton dossier `DEPOSE/` et lister tous les fichiers `.py` + leurs fonctions** ? Ça permettrait de vérifier automatiquement si `Traitement_3` existe bien et sous quel nom."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "979552cdbd6a02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "992eb5d0-db00-4b42-962b-fa1ba7198d21",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "992eb5d0-db00-4b42-962b-fa1ba7198d21",
+      "children": [
+        "bd902b37-6771-4892-bb90-b3a614b226c7"
+      ]
+    },
+    "bd902b37-6771-4892-bb90-b3a614b226c7": {
+      "id": "bd902b37-6771-4892-bb90-b3a614b226c7",
+      "message": {
+        "id": "bd902b37-6771-4892-bb90-b3a614b226c7",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756903558.629,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "nn mon fichier est avec une faute de frappe c'est pour ça"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "979558e9e9ad02d1-MAD",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "187ae369-7eaa-4018-b633-c2ff4a29ed6c",
+      "children": [
+        "6a162eac-a398-407a-aaf9-e7fe7ec38916"
+      ]
+    },
+    "6a162eac-a398-407a-aaf9-e7fe7ec38916": {
+      "id": "6a162eac-a398-407a-aaf9-e7fe7ec38916",
+      "message": {
+        "id": "6a162eac-a398-407a-aaf9-e7fe7ec38916",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756903559.963008,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Parfait, alors ça explique l’erreur ✅  \n\nComme ton fichier s’appelle avec la faute **`Traitemnet_3.py`**, Python ne trouve pas de module nommé `Traitement_3`.  \n\n👉 Tu as deux options :\n\n### 🔧 Option 1 : Corriger l’orthographe du fichier\nRenomme simplement le fichier dans ton dossier `DEPOSE/` :  \n```\nTraitemnet_3.py  →  Traitement_3.py\n```\n\net dans ton code :\n```python\nfrom DEPOSE.Traitement_3 import Traitement_3\n```\n\n### 🔧 Option 2 : Garder la faute (pas conseillé)\nSi tu veux garder le nom de fichier tel qu’il est (`Traitemnet_3.py`), il faut juste harmoniser :\n```python\nfrom DEPOSE.Traitemnet_3 import Traitemnet_3\n```\net dans ton code :\n```python\nTraitemnet_3(self.temp_dirs[2])\n```\n\n---\n\n💡 La **meilleure pratique** reste de corriger le nom du fichier → ça évite les erreurs futures et ça rend ton projet plus propre.  \n\nTu veux que je t’aide à **renommer partout dans ton projet automatiquement** (import + appels), ou tu préfères juste corriger à la main ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "979558e9e9ad02d1-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "bd902b37-6771-4892-bb90-b3a614b226c7",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bd902b37-6771-4892-bb90-b3a614b226c7",
+      "children": [
+        "0c235b0e-cae6-4869-9077-23851448efbf"
+      ]
+    },
+    "0c235b0e-cae6-4869-9077-23851448efbf": {
+      "id": "0c235b0e-cae6-4869-9077-23851448efbf",
+      "message": {
+        "id": "0c235b0e-cae6-4869-9077-23851448efbf",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756905050.369,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "file-service://file-9CYdQNEvmDjPSs5X6cGpVm",
+              "size_bytes": 947784,
+              "width": 1152,
+              "height": 2048,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "sanitized": true,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null
+              }
+            },
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file-9CYdQNEvmDjPSs5X6cGpVm",
+              "size": 947784,
+              "name": "unnamed.jpg",
+              "mime_type": "image/jpeg",
+              "width": 1152,
+              "height": 2048,
+              "source": "local"
+            }
+          ],
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "97957d54bbc67912-MAD",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6a162eac-a398-407a-aaf9-e7fe7ec38916",
+      "children": [
+        "f3887ef9-2782-4eef-9f4a-5c5c38388f22"
+      ]
+    },
+    "f3887ef9-2782-4eef-9f4a-5c5c38388f22": {
+      "id": "f3887ef9-2782-4eef-9f4a-5c5c38388f22",
+      "message": {
+        "id": "f3887ef9-2782-4eef-9f4a-5c5c38388f22",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756905055.773024,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Merci pour la photo 📸  \n\nL’erreur que tu as est tout en bas :  \n\n```\nFileNotFoundError: [Errno 2] No such file or directory: \n'C:\\\\Users\\\\DELPORT...\\\\Version_7\\\\CABLAGE_DECABLAGE\\\\YoloDeca.pt'\n```\n\n👉 Python essaie de charger un modèle YOLO (`YoloDeca.pt`) mais le fichier n’existe pas dans ton dossier `CABLAGE_DECABLAGE`.  \n\n---\n\n### ✅ Solution\n1. Vérifie dans ton projet où est stocké ton modèle YOLO `.pt`.  \n   - Exemple : `best.pt`, `last.pt`, ou `YoloDeca.pt`.  \n\n2. Mets-le au bon endroit attendu par ton code :\n   ```\n   C:\\Users\\DELPORT... \\Version_7\\CABLAGE_DECABLAGE\\YoloDeca.pt\n   ```\n\n3. Sinon, change ton script Python pour pointer vers le vrai chemin du modèle.  \n   Exemple dans ton code (dans un `torch.load` ou `YOLO(\"...\")`) :\n   ```python\n   model = YOLO(\"C:/Users/DELPORT_T/Desktop/Version_7/CABLAGE_DECABLAGE/best.pt\")\n   ```\n\n---\n\n🔍 En résumé : ton code est bon, mais il lui manque le **fichier du modèle YOLO**.  \n\nVeux-tu que je t’aide à adapter ton script pour **utiliser un autre modèle déjà existant (par ex. `yolov8n.pt`)** comme modèle par défaut si `YoloDeca.pt` n’est pas trouvé ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "97957d54bbc67912-MAD",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "0c235b0e-cae6-4869-9077-23851448efbf",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0c235b0e-cae6-4869-9077-23851448efbf",
+      "children": [
+        "73831099-b585-4b0e-bd20-bf3a079e2eba"
+      ]
+    },
+    "73831099-b585-4b0e-bd20-bf3a079e2eba": {
+      "id": "73831099-b585-4b0e-bd20-bf3a079e2eba",
+      "message": {
+        "id": "73831099-b585-4b0e-bd20-bf3a079e2eba",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756908695.228,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Using CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nUsing CPU. Note: This module is much faster with a GPU.\r\n🖥️ Utilisation de : cuda\r\nUsing CPU. Note: This module is much faster with a GPU.\r\nC:\\Python\\Python310\\lib\\site-packages\\torch\\_utils.py:99: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\c10/cuda/CUDAAllocatorConfig.h:28.)\r\n  untyped_storage = torch.UntypedStorage(self.size(), device=device)\r\n❌ Erreur import: cannot import name 'Traitemnet_3' from 'DEPOSE.Traitemnet_3' (c:\\Users\\DELPORTE_T\\Desktop\\Version_7\\DEPOSE\\Traitemnet_3.py) j'ai ça quand je lance page main"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9795d651a9bcf108-WAW",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f3887ef9-2782-4eef-9f4a-5c5c38388f22",
+      "children": [
+        "6d2e702e-d3b0-4422-8868-7fc9d0f95f82"
+      ]
+    },
+    "6d2e702e-d3b0-4422-8868-7fc9d0f95f82": {
+      "id": "6d2e702e-d3b0-4422-8868-7fc9d0f95f82",
+      "message": {
+        "id": "6d2e702e-d3b0-4422-8868-7fc9d0f95f82",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756908696.828567,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Ok, là ton erreur est très claire 👇  \n\n```\n❌ Erreur import: cannot import name 'Traitemnet_3' from 'DEPOSE.Traitemnet_3'\n```\n\n➡️ Ça veut dire que **Python essaie d’importer `Traitemnet_3` depuis un fichier nommé `Traitemnet_3.py`**.  \nDonc le problème n’est pas YOLO ou CUDA, mais bien **l’orthographe**.\n\n---\n\n### Ce qui se passe\n- Ton fichier est encore nommé **`Traitemnet_3.py`** (avec la faute).  \n- Ton code essaie sûrement d’importer comme ça :  \n  ```python\n  from DEPOSE.Traitemnet_3 import Traitemnet_3\n  ```\n- Mais toi tu veux en fait que ce soit **`Traitement_3.py`** et `Traitement_3`.\n\n---\n\n### ✅ Ce qu’il faut faire\n\n1. Dans ton explorateur de fichiers, renomme :\n   ```\n   DEPOSE/Traitemnet_3.py  →  DEPOSE/Traitement_3.py\n   ```\n\n2. Dans ton code (`main.py` et partout ailleurs), change :\n   ```python\n   from DEPOSE.Traitemnet_3 import Traitemnet_3\n   ```\n   en\n   ```python\n   from DEPOSE.Traitement_3 import Traitement_3\n   ```\n\n3. Vérifie dans `Traitement_3.py` que la fonction s’appelle bien :\n   ```python\n   def Traitement_3(...):\n       ...\n   ```\n   et pas encore avec la faute.\n\n---\n\n👉 Tant que le fichier s’appelle **Traitemnet_3.py**, Python cherchera `Traitemnet_3`.  \nTu veux que je t’écrive une petite commande PowerShell à lancer directement dans ton dossier pour renommer le fichier et corriger ça d’un coup ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "9795d651a9bcf108-WAW",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "73831099-b585-4b0e-bd20-bf3a079e2eba",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "73831099-b585-4b0e-bd20-bf3a079e2eba",
+      "children": [
+        "20af2a2f-3bed-47d6-8a8a-eebb870b5edb"
+      ]
+    },
+    "20af2a2f-3bed-47d6-8a8a-eebb870b5edb": {
+      "id": "20af2a2f-3bed-47d6-8a8a-eebb870b5edb",
+      "message": {
+        "id": "20af2a2f-3bed-47d6-8a8a-eebb870b5edb",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756908745.028,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "bas si il ont le même nom peut importe ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9795d788fd4ef108-WAW",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6d2e702e-d3b0-4422-8868-7fc9d0f95f82",
+      "children": [
+        "ae2290d0-7a7b-4f09-8f18-14e4f97d8a42"
+      ]
+    },
+    "ae2290d0-7a7b-4f09-8f18-14e4f97d8a42": {
+      "id": "ae2290d0-7a7b-4f09-8f18-14e4f97d8a42",
+      "message": {
+        "id": "ae2290d0-7a7b-4f09-8f18-14e4f97d8a42",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756908747.552238,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Pas tout à fait 🙂  \n\nEn Python, il y a **deux niveaux** qui doivent coller :  \n\n1. **Le nom du fichier**  \n   - Exemple : `Traitement_3.py`  \n   - Quand tu fais `from DEPOSE.Traitement_3 import ...`, Python va chercher un fichier qui s’appelle exactement `Traitement_3.py` dans le dossier `DEPOSE`.\n\n2. **Le nom de la fonction ou classe à l’intérieur du fichier**  \n   - Exemple :\n     ```python\n     def Traitement_3(...):\n         ...\n     ```\n   - Quand tu écris `from DEPOSE.Traitement_3 import Traitement_3`, Python ouvre le fichier `Traitement_3.py` et cherche une fonction ou classe qui s’appelle `Traitement_3`.\n\n---\n\n### Ce qui t’arrive\n- Ton fichier est écrit **`Traitemnet_3.py`** (avec le `m` et `n` inversés).  \n- Mais ton import écrit `Traitement_3`.  \n👉 Python ne trouve pas le fichier → **erreur d’import**.\n\nMême si la fonction s’appelle bien `Traitement_3`, si le fichier n’a pas le bon nom, ça plantera.\n\n---\n\n### ✅ Solution simple\n- Soit tu **renommes le fichier** :  \n  ```\n  Traitemnet_3.py  →  Traitement_3.py\n  ```\n  et tu laisses l’import comme tu l’as (`from DEPOSE.Traitement_3 import Traitement_3`).\n\n- Soit tu gardes le fichier avec la faute (`Traitemnet_3.py`), mais alors tu dois aussi écrire avec la faute :  \n  ```python\n  from DEPOSE.Traitemnet_3 import Traitemnet_3\n  ```\n\n---\n\n👉 Mais la **bonne pratique** c’est de corriger l’orthographe partout (`Traitement_3`).  \n\nTu veux que je t’aide à passer un coup de **recherche/remplacement automatique** dans tout ton projet pour corriger le nom propre (`Traitement_3`) partout ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "9795d788fd4ef108-WAW",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "20af2a2f-3bed-47d6-8a8a-eebb870b5edb",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "20af2a2f-3bed-47d6-8a8a-eebb870b5edb",
+      "children": [
+        "dfe258f0-5526-4bd8-b63a-b27b714e7e69"
+      ]
+    },
+    "dfe258f0-5526-4bd8-b63a-b27b714e7e69": {
+      "id": "dfe258f0-5526-4bd8-b63a-b27b714e7e69",
+      "message": {
+        "id": "dfe258f0-5526-4bd8-b63a-b27b714e7e69",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756908883.096,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "oui mais je veux dire si la faute est partout ou est le soucis ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9795dae7dd49f108-CDG",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ae2290d0-7a7b-4f09-8f18-14e4f97d8a42",
+      "children": [
+        "5d6e0923-e40b-443a-8b95-4092c7441a78"
+      ]
+    },
+    "5d6e0923-e40b-443a-8b95-4092c7441a78": {
+      "id": "5d6e0923-e40b-443a-8b95-4092c7441a78",
+      "message": {
+        "id": "5d6e0923-e40b-443a-8b95-4092c7441a78",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756908884.662815,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Très bonne remarque 👍  \n\nEn effet, si **la faute est partout la même**, Python s’en fiche totalement :  \n\n- Fichier → `Traitemnet_3.py`  \n- Fonction → `def Traitemnet_3(...):`  \n- Import → `from DEPOSE.Traitemnet_3 import Traitemnet_3`  \n\n👉 Dans ce cas, tout marche, même si c’est moche 😅\n\n---\n\n### Pourquoi tu as une erreur alors ?\nTon message d’erreur dit :  \n\n```\ncannot import name 'Traitemnet_3' from 'DEPOSE.Traitemnet_3'\n```\n\nÇa veut dire :\n1. Python a trouvé ton fichier **`Traitemnet_3.py`** ✅  \n2. Mais dedans, il n’a **pas trouvé de fonction nommée `Traitemnet_3`** ❌\n\nDonc ton fichier **n’a pas la fonction avec la même faute de frappe que le nom du fichier**.  \nProbablement dedans tu as écrit :  \n```python\ndef Traitement_3(...):   # sans la faute\n    ...\n```\n\n---\n\n### ✅ Deux solutions\n1. **Tout harmoniser avec la faute**  \n   - Laisser le fichier comme `Traitemnet_3.py`  \n   - Vérifier que la fonction est aussi `def Traitemnet_3(...):`  \n\n2. **Tout corriger proprement** (recommandé)  \n   - Renommer le fichier en `Traitement_3.py`  \n   - Corriger l’import : `from DEPOSE.Traitement_3 import Traitement_3`  \n   - Vérifier que la fonction est `def Traitement_3(...):`  \n\n---\n\n👉 Si tu veux je peux t’écrire un mini script qui **scanne ton projet et liste toutes les fonctions définies dans `Traitemnet_3.py`**. Comme ça tu verras direct si la fonction porte bien le même nom que ton import.  \n\nTu veux que je le fasse ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "9795dae7dd49f108-CDG",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "dfe258f0-5526-4bd8-b63a-b27b714e7e69",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "dfe258f0-5526-4bd8-b63a-b27b714e7e69",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "5d6e0923-e40b-443a-8b95-4092c7441a78",
+  "plugin_ids": null,
+  "conversation_id": "68b8378d-5104-8320-8530-8a247bb365cc",
+  "conversation_template_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+  "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+  "gizmo_type": "snorlax",
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "details.style",
+    "window.location.search",
+    "https://platform.openai.com/docs/guides/error-codes/api-errors.||||j",
+    "https://github.com/theod-maker/Projet-IA.git",
+    "https://github.com/theod-maker",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+    "https://www.linkedin.com/in/ton-profil",
+    "https://www.linkedin.com/in/th%C3%A9o-undefined-a157b3309/",
+    "https://formspree.io/f/movwoykz",
+    "https://github.com/openboxes/openboxes||||si",
+    "https://github.com/NanoFabricFX/openwms",
+    "https://theod-maker.github.io/merci.html"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "68b8378d-5104-8320-8530-8a247bb365cc"
+}

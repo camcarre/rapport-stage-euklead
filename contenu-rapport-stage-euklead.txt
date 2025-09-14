@@ -1,0 +1,126 @@
+RAPPORT DE STAGE - EUKLEAD
+============================
+
+INFORMATIONS GÉNÉRALES
+---------------------
+Stagiaire: Camille DOUAUD
+Entreprise: EUKLEAD
+Période: 16 juin - 25 juillet 2025
+Durée: 6 semaines (210h)
+Maître de stage: Marie MOLIN
+
+INTRODUCTION
+============
+
+Ce stage de 6 semaines chez EUKLEAD s'inscrit dans le cadre de ma 2ème année de Bachelor Informatique à Ynov Campus Nantes. L'objectif était de découvrir le milieu professionnel du conseil en systèmes d'information et de contribuer concrètement au développement d'outils data et d'automatisation pour optimiser les processus internes et clients.
+
+EUKLEAD, située à Saint-Nazaire, est une société de conseil spécialisée dans l'accompagnement des entreprises dans leurs projets de transformation digitale, particulièrement dans le domaine des ressources humaines et de l'analyse de données. L'entreprise développe notamment des observatoires sectoriels et des outils d'aide à la décision pour ses clients.
+
+MISSIONS RÉALISÉES
+==================
+
+1. 🔄 HARMONISATION DES DONNÉES EXCEL
+   -----------------------------------
+   Développement d'un outil VBA complet avec interface utilisateur pour harmoniser automatiquement les intitulés de qualifications professionnelles. Utilisation d'algorithmes de similarité (Levenshtein) et création d'un système de référentiel intelligent.
+
+2. 📊 OBSERVATOIRE DE L'INTÉRIM - POWER BI
+   ----------------------------------------
+   Création de dashboards interactifs Power BI pour analyser les données du secteur de l'intérim. Développement de KPIs avancés en DAX, visualisations géographiques et analyses de volumétrie par profils.
+
+3. 🎯 INDICATEURS INNOVANTS
+   -------------------------
+   Création de nouveaux KPIs et métriques pour améliorer le pilotage d'activité. Développement d'algorithmes de calcul personnalisés et mise en place de systèmes d'alertes automatiques.
+
+TECHNOLOGIES MAÎTRISÉES
+=======================
+
+ANALYSE ET VISUALISATION DE DONNÉES
+- Power BI
+- DAX
+- Power Query
+- Excel Avancé
+- VBA
+
+DÉVELOPPEMENT ET PROGRAMMATION
+- Python
+- JavaScript
+- HTML/CSS
+- Algorithms (Levenshtein)
+
+MÉTHODES ET GESTION
+- Gestion de projet
+- Tests utilisateurs
+- Documentation technique
+- Analyse des besoins
+
+COMPÉTENCES DÉVELOPPÉES
+======================
+
+1. COMPÉTENCES TECHNIQUES (85%)
+   Maîtrise des outils Microsoft (Power BI, Excel VBA), développement d'algorithmes de traitement de données, conception d'interfaces utilisateur intuitives.
+
+2. ANALYSE ET RÉSOLUTION DE PROBLÈMES (90%)
+   Capacité à identifier les besoins utilisateurs, analyser des jeux de données complexes et proposer des solutions adaptées et scalables.
+
+3. COMMUNICATION ET PRÉSENTATION (80%)
+   Aptitude à présenter des solutions techniques à des non-techniciens, rédaction de documentation utilisateur claire et formations d'équipes.
+
+4. AUTONOMIE ET INITIATIVE (88%)
+   Capacité à mener des projets de bout en bout, proposer des améliorations proactives et s'adapter rapidement aux nouvelles technologies.
+
+PROJETS DÉTAILLÉS
+=================
+
+PROJET D'HARMONISATION DES DONNÉES
+----------------------------------
+Problématique: Les intitulés de qualifications professionnelles varient selon les sources (ETT, clients), rendant l'analyse et les statistiques difficiles.
+
+Solution développée: Création d'un complément Excel (.xlam) avec algorithme de correspondance fuzzy, interface utilisateur intuitive et système de référentiel auto-enrichi.
+
+Impact: Réduction de 70% du temps de traitement des données, amélioration de la qualité des analyses et standardisation des processus.
+
+OBSERVATOIRE DE L'INTÉRIM - POWER BI
+------------------------------------
+Contexte: Besoin d'analyser les tendances du marché de l'intérim pour conseiller les clients EUKLEAD.
+
+Réalisation: Développement de 50+ KPIs en DAX, création de 3 pages de dashboard avec cartes géographiques, analyses de profils et métriques de performance.
+
+Résultat: Outil de pilotage stratégique utilisé quotidiennement par l'équipe commerciale et les consultants.
+
+RÉSULTATS ET IMPACT
+===================
+
+- 50+ KPIs Power BI créés
+- 70% de réduction du temps de traitement
+- 3 outils déployés en production
+- 100% des objectifs atteints
+
+CONCLUSION ET PERSPECTIVES
+==========================
+
+Ce stage chez EUKLEAD a été une expérience exceptionnellement enrichissante qui m'a permis de mettre en pratique mes compétences techniques tout en découvrant le monde du conseil en entreprise. J'ai particulièrement apprécié la diversité des projets et la confiance accordée pour mener des initiatives de bout en bout.
+
+APPORTS DU STAGE
+----------------
+
+Technique: Maîtrise approfondie de Power BI/DAX, expertise VBA avancée avec algorithmes de matching, développement d'interfaces utilisateur
+
+Méthodologique: Gestion de projet, analyse des besoins utilisateurs, création de documentation technique, tests et déploiement
+
+Personnel: Autonomie, sens de l'initiative, communication avec les équipes métier, résolution de problèmes complexes, capacité d'innovation et d'adaptation
+
+CONTEXTE DE CANDIDATURE
+-----------------------
+Cette expérience découle d'une candidature spontanée envoyée en janvier 2025, où j'ai exprimé ma motivation pour développer mes compétences en analyse de données. Bien que n'ayant pas encore maîtrisé Power BI à l'époque, j'ai démontré ma détermination à me former rapidement et ma maîtrise avancée d'Excel acquise lors de projets académiques et personnels.
+
+PERSPECTIVES PROFESSIONNELLES
+-----------------------------
+Cette expérience confirme mon intérêt pour les métiers de la data et de l'automatisation. Elle m'oriente vers une spécialisation en Data Science / Ingénierie des données pour ma 3ème année de Bachelor, avec l'objectif de devenir expert en analyse de données et intelligence artificielle appliquée aux processus métiers.
+
+L'expérience EUKLEAD m'a montré l'importance de créer des solutions qui ont un impact concret sur l'efficacité des équipes. C'est cette dimension de résolution de problèmes réels que je souhaite approfondir dans la suite de mon parcours.
+
+CONTACT
+=======
+Camille DOUAUD - Stage EUKLEAD - Été 2025
+📧 camille.douaud@ynov.com | 📞 07 88 99 44 38
+🔗 GitHub: https://github.com/camcarre | LinkedIn: https://linkedin.com/in/camille-douaud

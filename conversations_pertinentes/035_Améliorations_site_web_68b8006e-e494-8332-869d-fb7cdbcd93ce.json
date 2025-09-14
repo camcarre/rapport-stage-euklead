@@ -1,0 +1,1417 @@
+{
+  "title": "Améliorations site web",
+  "create_time": 1756889199.667863,
+  "update_time": 1756900447.112321,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "9041e8d9-6820-46e5-b46a-dafaab19d302"
+      ]
+    },
+    "9041e8d9-6820-46e5-b46a-dafaab19d302": {
+      "id": "9041e8d9-6820-46e5-b46a-dafaab19d302",
+      "message": {
+        "id": "9041e8d9-6820-46e5-b46a-dafaab19d302",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "51803df0-477c-40c4-8ae3-28e18bc47688"
+      ]
+    },
+    "51803df0-477c-40c4-8ae3-28e18bc47688": {
+      "id": "51803df0-477c-40c4-8ae3-28e18bc47688",
+      "message": {
+        "id": "51803df0-477c-40c4-8ae3-28e18bc47688",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756889199.3078127,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file-5ygRkfLuEzefJvJn5wf2N9",
+              "name": "index.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 920
+            },
+            {
+              "id": "file-JYN1gncDW5yQqNPFH2EGJN",
+              "name": "blog.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 860
+            },
+            {
+              "id": "file-1xGQzmXY9nY7rVJCEpyLnG",
+              "name": "bilan.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 1142
+            },
+            {
+              "id": "file-Gh6o3DbQA5MVq3Nin5EMAy",
+              "name": "competence.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 1733
+            },
+            {
+              "id": "file-6y1w8uiM5Qw3Qvib6QQnz6",
+              "name": "missions.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 973
+            },
+            {
+              "id": "file-9VnnceDc55rvbZwQqqzj7y",
+              "name": "contact.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 618
+            },
+            {
+              "id": "file-EyCEheuNQ1YufjJGUhM8TB",
+              "name": "projet.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 2466
+            },
+            {
+              "id": "file-FvZ6mjZN3SBnSo1nehaYLs",
+              "name": "merci.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 315
+            },
+            {
+              "id": "file-TSzAv49f2vzo3K6crZ2sRP",
+              "name": "presentation.html",
+              "mimeType": "text/html",
+              "fileSizeTokens": 1724
+            }
+          ],
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9041e8d9-6820-46e5-b46a-dafaab19d302",
+      "children": [
+        "07569c26-4215-4c93-b6f1-2ab376eb0157"
+      ]
+    },
+    "07569c26-4215-4c93-b6f1-2ab376eb0157": {
+      "id": "07569c26-4215-4c93-b6f1-2ab376eb0157",
+      "message": {
+        "id": "07569c26-4215-4c93-b6f1-2ab376eb0157",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756889198.54,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "propose ce que je peux améliorer"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9793fa539b735169-ATL",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "51803df0-477c-40c4-8ae3-28e18bc47688",
+      "children": [
+        "6e04cf07-f2ee-44f4-8ee4-b2e89c40ecc2"
+      ]
+    },
+    "6e04cf07-f2ee-44f4-8ee4-b2e89c40ecc2": {
+      "id": "6e04cf07-f2ee-44f4-8ee4-b2e89c40ecc2",
+      "message": {
+        "id": "6e04cf07-f2ee-44f4-8ee4-b2e89c40ecc2",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.3980894,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_browsing_display",
+          "result": "",
+          "summary": "",
+          "assets": null,
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "command": "spinner",
+          "status": "running",
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "07569c26-4215-4c93-b6f1-2ab376eb0157",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "07569c26-4215-4c93-b6f1-2ab376eb0157",
+      "children": [
+        "82a1c1be-185e-4cd0-8cb9-32cd29d53351"
+      ]
+    },
+    "82a1c1be-185e-4cd0-8cb9-32cd29d53351": {
+      "id": "82a1c1be-185e-4cd0-8cb9-32cd29d53351",
+      "message": {
+        "id": "82a1c1be-185e-4cd0-8cb9-32cd29d53351",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.6194956,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-5ygRkfLuEzefJvJn5wf2N9",
+          "domain": "index.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Accueil - Mon Stage chez SEGULA Technologies</title>\r\n\r\n  <meta name=\"description\" content=\"Blog de stage de Théo Delporte chez SEGULA Technologies : missions, projets, compétences, bilan et billets d'expérience.\" />\r\n  <meta property=\"og:title\" content=\"Blog de stage - Théo Delporte\" />\r\n  <meta property=\"og:description\" content=\"Missions, projets, compétences, bilan et billets.\" />\r\n  <meta property=\"og:type\" content=\"website\" />\r\n  <meta property=\"og:image\" content=\"https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80\" />\r\n  <meta property=\"og:locale\" content=\"fr_FR\" />\r\n\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>\r\n    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }\r\n  </script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Bienvenue sur mon Blog de Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\">\r\n      <h2>Qui suis-je ?</h2>\r\n      <p>Je m'appelle Théo Delporte, étudiant passionné par l'informatique, l’intelligence artificielle et les nouvelles technologies. Ce blog est le fruit de mon stage chez SEGULA Technologies.</p>\r\n\r\n      <p class=\"mt-2\">\r\n        <a class=\"btn\" href=\"https://www.linkedin.com/in/th%C3%A9o-undefined-a157b3309/\" target=\"_blank\" rel=\"noopener\">Mon LinkedIn</a>\r\n        <a class=\"btn\" href=\"https://github.com/theod-maker\" target=\"_blank\" rel=\"noopener\"> Mon GitHub</a>\r\n        <a class=\"btn\" href=\"../pdf/CV_Theo_Delporte.pdf\" target=\"_blank\">Télécharger mon CV</a>\r\n      </p>\r\n\r\n      <h3>Ce que vous trouverez ici :</h3>\r\n      <ul>\r\n        <li>La présentation de l’entreprise SEGULA</li>\r\n        <li>Mes missions réalisées en stage</li>\r\n        <li>Un bilan complet de mon expérience</li>\r\n        <li>Un aperçu de mes compétences techniques et humaines</li>\r\n        <li>Des billets réguliers sur mon apprentissage (<a class=\"btn\" href=\"blog.html\">voir les billets</a>)</li>\r\n      </ul>\r\n\r\n      <div class=\"carousel\">\r\n  <img src=\"../icons/yolo_example.png\" alt=\"Exemple YOLO\" loading=\"lazy\">\r\n  <img src=\"../icons/Capture d’écran 2025-09-01 092143.png\" alt=\"Illustration stage 2\" loading=\"lazy\">\r\n  <img src=\"../icons/roboflow.png\" alt=\"Illustration stage 3\" loading=\"lazy\">\r\n  </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "index.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "6e04cf07-f2ee-44f4-8ee4-b2e89c40ecc2",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6e04cf07-f2ee-44f4-8ee4-b2e89c40ecc2",
+      "children": [
+        "dad306ed-5e92-4dec-81a2-6dcd03754652"
+      ]
+    },
+    "dad306ed-5e92-4dec-81a2-6dcd03754652": {
+      "id": "dad306ed-5e92-4dec-81a2-6dcd03754652",
+      "message": {
+        "id": "dad306ed-5e92-4dec-81a2-6dcd03754652",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.6420033,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-JYN1gncDW5yQqNPFH2EGJN",
+          "domain": "blog.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Blog - Mon Stage chez SEGULA Technologies</title>\r\n  <meta name=\"description\" content=\"Billets réguliers sur mon stage : intégration, difficultés rencontrées, solutions techniques et apprentissages.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Blog de Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt; <a href=\"blog.html\">Blog</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section blog-list\">\r\n      <h2>Billets</h2>\r\n\r\n      <article>\r\n        <h3>Mon intégration chez SEGULA</h3>\r\n        <time datetime=\"2025-06-16\">12 juin 2025</time>\r\n        <p>Présentation de l’équipe et des bureau, besoin d'aide sur le proget Roboflow, mon premier défis à donc été d'apporté l'aide sur l'annotation des images d'entraienement la première semaines.</p>\r\n      </article>\r\n\r\n      <article>\r\n        <h3>Lancement du projet de mon stage</h3>\r\n        <time datetime=\"2025-06-20\">23 juin 2025</time>\r\n        <p>Réception du jeux de données, le défi aujourd'hui à été de comprendre les données et lancer tous le processus de nettoyage pour une exploitation pour la suite. J'ai donc utilisé Power Query et vais apprendre à l'utiliser.</p>\r\n      </article>\r\n\r\n      <article>\r\n        <h3>Technique : pipeline Power BI, DAX & KPI</h3>\r\n        <time datetime=\"2025-06-30\">01 juillet 2025</time>\r\n        <p>Le défis aujourd'hui à été avec les données trier, de trouver la solution pour atteindre les KPI's demandées. Je vais bien évidemment utiliser les données, mais au vu de ce que j'ai je vais devoir utiliser le DAX et approfondire mes connaissances sur celui-ci.</p>\r\n      </article>\r\n\r\n      <article>\r\n        <h3>Mise en forme et présentation du rapport</h3>\r\n        <time datetime=\"2025-06-30\">15 juillet 2025</time>\r\n        <p>J'ai la plupart de mes graphiues et mes données sont propres, mais il va falloir que je travail la mis en forme, l'armonisation et l'organisation des pages. Il faut que ça soit le plus optimisé possible, et surtout présentable.</p>\r\n      </article>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "blog.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "82a1c1be-185e-4cd0-8cb9-32cd29d53351",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "82a1c1be-185e-4cd0-8cb9-32cd29d53351",
+      "children": [
+        "f86ad02d-777c-44ab-b015-6aad94acb641"
+      ]
+    },
+    "f86ad02d-777c-44ab-b015-6aad94acb641": {
+      "id": "f86ad02d-777c-44ab-b015-6aad94acb641",
+      "message": {
+        "id": "f86ad02d-777c-44ab-b015-6aad94acb641",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.647844,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-1xGQzmXY9nY7rVJCEpyLnG",
+          "domain": "bilan.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Bilan - Mon Stage chez SEGULA Technologies</title>\r\n  <meta name=\"description\" content=\"Bilan de stage : apprentissages, points forts, axes d'amélioration, impact sur mon projet professionnel.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\">\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Bilan de mon Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"bilan.html\">Bilan</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\">\r\n      <h2>Mon bilan personnel et professionnel</h2>\r\n      <p>Ce stage chez SEGULA Technologies m'a permis d'acquérir de nombreuses compétences technique, et de mettre savoirs au profit d'un projet concrets. Egalement d'en découvrir plus sur le fonctionnement d'un bureau d'études, et de faire des rencontres d'autres étudiants en IA. C'était aussis bien évidemment l'ocassion pour moi de voir l'entreprise dans laquel je suis en alteranance à partir de cette années</p>\r\n\r\n      <h3>Ce que j'ai appris</h3>\r\n      <ul>\r\n        <li>Analyse et trie de données complexes pour interprétation des résultats et meilleurs utilisation</li>\r\n        <li>Travail en équipe pluridisciplinaire</li>\r\n        <li>Utilisation des méthodes agiles et gestion de projets</li>\r\n        <li>Savoir gérer sont temps, et avancer en autonomie sur un projet à long therme</li>\r\n        <li>Prendre des décisions et certains risque</li>\r\n        <li>Travailler avec de nouveaux outils, logiciels</li>\r\n      </ul>\r\n\r\n      <h3>Mes points forts révélés</h3>\r\n      <ul>\r\n        <li>Autonomie et sens de l'initiative</li>\r\n        <li>Curiosité technologique</li>\r\n        <li>Capacité d’analyse et de synthèse sur des jeux de données inconnue</li>\r\n      </ul>\r\n\r\n      <h3>Difficulté marquante & solution</h3>\r\n      <p>La consolidation d’Excel hétérogènes (colonnes instables, encodages) a été la difficulté principale ainsi que la liaison des données. J’ai mis en place un nettoyage Power Query (typage/normalisation), une modélisation claire (relations, tables dimensions) et des mesures DAX pour fiabiliser les KPI. Cela a amélioré la qualité des décisions et facilité l'exploitation des données</p>\r\n      <p>Réaliser les KPi's précis demandées, car des fois la données n'était paq toujours disponible ou je n'avais pâs le nécesssaire pour réaliser la mesure DAX. Mais le plus souvent soit j'y arrivais, soit je trouvais la mesure ou la formule DAX la plus proche ou adappté, pour répondre aux attendus</Data></p>\r\n      <h3>Axes d'amélioration</h3>\r\n      <ul>\r\n        <li>Approfondir le processus de trie et de nettoyage de données.</li>\r\n        <li>Approfondir les techniques de visualisation avancées (Power BI, design UX des dashboards)</li>\r\n        <li>Approfondir le processus de déploiement, pour utilisation</li>\r\n      </ul>\r\n\r\n      <h3>Impact sur mon projet professionnel</h3>\r\n      <p>Cette expérience confirme mon intérêt pour la data et IA. Je souhaite poursuivre vers des postes alliant ingénierie de données et aide à la décision, en consolidant mes compétences Python/Power BI et mes pratiques de gouvernance des données.</p>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "bilan.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "dad306ed-5e92-4dec-81a2-6dcd03754652",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "dad306ed-5e92-4dec-81a2-6dcd03754652",
+      "children": [
+        "b685d054-55fb-4cbb-8fb4-02bed92f3c95"
+      ]
+    },
+    "b685d054-55fb-4cbb-8fb4-02bed92f3c95": {
+      "id": "b685d054-55fb-4cbb-8fb4-02bed92f3c95",
+      "message": {
+        "id": "b685d054-55fb-4cbb-8fb4-02bed92f3c95",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.65017,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-Gh6o3DbQA5MVq3Nin5EMAy",
+          "domain": "competence.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Compétences - Stage SEGULA</title>\r\n  <meta name=\"description\" content=\"Compétences techniques et humaines acquises pendant le stage, avec preuves, réalisations et impacts.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Compétences Acquises</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"competence.html\">Compétences</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\" class=\"skills-section\">\r\n    <h2>Mes compétences acquises lors du stage</h2>\r\n    <p class=\"intro\">\r\n      Étudiant orienté Data & IA, j’aime utiler les données pour exploiter tous leurs potentiels.\r\n      Niveau global : <strong>intermédiaire</strong> en Power BI & Python, avec une sensibilité produit (lisibilité, pertinence des KPI).\r\n    </p>\r\n\r\n    <h3>Compétences techniques</h3>\r\n    <div class=\"skills-container\">\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/powerbi.png\" alt=\"Logo Power BI\" loading=\"lazy\">\r\n        <h4>Power BI (Power Query & DAX)</h4>\r\n        <p>Modèle en étoile, mesures KPI (taux de conversion, cycle moyen), pages de synthèse métier.</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 80%;\"></div></div>\r\n      </div>\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/roboflow.jpg\" alt=\"Logo roboflow\" loading=\"lazy\">\r\n        <h4>Roboflow et YOLO</h4>\r\n        <p>Découverte de Roboflow et YOLO et apport d'aide</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 45%;\"></div></div>\r\n      </div>\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/github.png\" alt=\"Logo GitHub\" loading=\"lazy\">\r\n        <h4>Git & GitHub</h4>\r\n        <p>Versionnage des scripts, branches simples, README et suivi des évolutions.</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 70%;\"></div></div>\r\n      </div>\r\n    </div>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Compétences techniques – preuves ciblées</h3>\r\n      <ul>\r\n        <li><strong>Power Query / DAX :</strong> normalisation d’Excel hétérogènes (typage, relations), mesures KPI et publication d’un dashboard fiable pour l’Avant-vente <p>(<a href=\"projet.html?projet=1\" class=\"btn\">Voir le projet</a>)</p>.</li>\r\n        <li><strong>YOLO / Roboflow :</strong> annotation & entraînement pour détection de symboles électriques sur plans (<a href=\"projet.html?projet=3\" class=\"btn\">Voir le projet</a>).</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <h3>Compétences humaines</h3>\r\n    <ul class=\"soft-skills\">\r\n      <li><strong>Travail en équipe :</strong> échanges réguliers avec l’équipe IA et l’Avant-vente (recueil du besoin, itérations rapides).</li>\r\n      <li><strong>Résolution de problèmes :</strong> adaptation des données aux KPI attendus (règles de contrôle, mapping de colonnes).</li>\r\n      <li><strong>Autonomie :</strong> conduite d’un POC de bout en bout (collecte → modélisation → restitution).</li>\r\n      <li><strong>Communication :</strong> synthèse claire en réunion (objectifs, résultats, limites, prochaines étapes).</li>\r\n    </ul>\r\n\r\n    <h3>Outils & technologies utilisés</h3>\r\n    <div class=\"tools-container\" aria-label=\"Outils et technologies\">\r\n      <div><img src=\"../icons/python.png\" alt=\"Python\" loading=\"lazy\"><p>Python</p></div>\r\n      <div><img src=\"../icons/powerbi.png\" alt=\"Power BI\" loading=\"lazy\"><p>Power BI</p></div>\r\n      <div><img src=\"../icons/roboflow.jpg\" alt=\"Roboflow\" loading=\"lazy\"><p>Roboflow</p></div>\r\n      <div><img src=\"../icons/github.png\" alt=\"GitHub\" loading=\"lazy\"><p>GitHub</p></div>\r\n    </div>\r\n\r\n    <h3>Mes acquis professionnels</h3>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>présenter des résultats d’analyse</strong> en réunion projet.</div>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>concevoir un outils de modélisation</strong> sur des données Excel réelles.</div>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>réaliser un projet de bout en bout</strong> avec des contrainte et critère particulié</div>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Impacts et résultats</h3>\r\n      <ul>\r\n        <li>Accès plus simple rapide aux données d'avant ventes, meilleurs compréhension pour les personnes extérieur</li>\r\n        <li>Diminution des erreurs de lecture pour une meilleur interprétation et gain de temps.</li>\r\n        <li>Aide au chiffrage : premier score de probabilité “Go / No Go” pour prioriser les offres.</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Langues & liens</h3>\r\n      <p>Français (natif) – Anglais (intermédiaire, technique).</p>\r\n      <div class=\"center-btn\" style=\"margin-top:18px\">\r\n        <a class=\"btn\" href=\"https://www.linkedin.com/in/ton-profil\" target=\"_blank\" rel=\"noopener\">Mon LinkedIn</a>\r\n        <a class=\"btn\" href=\"../pdf/CV_Theo_Delporte.pdf\" target=\"_blank\" rel=\"noopener\">📄 Télécharger mon CV</a>\r\n      </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "competence.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "f86ad02d-777c-44ab-b015-6aad94acb641",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f86ad02d-777c-44ab-b015-6aad94acb641",
+      "children": [
+        "d63aa977-90ef-48dc-b2f1-de07db2ba168"
+      ]
+    },
+    "d63aa977-90ef-48dc-b2f1-de07db2ba168": {
+      "id": "d63aa977-90ef-48dc-b2f1-de07db2ba168",
+      "message": {
+        "id": "d63aa977-90ef-48dc-b2f1-de07db2ba168",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.6528804,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-6y1w8uiM5Qw3Qvib6QQnz6",
+          "domain": "missions.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Missions - Mon Stage chez SEGULA Technologies</title>\r\n  <meta name=\"description\" content=\"Missions de stage : analyse de données, modèle prédictif, IA Roboflow.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>\r\n    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }\r\n    function toggleDetails(element) {\r\n      const details = element.querySelector('.mission-details');\r\n      if (details.style.maxHeight) { details.style.maxHeight = null; }\r\n      else { details.style.maxHeight = details.scrollHeight + \"px\"; }\r\n    }\r\n    document.addEventListener('DOMContentLoaded', () => {\r\n      const blocks = document.querySelectorAll('.mission-block');\r\n      blocks.forEach((block, i) => {\r\n        block.style.animationDelay = `${i * 0.2}s`;\r\n        block.classList.add('animate');\r\n      });\r\n    });\r\n  </script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Missions de Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"missions.html\">Missions</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"missions-container\">\r\n\r\n      <div class=\"mission-block\" onclick=\"toggleDetails(this)\">\r\n        <div class=\"mission-img-wrapper\">\r\n          <img src=\"../icons/power.png\" alt=\"Analyse de données\" class=\"mission-img\" loading=\"lazy\">\r\n        </div>\r\n        <div class=\"mission-text\">\r\n          <h3>Projet principal - Création d'un outils d'analyse des données commerciales</h3>\r\n          <p>Dans un but de compréhension et manipulation des bases de données pour mieux gérer les offres futures, et faire de meilleiurs prédiction.</p>\r\n          <div class=\"mission-details\">\r\n            <p>J’ai mis en place un <strong>pipeline Power BI</strong> (Power Query + DAX), conçu des <strong>KPI</strong>, et automatisé la <strong>visualisation</strong> des données commerciales. Rôle : collecte, modélisation, restitution. Collaboration : avant-vente et direction commerciale.</p>\r\n            <a href=\"projet.html?projet=1\" class=\"btn\">Voir le projet</a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"mission-block\" onclick=\"toggleDetails(this)\">\r\n        <div class=\"mission-img-wrapper\">\r\n          <img src=\"../icons/roboflow.png\" alt=\"Projet IA\" class=\"mission-img\" loading=\"lazy\">\r\n        </div>\r\n        <div class=\"mission-text\">\r\n          <h3>Projet secondaire -  IA d’annotation automatique</h3>\r\n          <p>Automatisation de l’annotation de plans techniques grâce à l’IA.</p>\r\n          <div class=\"mission-details\">\r\n            <p>Entraînement d’un modèle <strong>YOLO</strong> pour détecter des symboles électriques sur des folios (Total Montoir). Rôle : annotation, entraînement, analyse d’erreurs et itérations.</p>\r\n            <a href=\"projet.html?projet=3\" class=\"btn\">Voir le projet</a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "missions.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "b685d054-55fb-4cbb-8fb4-02bed92f3c95",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b685d054-55fb-4cbb-8fb4-02bed92f3c95",
+      "children": [
+        "791c9533-70e4-4975-99aa-6ea50950ca1b"
+      ]
+    },
+    "791c9533-70e4-4975-99aa-6ea50950ca1b": {
+      "id": "791c9533-70e4-4975-99aa-6ea50950ca1b",
+      "message": {
+        "id": "791c9533-70e4-4975-99aa-6ea50950ca1b",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.7094038,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-9VnnceDc55rvbZwQqqzj7y",
+          "domain": "contact.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Contact - Mon Stage chez SEGULA Technologies</title>\r\n  <meta name=\"description\" content=\"Contactez-moi pour toute question ou remarque à propos de mon blog de stage.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Contactez-moi</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"contact.html\">Contact</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section>\r\n      <h2>Me contacter</h2>\r\n      <p>Pour toute question ou remarque, merci de remplir le formulaire ci-dessous. Vous serez redirigé vers une page de confirmation après l’envoi.</p>\r\n\r\n      <form action=\"https://formspree.io/f/movwoykz\" method=\"POST\" class=\"contact-form\">\r\n        <input type=\"hidden\" name=\"_next\" value=\"https://theod-maker.github.io/merci.html\">\r\n\r\n        <label for=\"name\">Nom :</label>\r\n        <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Votre nom\" required autocomplete=\"name\">\r\n\r\n        <label for=\"email\">Email :</label>\r\n        <input type=\"email\" id=\"email\" name=\"_replyto\" placeholder=\"Votre email\" required autocomplete=\"email\">\r\n\r\n        <label for=\"message\">Message :</label>\r\n        <textarea id=\"message\" name=\"message\" placeholder=\"Votre message\" ></textarea>\r\n\r\n        <button type=\"submit\">Envoyer</button>\r\n      </form>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "contact.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "d63aa977-90ef-48dc-b2f1-de07db2ba168",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d63aa977-90ef-48dc-b2f1-de07db2ba168",
+      "children": [
+        "33f198e3-f7f2-4702-8849-cafd1d7e4a2f"
+      ]
+    },
+    "33f198e3-f7f2-4702-8849-cafd1d7e4a2f": {
+      "id": "33f198e3-f7f2-4702-8849-cafd1d7e4a2f",
+      "message": {
+        "id": "33f198e3-f7f2-4702-8849-cafd1d7e4a2f",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.712615,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-EyCEheuNQ1YufjJGUhM8TB",
+          "domain": "projet.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Projets détaillés - Stage SEGULA</title>\r\n  <meta name=\"description\" content=\"Projets détaillés du stage : pipelines BI, modèle prédictif, IA Roboflow.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Projets de Stage</h1>\r\n    <button onclick=\"document.body.classList.toggle('dark-mode')\" class=\"dark-mode-toggle\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\" class=\"project-container\">\r\n\r\n    <details class=\"project-item\" id=\"projet-1\">\r\n  <summary>Projet principal - Création d'un outils d'analyse des données commerciales</summary>\r\n  <div class=\"project-content\">\r\n    <p>Ce projet à pour but de répondre à un besoins du service avant ventes. Toute les données classifier dans excel ne sont pas lié et difficillement exploitable et présentable. Mon sujet de stage à donc consister à développer un outils pour le suivi des performances des offres commerciales.<p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 125417.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    </div>\r\n\r\n    <figcaption>Aperçu d'une source de données</figcaption>\r\n    <p>Pour cela il était donc nécessaire que je récupère les données, ici ce sera celle de l'année 2024. Ensuite j'ai du analyser les données, essayer déja moi même de les comprendes pour aussi avoir une meilleur visualisation, il y avait évidemment plusieurs sources de données. Egalement essayer d'étudier les liens potentiels entre elles pour la suite. \r\n    Une fois cette étape et compte tenu des données, j'ai décider d'importer ces données dans Power BI qui est un logiciel réputé pour les projets à traitement de données et qui facilite grandement leur exploitation. Une fois importer j'ai utiliser Power Query, déja intégré à Power BI pour mettre en forme les données, suprimé les valeurs null, ajuster les valeurs ou format de données correcte. En fait il permet de passer de données brute à des données beaucoup plus exploitatble par la suite dans power BI. Cela ma aussi permis de réaliser des liens entre les différentes source de données.<p>\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 130448.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Power Query - utilisé pour la gestion des données</figcaption>\r\n    <p>Lorsqu'ont ma présenté le projet, le service avant ventes attendais des KPI particulier pour explloiter des données précises. Une fois ce premier processus fait, j'ai commencer à étudier la manière dont j'allais réaliser les graphiques, mais pour certains je n'avais pas les données nécessaires où il restait encore certaines choses à extraire ou filter. \r\n    <p>C'est ici que va entrer en jeux le DAX, comme vous aller le voir, ça va être une partie importantes de mon projet de stage.\r\n    Le DAX c'est quoi ? C'est en fait une collection de fonctions, d'opérateurs et de constatntes qui peuvent être utilisées dans une formule ou une expression, pour calculer et retourner une ou plusieurs valeurs. Le DAX va vous permettre de créer des informations à partir des données qui se trouvent déja dans votre modèle.\r\n    </p> Voici quelque exemple de formule DAX, réalisé pendant ce stage:</p>\r\n\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120344.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120442.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120513.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>Exemple de DAX - utilisé pour de nombreux KPI</figcaption>\r\n    </div>\r\n\r\n    </p>En géneral je faisais une page pour un KPI que j'agrémmentais avec des tabelaux où encore des données qui me parraissait pertinantes, en plus des graphiques. Le défis sur cette partie à été de projeter la réalisation des KPI demandées sur la plateforme Power BI. La plus part était évidemment réalisable étant la large game proposé par Power BI.</p>\r\n    <p> Les données se trouvent comme vous pouvez le voir sur les illustrations, dans la section \"Données\" à droite de l'espace de travail. J'ai donc en fonction des KPI demandées, pris les données qui me semblais utilie pour les intégrer à celui-ci. Voici par exemple le fonctionnement de ce premier graphique. </p>\r\n\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 131747.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Interface Power BI - utilisé pour réaliser les KPI's</figcaption>\r\n\r\n    <p>Ensuite il y a des KPI ou je n'ai pas la données, ou elles sont tous simplement trop brute, aussi parfois il fallait la calculer à l'aide d'une autre données. Pour avoir un exemple concrets, voivi le graphique attendu et le KPI final, au vu des données que j'avais, j'ai utiliser du DAX, Les voicis: </p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120641.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120718.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 132305.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>KPI's attendu VS réalisé - à l'aide du DAX</figcaption>\r\n    </div>\r\n\r\n    <p> J'ai donc réalisé cela pour tous les KPI et mis en forme le rapport, vous pourrez trouver des captures ainsi que le lien télechargeable du rapport en bas de page. Ce projet est bien évidemment à continuer et ne demande que des améliorations, il est également possible de le déployer pour avoir une vu présentation grâce aux outils microsoft.</p>\r\n    <div class=\"stack\">\r\n      <strong>Technos :</strong>\r\n      <span>Excel</span><span>Power BI</span><span>Power Query</span><span>Python</span>\r\n    </div>\r\n  </div>\r\n</details>\r\n\r\n\r\n    <details class=\"project-item\" id=\"projet-3\">\r\n      <summary>Projet secondaire -  IA d’annotation automatique</summary>\r\n      <div class=\"project-content\">\r\n        <p>Quand je suis arrivé ici, d'autres étudiant IA travaillais déja sur un projet. Ce projet à pour but d'automatiser les annotations des schémas électrque par l'IA. (Ici folio du client TOTAL ENERGIES). Il fallait entrainer le modèle et l'aider à comprendre ce qu'il devait repéré sur les schémas, nous avons donc utilisé le logiciel roboflow qui est un outils d'étiquetage d'image. </p>\r\n        <p>C'est un processus plutôt long, de réaliser cela sur les nombreux folio d'entrainement, donc j'ai apporté de l'aide sur la première semaine sur cette partie annotation. Puis une fois ce processuce réalisé, ils ont técupéré les données et ont pu entrainer le modèles et apportées les modifications nécessaires.</p>\r\n        <img src=\"../icons/Capture d’écran 2025-09-02 101820.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Aperçu de l'outils Roboflow</figcaption>\r\n        <img src=\"../icons/yolo_example.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Outils de détection yolo</figcaption>\r\n        <p>Pour passer les données dans le modèle, l'outils utilisé était YOLO, qui est un véritable détecteur d'objets. Il est courrament utilisé car il est simple à installer, puissant et rapide.<p>\r\n        </p>Une fois ces données passé dans le modèle nous avions le résulats dans un fichier excel, pour voir si cela fonctionnais et surtous voir la précisions, comparer à nos données d'annotations réeels, repérer les différentes erreur et les annotées dans un tableaux. Cela a permis au étudiants de corriger leurs erreurs par la suite</p>\r\n        <img src=\"../icons/roboflow.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Tableau de détection des erreur du modèle</figcaption>\r\n        <div class=\"stack\">\r\n          <strong>Technos :</strong>\r\n          <span>YOLO</span><span>Roboflow</span><span>Python</span>\r\n        </div>\r\n      </div>\r\n    </details>\r\n\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n\r\n  <script>\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n    const params = new URLSearchParams(window.location.search);\r\n    const projet = params.get(\"projet\");\r\n\r\n    const projet1 = document.getElementById(\"projet-1\");\r\n    const projet3 = document.getElementById(\"projet-3\");\r\n\r\n    if (projet === \"1\") {\r\n      projet1.style.display = \"block\";\r\n      projet3.style.display = \"none\";\r\n    } else if (projet === \"3\") {\r\n      projet1.style.display = \"none\";\r\n      projet3.style.display = \"block\";\r\n    }\r\n  });\r\n </script>\r\n\r\n</body>\r\n</html>",
+          "title": "projet.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "791c9533-70e4-4975-99aa-6ea50950ca1b",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "791c9533-70e4-4975-99aa-6ea50950ca1b",
+      "children": [
+        "fae2b8ae-01f1-4870-bf9b-3a7f18958a1d"
+      ]
+    },
+    "fae2b8ae-01f1-4870-bf9b-3a7f18958a1d": {
+      "id": "fae2b8ae-01f1-4870-bf9b-3a7f18958a1d",
+      "message": {
+        "id": "fae2b8ae-01f1-4870-bf9b-3a7f18958a1d",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.7158172,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-FvZ6mjZN3SBnSo1nehaYLs",
+          "domain": "merci.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Merci pour votre message</title>\r\n  <meta name=\"description\" content=\"Confirmation d'envoi du message.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\">\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Merci pour votre message !</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <a href=\"index.html\">Retour à l'accueil</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\">\r\n      <p>Votre message a bien été envoyé. Je vous répondrai dès que possible.</p>\r\n      <div class=\"center-btn\">\r\n        <a href=\"index.html\" class=\"btn\">🏠 Retour à l'accueil</a>\r\n      </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "merci.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "33f198e3-f7f2-4702-8849-cafd1d7e4a2f",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "33f198e3-f7f2-4702-8849-cafd1d7e4a2f",
+      "children": [
+        "23e21d52-b7b1-4d57-b154-ad235476204f"
+      ]
+    },
+    "23e21d52-b7b1-4d57-b154-ad235476204f": {
+      "id": "23e21d52-b7b1-4d57-b154-ad235476204f",
+      "message": {
+        "id": "23e21d52-b7b1-4d57-b154-ad235476204f",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.7191167,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-TSzAv49f2vzo3K6crZ2sRP",
+          "domain": "presentation.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Présentation de l'entreprise</title>\r\n  <meta name=\"description\" content=\"Présentation de l'entreprise SEGULA Technologies et cadre du stage de Théo Delporte.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>\r\n    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }\r\n    document.addEventListener('DOMContentLoaded', () => {\r\n      const counters = document.querySelectorAll('.counter');\r\n      counters.forEach(counter => {\r\n        const target = +counter.getAttribute('data-target');\r\n        const speed = 50;\r\n        const updateCount = () => {\r\n          const count = +counter.innerText;\r\n          const increment = Math.ceil(target / speed);\r\n          if (count < target) { counter.innerText = count + increment; setTimeout(updateCount, 50); }\r\n          else { counter.innerText = target; }\r\n        };\r\n        updateCount();\r\n      });\r\n    });\r\n  </script>\r\n</head>\r\n\r\n<body> \r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Présentation de l'entreprise</h1>\r\n\r\n    <div class=\"header-tools\">\r\n      <div class=\"stats-banner\">\r\n        <div class=\"stat-item\">\r\n          <h3 class=\"counter\" data-target=\"6\">0</h3>\r\n          <p>Semaines de stage</p>\r\n        </div>\r\n        <div class=\"stat-item\">\r\n          <h3 class=\"counter\" data-target=\"4\">0</h3>\r\n          <p>Projets réalisés</p>\r\n        </div>\r\n        <div class=\"stat-item\">\r\n          <h3 class=\"counter\" data-target=\"3\">0</h3>\r\n          <p>Compétences clés</p>\r\n        </div>\r\n      </div>\r\n\r\n      <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    </div>\r\n\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"presentation.html\">Présentation</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\" aria-labelledby=\"cadre-stage\">\r\n      <h2 id=\"cadre-stage\">Cadre du stage</h2>\r\n      <ul>\r\n        <li><strong>Entreprise :</strong> SEGULA Technologies – Site de Montoir-de-Bretagne</li>\r\n        <li><strong>Secteur :</strong> Ingénierie (énergie, aéronautique, naval…)</li>\r\n        <li><strong>Durée :</strong> 6 semaines – du 16 juin au 25 juillet 2025</li>\r\n        <li><strong>Tuteur :</strong>LAZREK Yassine</li>\r\n        <li><strong>Rôle :</strong> Stagiaire Data/BI – analyse, modélisation, dashboards</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <section class=\"content-section\">\r\n      <h2>Présentation de l'entreprise SEGULA Technologies</h2>\r\n\r\n      <h3>1.1 Historique de l'entreprise</h3>\r\n      <p>Créée en 1985, SEGULA Technologies est une entreprise française spécialisée dans l'ingénierie. Dans les années 90, l'entreprise a consolidé sa présence en France avant de s'étendre à l'international dans les années 2000. Depuis 2010, SEGULA n'a cessé de diversifier ses activités et d'innover pour devenir un acteur majeur du secteur. Aujourd'hui, avec plus de 15 000 collaborateurs répartis dans plus de 30 pays, le groupe accompagne plus de 300 clients industriels dans des secteurs stratégiques. L'innovation est au cœur de sa stratégie, de la phase d'étude à la production industrielle.</p>\r\n\r\n      <h3>1.2 Activités principales</h3>\r\n      <p>SEGULA Technologies intervient dans de nombreux secteurs :</p>\r\n      <ul>\r\n        <li><strong>Aéronautique et Spatial :</strong> Conception de systèmes complexes et soutien à l'innovation technologique.</li>\r\n        <li><strong>Automobile :</strong> Développement des véhicules de demain avec les plus grands constructeurs.</li>\r\n        <li><strong>Énergie :</strong> Solutions innovantes pour la transition énergétique et la préservation de l'environnement.</li>\r\n        <li><strong>Ferroviaire :</strong> Optimisation des infrastructures et développement de technologies pour les transports.</li>\r\n        <li><strong>Naval :</strong> Conception et maintenance de navires en mettant l'accent sur l'innovation.</li>\r\n        <li><strong>Oil & Gas :</strong> Ingénierie pour l'exploration, la production et la distribution d'énergie.</li>\r\n        <li><strong>Pharmacie :</strong> Optimisation des procédés de production pour garantir la qualité des produits pharmaceutiques.</li>\r\n      </ul>\r\n\r\n      <h3>1.3 Le site SEGULA Technologies de Montoir-de-Bretagne</h3>\r\n      <p>Racheté en 2016, le site de Montoir-de-Bretagne (anciennement SECOMAT) joue un rôle clé au sein de SEGULA. Ce bureau d'études intervient dans les domaines de l'énergie, de l'aéronautique et du naval, en partenariat avec des grands comptes comme Airbus ou Total Energies. Le site se distingue par son expertise en automatisme et informatique industrielle.</p>\r\n\r\n      <h3>1.4 Organisation du Bureau d'Études</h3>\r\n      <p>L'organisation repose sur plusieurs pôles :</p>\r\n      <ul>\r\n        <li><strong>Direction de Pôle :</strong> Supervision des activités et des projets.</li>\r\n        <li><strong>Direction QHSE :</strong> Gestion de la Qualité, de l'Hygiène, de la Sécurité et de l'Environnement.</li>\r\n        <li><strong>Direction Technique :</strong> Développement et innovation technique.</li>\r\n        <li><strong>Direction Commerciale :</strong> Stratégies de vente et relations clients.</li>\r\n      </ul>\r\n\r\n      <p>Les métiers sont variés et couvrent :</p>\r\n      <ul>\r\n        <li>Avant-Vente et Chiffrage</li>\r\n        <li>Gestion de projets et achats</li>\r\n        <li>Inspection, réalisation et mise en service (Commissioning)</li>\r\n        <li>Électricité, instrumentation, automatisme et informatique industrielle</li>\r\n        <li>Génie civil, procédés, structure et tuyauterie</li>\r\n      </ul>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+          "title": "presentation.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "fae2b8ae-01f1-4870-bf9b-3a7f18958a1d",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fae2b8ae-01f1-4870-bf9b-3a7f18958a1d",
+      "children": [
+        "4da451df-0b34-41e3-918e-9ca9d61811c5"
+      ]
+    },
+    "4da451df-0b34-41e3-918e-9ca9d61811c5": {
+      "id": "4da451df-0b34-41e3-918e-9ca9d61811c5",
+      "message": {
+        "id": "4da451df-0b34-41e3-918e-9ca9d61811c5",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756889199.7223551,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "All the files uploaded by the user have been fully loaded. Searching won't provide additional information."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "23e21d52-b7b1-4d57-b154-ad235476204f",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "23e21d52-b7b1-4d57-b154-ad235476204f",
+      "children": [
+        "bd4742f7-5104-4b6d-a6bd-f7114f27caeb"
+      ]
+    },
+    "bd4742f7-5104-4b6d-a6bd-f7114f27caeb": {
+      "id": "bd4742f7-5104-4b6d-a6bd-f7114f27caeb",
+      "message": {
+        "id": "bd4742f7-5104-4b6d-a6bd-f7114f27caeb",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756889199.725002,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "4da451df-0b34-41e3-918e-9ca9d61811c5",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4da451df-0b34-41e3-918e-9ca9d61811c5",
+      "children": [
+        "a4f24a56-2e8d-4276-b7f3-9119eb0170b9"
+      ]
+    },
+    "a4f24a56-2e8d-4276-b7f3-9119eb0170b9": {
+      "id": "a4f24a56-2e8d-4276-b7f3-9119eb0170b9",
+      "message": {
+        "id": "a4f24a56-2e8d-4276-b7f3-9119eb0170b9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756889199.497195,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "J’ai parcouru tes pages (`index`, `missions`, `blog`, `projets`, `bilan`, `compétences`, `présentation`, `contact`, `merci`). Globalement ton site est déjà clair et bien structuré, mais voici des axes d’amélioration concrets :  \n\n---\n\n### 🎨 Design & UX\n- **Cohérence visuelle** : uniformiser les styles des boutons et des images (certaines ont des bordures, d’autres non).  \n- **Accessibilité** :  \n  - Vérifier le contraste des couleurs en mode sombre.  \n  - Ajouter des `aria-label` explicites sur les boutons (par ex. “Activer/désactiver le mode sombre”).  \n- **Navigation** :  \n  - Mettre en évidence la page active dans le menu (ex : lien souligné ou coloré).  \n  - Ajouter un menu “Retour en haut” sur les pages longues (`projets`, `présentation`).  \n\n---\n\n### 📖 Contenu & Langue\n- **Orthographe/grammaire** : plusieurs fautes (ex. *“proget” → “projet”*, *“défis” → “défi”*, *“armonisation” → “harmonisation”*, *“sont temps” → “son temps”*).  \n- **Clarté** : certains passages sont très longs (notamment `projet.html`). Tu pourrais :  \n  - Utiliser des sous-sections avec titres clairs.  \n  - Ajouter des encadrés “Résumé” avec 3–4 phrases clés.  \n- **Valorisation** : dans `bilan.html` et `competence.html`, mets plus en avant les résultats chiffrés (ex. “+30% de rapidité dans l’accès aux données”).  \n\n---\n\n### ⚙️ Technique\n- **SEO** :  \n  - Ajouter des balises `<h2>` plus descriptives (ex : “Analyse de données commerciales avec Power BI”).  \n  - Uniformiser les balises `meta description` (certaines sont génériques).  \n- **Performance** :  \n  - Compresser et redimensionner les images (`Capture d’écran …` sont lourdes).  \n  - Ajouter `width` et `height` aux balises `<img>` pour éviter les sauts de mise en page.  \n- **Accessibilité formulaire** :  \n  - Dans `contact.html`, associer explicitement chaque `label` avec son `input` (tu l’as fait, c’est bien, mais ajouter `aria-required=\"true\"` serait un plus).  \n\n---\n\n### 💡 Idées supplémentaires\n- **Timeline interactive** pour montrer la progression de ton stage semaine par semaine.  \n- **Portfolio téléchargeable** : proposer un PDF avec un résumé des projets.  \n- **Filtres dynamiques** dans `blog.html` (ex. “Tous / Techniques / Bilan”).  \n- **Mode hors ligne (PWA légère)** : si tu veux impressionner, transformer le site en application web installable.  \n\n---\n\n👉 Veux-tu que je commence par corriger **tous les textes (orthographe et style)** pour que ça fasse plus pro, ou plutôt que je t’aide à améliorer la **partie technique (SEO, images, accessibilité)** en priorité ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "9793fa539b735169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "bd4742f7-5104-4b6d-a6bd-f7114f27caeb",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bd4742f7-5104-4b6d-a6bd-f7114f27caeb",
+      "children": [
+        "b97b5344-ed79-40ce-8722-a062d057a36c"
+      ]
+    },
+    "b97b5344-ed79-40ce-8722-a062d057a36c": {
+      "id": "b97b5344-ed79-40ce-8722-a062d057a36c",
+      "message": {
+        "id": "b97b5344-ed79-40ce-8722-a062d057a36c",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756889269.643,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "va y fait les modif, mais pour l'instant je veux pas de modif sur l'orthographe je ferais une passe plus tard"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9793fc1068b85169-ATL",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a4f24a56-2e8d-4276-b7f3-9119eb0170b9",
+      "children": [
+        "f4395606-bd08-461b-93ae-9f8d8ca64b1f"
+      ]
+    },
+    "f4395606-bd08-461b-93ae-9f8d8ca64b1f": {
+      "id": "f4395606-bd08-461b-93ae-9f8d8ca64b1f",
+      "message": {
+        "id": "f4395606-bd08-461b-93ae-9f8d8ca64b1f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756889270.940592,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Parfait 👍 je laisse l’orthographe de côté et je te propose un premier lot de **modifications techniques et UX** (sans toucher au contenu des textes) :  \n\n---\n\n### 🔹 Navigation\n- Ajouter une **mise en avant du lien actif** dans la barre de navigation :  \n  ```css\n  nav a.active {\n    font-weight: bold;\n    border-bottom: 2px solid var(--primary-color);\n  }\n  ```\n  → et dans chaque page, ajouter la classe `active` sur le lien correspondant.  \n\n---\n\n### 🔹 Accessibilité\n- Améliorer le bouton du mode sombre :  \n  ```html\n  <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\" aria-label=\"Basculer en mode sombre\">\n    🌙 Mode sombre\n  </button>\n  ```\n- Dans le formulaire (`contact.html`), ajouter :  \n  ```html\n  <input type=\"text\" id=\"name\" name=\"name\" required aria-required=\"true\">\n  ```\n\n---\n\n### 🔹 SEO\n- Uniformiser les balises `<meta name=\"description\">` → éviter qu’elles soient trop courtes ou trop générales.  \n- Ajouter des balises `<h2>` plus précises pour les sections longues (par ex. `projet.html` : `<h2>Utilisation de Power Query</h2>` au lieu d’un simple paragraphe).  \n\n---\n\n### 🔹 Images\n- Ajouter des dimensions fixes pour éviter le “reflow” :  \n  ```html\n  <img src=\"../icons/roboflow.png\" alt=\"Outil Roboflow\" width=\"400\" height=\"250\" loading=\"lazy\">\n  ```\n- Compresser et renommer les captures d’écran (`Capture d’écran …`) → noms plus clairs : `powerbi-dashboard.png`, `yolo-detection.png`, etc.  \n\n---\n\n### 🔹 Améliorations visuelles\n- Ajouter un bouton **Retour en haut** sur les pages longues :  \n  ```html\n  <button onclick=\"window.scrollTo({top:0, behavior:'smooth'});\" class=\"back-to-top\">↑ Haut</button>\n  ```\n  avec un petit style fixe en bas à droite.  \n\n---\n\n### 🔹 Bonus possible\n- **Timeline interactive** pour `missions.html` ou `blog.html` → affichage chronologique plus visuel.  \n- **Portfolio PDF** : générer un export téléchargeable de toutes les pages principales.  \n\n---\n\n👉 Veux-tu que je commence par **réécrire le code corrigé pour une page complète** (par ex. `index.html`) en appliquant ces améliorations, pour que tu vois le rendu avant de les propager sur tout le site ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "9793fc1068b85169-ATL",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "b97b5344-ed79-40ce-8722-a062d057a36c",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b97b5344-ed79-40ce-8722-a062d057a36c",
+      "children": [
+        "7eacf388-922c-47c4-b3a0-5b6138e1f01f"
+      ]
+    },
+    "7eacf388-922c-47c4-b3a0-5b6138e1f01f": {
+      "id": "7eacf388-922c-47c4-b3a0-5b6138e1f01f",
+      "message": {
+        "id": "7eacf388-922c-47c4-b3a0-5b6138e1f01f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756890110.247,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "tu vois la class btn pour mes bouton télecherger cv, etc"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "97941095cd8ad0ae-ZRH",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f4395606-bd08-461b-93ae-9f8d8ca64b1f",
+      "children": [
+        "10c814eb-995a-48a0-9883-e9afc0af899e"
+      ]
+    },
+    "10c814eb-995a-48a0-9883-e9afc0af899e": {
+      "id": "10c814eb-995a-48a0-9883-e9afc0af899e",
+      "message": {
+        "id": "10c814eb-995a-48a0-9883-e9afc0af899e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756890111.558933,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Oui 👍 j’ai bien repéré ta classe `.btn` utilisée dans plusieurs pages, par exemple dans **`index.html`** :  \n\n```html\n<a class=\"btn\" href=\"https://www.linkedin.com/in/th%C3%A9o-undefined-a157b3309/\" target=\"_blank\" rel=\"noopener\">Mon LinkedIn</a>\n<a class=\"btn\" href=\"https://github.com/theod-maker\" target=\"_blank\" rel=\"noopener\"> Mon GitHub</a>\n<a class=\"btn\" href=\"../pdf/CV_Theo_Delporte.pdf\" target=\"_blank\">Télécharger mon CV</a>\n```\n【13†index.html】\n\net aussi dans `competence.html` pour les liens vers les projets et le CV【16†competence.html】.  \n\n👉 Ce que tu pourrais améliorer sur cette classe `.btn` :  \n- **Accessibilité** : ajouter un `role=\"button\"` et un `aria-label` si besoin pour clarifier l’action.  \n- **Style cohérent** : donner un padding uniforme, coins arrondis, hover visible (ex. changement de couleur ou petite ombre).  \n- **Couleurs dynamiques** : utiliser des variables CSS pour que le style s’adapte au mode clair/sombre.  \n- **Responsive** : passer automatiquement en bloc (`display: block; width: 100%`) sur mobile pour plus de lisibilité.  \n\nExemple de style CSS amélioré :  \n```css\n.btn {\n  display: inline-block;\n  padding: 10px 18px;\n  margin: 5px;\n  background: var(--primary-color, #007bff);\n  color: #fff;\n  font-weight: 500;\n  text-decoration: none;\n  border-radius: 8px;\n  transition: background 0.3s, transform 0.2s;\n  role: button;\n}\n\n.btn:hover {\n  background: var(--primary-hover, #0056b3);\n  transform: translateY(-2px);\n}\n\n.dark-mode .btn {\n  background: var(--primary-dark, #3399ff);\n  color: #000;\n}\n```\n\n👉 Veux-tu que je refasse directement la **classe `.btn` complète dans ton `style.css`** (avec clair/sombre + mobile), ou tu veux que je fasse plusieurs variantes (`.btn-primary`, `.btn-secondary`, `.btn-outline`) pour que tu aies plus de flexibilité ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [
+            {
+              "start_ix": 440,
+              "end_ix": 455,
+              "citation_format_type": "tether_og",
+              "metadata": {
+                "type": "file",
+                "name": "index.html",
+                "id": "file-5ygRkfLuEzefJvJn5wf2N9",
+                "source": "my_files",
+                "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Accueil - Mon Stage chez SEGULA Technologies</title>\r\n\r\n  <meta name=\"description\" content=\"Blog de stage de Théo Delporte chez SEGULA Technologies : missions, projets, compétences, bilan et billets d'expérience.\" />\r\n  <meta property=\"og:title\" content=\"Blog de stage - Théo Delporte\" />\r\n  <meta property=\"og:description\" content=\"Missions, projets, compétences, bilan et billets.\" />\r\n  <meta property=\"og:type\" content=\"website\" />\r\n  <meta property=\"og:image\" content=\"https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80\" />\r\n  <meta property=\"og:locale\" content=\"fr_FR\" />\r\n\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>\r\n    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }\r\n  </script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Bienvenue sur mon Blog de Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\">\r\n      <h2>Qui suis-je ?</h2>\r\n      <p>Je m'appelle Théo Delporte, étudiant passionné par l'informatique, l’intelligence artificielle et les nouvelles technologies. Ce blog est le fruit de mon stage chez SEGULA Technologies.</p>\r\n\r\n      <p class=\"mt-2\">\r\n        <a class=\"btn\" href=\"https://www.linkedin.com/in/th%C3%A9o-undefined-a157b3309/\" target=\"_blank\" rel=\"noopener\">Mon LinkedIn</a>\r\n        <a class=\"btn\" href=\"https://github.com/theod-maker\" target=\"_blank\" rel=\"noopener\"> Mon GitHub</a>\r\n        <a class=\"btn\" href=\"../pdf/CV_Theo_Delporte.pdf\" target=\"_blank\">Télécharger mon CV</a>\r\n      </p>\r\n\r\n      <h3>Ce que vous trouverez ici :</h3>\r\n      <ul>\r\n        <li>La présentation de l’entreprise SEGULA</li>\r\n        <li>Mes missions réalisées en stage</li>\r\n        <li>Un bilan complet de mon expérience</li>\r\n        <li>Un aperçu de mes compétences techniques et humaines</li>\r\n        <li>Des billets réguliers sur mon apprentissage (<a class=\"btn\" href=\"blog.html\">voir les billets</a>)</li>\r\n      </ul>\r\n\r\n      <div class=\"carousel\">\r\n  <img src=\"../icons/yolo_example.png\" alt=\"Exemple YOLO\" loading=\"lazy\">\r\n  <img src=\"../icons/Capture d’écran 2025-09-01 092143.png\" alt=\"Illustration stage 2\" loading=\"lazy\">\r\n  <img src=\"../icons/roboflow.png\" alt=\"Illustration stage 3\" loading=\"lazy\">\r\n  </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+                "extra": {
+                  "cited_message_idx": 13,
+                  "cited_message_id": "82a1c1be-185e-4cd0-8cb9-32cd29d53351",
+                  "search_result_idx": null,
+                  "evidence_text": "index.html",
+                  "cloud_doc_url": null,
+                  "authors_display": null,
+                  "doi": null,
+                  "publication_year": "None",
+                  "journal_name": null
+                }
+              }
+            },
+            {
+              "start_ix": 529,
+              "end_ix": 549,
+              "citation_format_type": "tether_og",
+              "metadata": {
+                "type": "file",
+                "name": "competence.html",
+                "id": "file-Gh6o3DbQA5MVq3Nin5EMAy",
+                "source": "my_files",
+                "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Compétences - Stage SEGULA</title>\r\n  <meta name=\"description\" content=\"Compétences techniques et humaines acquises pendant le stage, avec preuves, réalisations et impacts.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Compétences Acquises</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"competence.html\">Compétences</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\" class=\"skills-section\">\r\n    <h2>Mes compétences acquises lors du stage</h2>\r\n    <p class=\"intro\">\r\n      Étudiant orienté Data & IA, j’aime utiler les données pour exploiter tous leurs potentiels.\r\n      Niveau global : <strong>intermédiaire</strong> en Power BI & Python, avec une sensibilité produit (lisibilité, pertinence des KPI).\r\n    </p>\r\n\r\n    <h3>Compétences techniques</h3>\r\n    <div class=\"skills-container\">\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/powerbi.png\" alt=\"Logo Power BI\" loading=\"lazy\">\r\n        <h4>Power BI (Power Query & DAX)</h4>\r\n        <p>Modèle en étoile, mesures KPI (taux de conversion, cycle moyen), pages de synthèse métier.</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 80%;\"></div></div>\r\n      </div>\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/roboflow.jpg\" alt=\"Logo roboflow\" loading=\"lazy\">\r\n        <h4>Roboflow et YOLO</h4>\r\n        <p>Découverte de Roboflow et YOLO et apport d'aide</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 45%;\"></div></div>\r\n      </div>\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/github.png\" alt=\"Logo GitHub\" loading=\"lazy\">\r\n        <h4>Git & GitHub</h4>\r\n        <p>Versionnage des scripts, branches simples, README et suivi des évolutions.</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 70%;\"></div></div>\r\n      </div>\r\n    </div>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Compétences techniques – preuves ciblées</h3>\r\n      <ul>\r\n        <li><strong>Power Query / DAX :</strong> normalisation d’Excel hétérogènes (typage, relations), mesures KPI et publication d’un dashboard fiable pour l’Avant-vente <p>(<a href=\"projet.html?projet=1\" class=\"btn\">Voir le projet</a>)</p>.</li>\r\n        <li><strong>YOLO / Roboflow :</strong> annotation & entraînement pour détection de symboles électriques sur plans (<a href=\"projet.html?projet=3\" class=\"btn\">Voir le projet</a>).</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <h3>Compétences humaines</h3>\r\n    <ul class=\"soft-skills\">\r\n      <li><strong>Travail en équipe :</strong> échanges réguliers avec l’équipe IA et l’Avant-vente (recueil du besoin, itérations rapides).</li>\r\n      <li><strong>Résolution de problèmes :</strong> adaptation des données aux KPI attendus (règles de contrôle, mapping de colonnes).</li>\r\n      <li><strong>Autonomie :</strong> conduite d’un POC de bout en bout (collecte → modélisation → restitution).</li>\r\n      <li><strong>Communication :</strong> synthèse claire en réunion (objectifs, résultats, limites, prochaines étapes).</li>\r\n    </ul>\r\n\r\n    <h3>Outils & technologies utilisés</h3>\r\n    <div class=\"tools-container\" aria-label=\"Outils et technologies\">\r\n      <div><img src=\"../icons/python.png\" alt=\"Python\" loading=\"lazy\"><p>Python</p></div>\r\n      <div><img src=\"../icons/powerbi.png\" alt=\"Power BI\" loading=\"lazy\"><p>Power BI</p></div>\r\n      <div><img src=\"../icons/roboflow.jpg\" alt=\"Roboflow\" loading=\"lazy\"><p>Roboflow</p></div>\r\n      <div><img src=\"../icons/github.png\" alt=\"GitHub\" loading=\"lazy\"><p>GitHub</p></div>\r\n    </div>\r\n\r\n    <h3>Mes acquis professionnels</h3>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>présenter des résultats d’analyse</strong> en réunion projet.</div>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>concevoir un outils de modélisation</strong> sur des données Excel réelles.</div>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>réaliser un projet de bout en bout</strong> avec des contrainte et critère particulié</div>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Impacts et résultats</h3>\r\n      <ul>\r\n        <li>Accès plus simple rapide aux données d'avant ventes, meilleurs compréhension pour les personnes extérieur</li>\r\n        <li>Diminution des erreurs de lecture pour une meilleur interprétation et gain de temps.</li>\r\n        <li>Aide au chiffrage : premier score de probabilité “Go / No Go” pour prioriser les offres.</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Langues & liens</h3>\r\n      <p>Français (natif) – Anglais (intermédiaire, technique).</p>\r\n      <div class=\"center-btn\" style=\"margin-top:18px\">\r\n        <a class=\"btn\" href=\"https://www.linkedin.com/in/ton-profil\" target=\"_blank\" rel=\"noopener\">Mon LinkedIn</a>\r\n        <a class=\"btn\" href=\"../pdf/CV_Theo_Delporte.pdf\" target=\"_blank\" rel=\"noopener\">📄 Télécharger mon CV</a>\r\n      </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+                "extra": {
+                  "cited_message_idx": 16,
+                  "cited_message_id": "b685d054-55fb-4cbb-8fb4-02bed92f3c95",
+                  "search_result_idx": null,
+                  "evidence_text": "competence.html",
+                  "cloud_doc_url": null,
+                  "authors_display": null,
+                  "doi": null,
+                  "publication_year": "None",
+                  "journal_name": null
+                }
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "【13†index.html】",
+              "start_idx": 440,
+              "end_idx": 455,
+              "alt": null,
+              "type": "file",
+              "name": "index.html",
+              "id": "file-5ygRkfLuEzefJvJn5wf2N9",
+              "source": "my_files",
+              "snippet": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Accueil - Mon Stage chez SEGULA Technologies</title>\r\n\r\n  <meta name=\"description\" content=\"Blog de stage de Théo Delporte chez SEGULA Technologies : missions, projets, compétences, bilan et billets d'expérience.\" />\r\n  <meta property=\"og:title\" content=\"Blog de stage - Théo Delporte\" />\r\n  <meta property=\"og:description\" content=\"Missions, projets, compétences, bilan et billets.\" />\r\n  <meta property=\"og:type\" content=\"website\" />\r\n  <meta property=\"og:image\" content=\"https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80\" />\r\n  <meta property=\"og:locale\" content=\"fr_FR\" />\r\n\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>\r\n    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }\r\n  </script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Bienvenue sur mon Blog de Stage</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\">\r\n    <section class=\"styled-section\">\r\n      <h2>Qui suis-je ?</h2>\r\n      <p>Je m'appelle Théo Delporte, étudiant passionné par l'informatique, l’intelligence artificielle et les nouvelles technologies. Ce blog est le fruit de mon stage chez SEGULA Technologies.</p>\r\n\r\n      <p class=\"mt-2\">\r\n        <a class=\"btn\" href=\"https://www.linkedin.com/in/th%C3%A9o-undefined-a157b3309/\" target=\"_blank\" rel=\"noopener\">Mon LinkedIn</a>\r\n        <a class=\"btn\" href=\"https://github.com/theod-maker\" target=\"_blank\" rel=\"noopener\"> Mon GitHub</a>\r\n        <a class=\"btn\" href=\"../pdf/CV_Theo_Delporte.pdf\" target=\"_blank\">Télécharger mon CV</a>\r\n      </p>\r\n\r\n      <h3>Ce que vous trouverez ici :</h3>\r\n      <ul>\r\n        <li>La présentation de l’entreprise SEGULA</li>\r\n        <li>Mes missions réalisées en stage</li>\r\n        <li>Un bilan complet de mon expérience</li>\r\n        <li>Un aperçu de mes compétences techniques et humaines</li>\r\n        <li>Des billets réguliers sur mon apprentissage (<a class=\"btn\" href=\"blog.html\">voir les billets</a>)</li>\r\n      </ul>\r\n\r\n      <div class=\"carousel\">\r\n  <img src=\"../icons/yolo_example.png\" alt=\"Exemple YOLO\" loading=\"lazy\">\r\n  <img src=\"../icons/Capture d’écran 2025-09-01 092143.png\" alt=\"Illustration stage 2\" loading=\"lazy\">\r\n  <img src=\"../icons/roboflow.png\" alt=\"Illustration stage 3\" loading=\"lazy\">\r\n  </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+              "cloud_doc_url": null,
+              "medical_file_reference": {
+                "authors_display": null,
+                "doi": null,
+                "publication_year": "None",
+                "journal_name": null
+              },
+              "input_pointer": {
+                "message_index": 13,
+                "message_id": "82a1c1be-185e-4cd0-8cb9-32cd29d53351",
+                "file_index": null,
+                "line_range_start": null,
+                "line_range_end": null
+              },
+              "fff_metadata": null
+            },
+            {
+              "matched_text": "【16†competence.html】",
+              "start_idx": 529,
+              "end_idx": 549,
+              "alt": null,
+              "type": "file",
+              "name": "competence.html",
+              "id": "file-Gh6o3DbQA5MVq3Nin5EMAy",
+              "source": "my_files",
+              "snippet": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n  <title>Compétences - Stage SEGULA</title>\r\n  <meta name=\"description\" content=\"Compétences techniques et humaines acquises pendant le stage, avec preuves, réalisations et impacts.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Compétences Acquises</h1>\r\n    <button type=\"button\" class=\"dark-mode-toggle\" onclick=\"toggleDarkMode()\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <div class=\"breadcrumb\">\r\n        <a href=\"index.html\">Accueil</a> &gt;\r\n        <a href=\"competence.html\">Compétences</a>\r\n      </div>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\" class=\"skills-section\">\r\n    <h2>Mes compétences acquises lors du stage</h2>\r\n    <p class=\"intro\">\r\n      Étudiant orienté Data & IA, j’aime utiler les données pour exploiter tous leurs potentiels.\r\n      Niveau global : <strong>intermédiaire</strong> en Power BI & Python, avec une sensibilité produit (lisibilité, pertinence des KPI).\r\n    </p>\r\n\r\n    <h3>Compétences techniques</h3>\r\n    <div class=\"skills-container\">\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/powerbi.png\" alt=\"Logo Power BI\" loading=\"lazy\">\r\n        <h4>Power BI (Power Query & DAX)</h4>\r\n        <p>Modèle en étoile, mesures KPI (taux de conversion, cycle moyen), pages de synthèse métier.</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 80%;\"></div></div>\r\n      </div>\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/roboflow.jpg\" alt=\"Logo roboflow\" loading=\"lazy\">\r\n        <h4>Roboflow et YOLO</h4>\r\n        <p>Découverte de Roboflow et YOLO et apport d'aide</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 45%;\"></div></div>\r\n      </div>\r\n      <div class=\"competence-card\">\r\n        <img src=\"../icons/github.png\" alt=\"Logo GitHub\" loading=\"lazy\">\r\n        <h4>Git & GitHub</h4>\r\n        <p>Versionnage des scripts, branches simples, README et suivi des évolutions.</p>\r\n        <div class=\"progress-bar\"><div class=\"progress\" style=\"width: 70%;\"></div></div>\r\n      </div>\r\n    </div>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Compétences techniques – preuves ciblées</h3>\r\n      <ul>\r\n        <li><strong>Power Query / DAX :</strong> normalisation d’Excel hétérogènes (typage, relations), mesures KPI et publication d’un dashboard fiable pour l’Avant-vente <p>(<a href=\"projet.html?projet=1\" class=\"btn\">Voir le projet</a>)</p>.</li>\r\n        <li><strong>YOLO / Roboflow :</strong> annotation & entraînement pour détection de symboles électriques sur plans (<a href=\"projet.html?projet=3\" class=\"btn\">Voir le projet</a>).</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <h3>Compétences humaines</h3>\r\n    <ul class=\"soft-skills\">\r\n      <li><strong>Travail en équipe :</strong> échanges réguliers avec l’équipe IA et l’Avant-vente (recueil du besoin, itérations rapides).</li>\r\n      <li><strong>Résolution de problèmes :</strong> adaptation des données aux KPI attendus (règles de contrôle, mapping de colonnes).</li>\r\n      <li><strong>Autonomie :</strong> conduite d’un POC de bout en bout (collecte → modélisation → restitution).</li>\r\n      <li><strong>Communication :</strong> synthèse claire en réunion (objectifs, résultats, limites, prochaines étapes).</li>\r\n    </ul>\r\n\r\n    <h3>Outils & technologies utilisés</h3>\r\n    <div class=\"tools-container\" aria-label=\"Outils et technologies\">\r\n      <div><img src=\"../icons/python.png\" alt=\"Python\" loading=\"lazy\"><p>Python</p></div>\r\n      <div><img src=\"../icons/powerbi.png\" alt=\"Power BI\" loading=\"lazy\"><p>Power BI</p></div>\r\n      <div><img src=\"../icons/roboflow.jpg\" alt=\"Roboflow\" loading=\"lazy\"><p>Roboflow</p></div>\r\n      <div><img src=\"../icons/github.png\" alt=\"GitHub\" loading=\"lazy\"><p>GitHub</p></div>\r\n    </div>\r\n\r\n    <h3>Mes acquis professionnels</h3>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>présenter des résultats d’analyse</strong> en réunion projet.</div>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>concevoir un outils de modélisation</strong> sur des données Excel réelles.</div>\r\n    <div class=\"competence-sentence\">✅ Je suis capable de <strong>réaliser un projet de bout en bout</strong> avec des contrainte et critère particulié</div>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Impacts et résultats</h3>\r\n      <ul>\r\n        <li>Accès plus simple rapide aux données d'avant ventes, meilleurs compréhension pour les personnes extérieur</li>\r\n        <li>Diminution des erreurs de lecture pour une meilleur interprétation et gain de temps.</li>\r\n        <li>Aide au chiffrage : premier score de probabilité “Go / No Go” pour prioriser les offres.</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <section class=\"styled-section\">\r\n      <h3>Langues & liens</h3>\r\n      <p>Français (natif) – Anglais (intermédiaire, technique).</p>\r\n      <div class=\"center-btn\" style=\"margin-top:18px\">\r\n        <a class=\"btn\" href=\"https://www.linkedin.com/in/ton-profil\" target=\"_blank\" rel=\"noopener\">Mon LinkedIn</a>\r\n        <a class=\"btn\" href=\"../pdf/CV_Theo_Delporte.pdf\" target=\"_blank\" rel=\"noopener\">📄 Télécharger mon CV</a>\r\n      </div>\r\n    </section>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n</body>\r\n</html>",
+              "cloud_doc_url": null,
+              "medical_file_reference": {
+                "authors_display": null,
+                "doi": null,
+                "publication_year": "None",
+                "journal_name": null
+              },
+              "input_pointer": {
+                "message_index": 16,
+                "message_id": "b685d054-55fb-4cbb-8fb4-02bed92f3c95",
+                "file_index": null,
+                "line_range_start": null,
+                "line_range_end": null
+              },
+              "fff_metadata": null
+            }
+          ],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "97941095cd8ad0ae-ZRH",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "7eacf388-922c-47c4-b3a0-5b6138e1f01f",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7eacf388-922c-47c4-b3a0-5b6138e1f01f",
+      "children": [
+        "ea75ca7e-95b9-42b9-a64f-c66349ce1aba"
+      ]
+    },
+    "ea75ca7e-95b9-42b9-a64f-c66349ce1aba": {
+      "id": "ea75ca7e-95b9-42b9-a64f-c66349ce1aba",
+      "message": {
+        "id": "ea75ca7e-95b9-42b9-a64f-c66349ce1aba",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756890138.364,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "très bien, je voudrais que ça soit centré, mais je ne comprends pas, ce n'est pas le cas"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "979411458b94d0ae-ZRH",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "10c814eb-995a-48a0-9883-e9afc0af899e",
+      "children": [
+        "8d685c81-b92c-41a2-a770-2b3e00eb64ad"
+      ]
+    },
+    "8d685c81-b92c-41a2-a770-2b3e00eb64ad": {
+      "id": "8d685c81-b92c-41a2-a770-2b3e00eb64ad",
+      "message": {
+        "id": "8d685c81-b92c-41a2-a770-2b3e00eb64ad",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756890139.684561,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Ok 👌 je comprends ton souci.  \n\nEn fait, ta classe `.btn` est bien définie pour le style des boutons, mais **ce n’est pas elle qui gère l’alignement**. Par défaut, les `<a class=\"btn\">` s’alignent **à gauche**, parce qu’ils suivent le flux normal du texte dans la page.  \n\nPour centrer tes boutons, tu dois agir sur le **contenant** (`<p>`, `<div>`, ou `<section>` qui entoure tes boutons), pas sur le bouton lui-même.  \n\n---\n\n### ✅ Exemple avec ton code dans `index.html`\nActuellement tu as ça :  \n```html\n<p class=\"mt-2\">\n  <a class=\"btn\" href=\"...\">Mon LinkedIn</a>\n  <a class=\"btn\" href=\"...\"> Mon GitHub</a>\n  <a class=\"btn\" href=\"...\">Télécharger mon CV</a>\n</p>\n```\n\n👉 Pour centrer, ajoute une règle CSS :  \n```css\n.mt-2 {\n  text-align: center;\n}\n```\n\n---\n\n### 🔹 Autre méthode (plus flexible)  \nSi tu veux que **tous les ensembles de boutons** soient centrés :  \n\n```css\n.center-btn {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap; /* utile si plusieurs boutons */\n  gap: 10px;\n}\n```\n\nEt dans ton HTML :  \n```html\n<div class=\"center-btn\">\n  <a class=\"btn\" href=\"...\">Mon LinkedIn</a>\n  <a class=\"btn\" href=\"...\">Mon GitHub</a>\n  <a class=\"btn\" href=\"...\">Télécharger mon CV</a>\n</div>\n```\n\n---\n\n👉 Veux-tu que je refasse la **classe `.btn` + une `.center-btn` universelle** pour que tu n’aies plus à te soucier du centrage à chaque fois ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "979411458b94d0ae-ZRH",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "ea75ca7e-95b9-42b9-a64f-c66349ce1aba",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ea75ca7e-95b9-42b9-a64f-c66349ce1aba",
+      "children": [
+        "59222276-f036-48f0-b960-2bd7217a639f"
+      ]
+    },
+    "59222276-f036-48f0-b960-2bd7217a639f": {
+      "id": "59222276-f036-48f0-b960-2bd7217a639f",
+      "message": {
+        "id": "59222276-f036-48f0-b960-2bd7217a639f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756890499.505,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "okay et pour celui dans projet si tu le vois bien, je fais comment"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file-77WVhkRCBVZsqGtidNU4WY",
+              "size": 9453,
+              "name": "projet.html",
+              "mime_type": "text/html",
+              "file_token_size": 2491,
+              "source": "local"
+            }
+          ],
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "97941a16df98d0ae-ZRH",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8d685c81-b92c-41a2-a770-2b3e00eb64ad",
+      "children": [
+        "519a6e99-c9fb-40c6-aec1-8e333aa6b334"
+      ]
+    },
+    "519a6e99-c9fb-40c6-aec1-8e333aa6b334": {
+      "id": "519a6e99-c9fb-40c6-aec1-8e333aa6b334",
+      "message": {
+        "id": "519a6e99-c9fb-40c6-aec1-8e333aa6b334",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756890501.32639,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_browsing_display",
+          "result": "",
+          "summary": "",
+          "assets": null,
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "command": "spinner",
+          "status": "running",
+          "request_id": "97941a16df98d0ae-ZRH",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "59222276-f036-48f0-b960-2bd7217a639f",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "59222276-f036-48f0-b960-2bd7217a639f",
+      "children": [
+        "e320df87-8fdb-4235-8457-93424054d75a"
+      ]
+    },
+    "e320df87-8fdb-4235-8457-93424054d75a": {
+      "id": "e320df87-8fdb-4235-8457-93424054d75a",
+      "message": {
+        "id": "e320df87-8fdb-4235-8457-93424054d75a",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756890501.5513308,
+        "update_time": null,
+        "content": {
+          "content_type": "tether_quote",
+          "url": "file-77WVhkRCBVZsqGtidNU4WY",
+          "domain": "projet.html",
+          "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Projets détaillés - Stage SEGULA</title>\r\n  <meta name=\"description\" content=\"Projets détaillés du stage : pipelines BI, modèle prédictif, IA Roboflow.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Projets de Stage</h1>\r\n    <button onclick=\"document.body.classList.toggle('dark-mode')\" class=\"dark-mode-toggle\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\" class=\"project-container\">\r\n\r\n    <details class=\"project-item\" id=\"projet-1\">\r\n  <summary>Projet principal - Création d'un outils d'analyse des données commerciales</summary>\r\n  <div class=\"project-content\">\r\n    <p>Ce projet à pour but de répondre à un besoins du service avant ventes. Toute les données classifier dans excel ne sont pas lié et difficillement exploitable et présentable. Mon sujet de stage à donc consister à développer un outils pour le suivi des performances des offres commerciales.<p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 125417.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    </div>\r\n\r\n    <figcaption>Aperçu d'une source de données</figcaption>\r\n    <p>Pour cela il était donc nécessaire que je récupère les données, ici ce sera celle de l'année 2024. Ensuite j'ai du analyser les données, essayer déja moi même de les comprendes pour aussi avoir une meilleur visualisation, il y avait évidemment plusieurs sources de données. Egalement essayer d'étudier les liens potentiels entre elles pour la suite. \r\n    Une fois cette étape et compte tenu des données, j'ai décider d'importer ces données dans Power BI qui est un logiciel réputé pour les projets à traitement de données et qui facilite grandement leur exploitation. Une fois importer j'ai utiliser Power Query, déja intégré à Power BI pour mettre en forme les données, suprimé les valeurs null, ajuster les valeurs ou format de données correcte. En fait il permet de passer de données brute à des données beaucoup plus exploitatble par la suite dans power BI. Cela ma aussi permis de réaliser des liens entre les différentes source de données.<p>\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 130448.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Power Query - utilisé pour la gestion des données</figcaption>\r\n    <p>Lorsqu'ont ma présenté le projet, le service avant ventes attendais des KPI particulier pour explloiter des données précises. Une fois ce premier processus fait, j'ai commencer à étudier la manière dont j'allais réaliser les graphiques, mais pour certains je n'avais pas les données nécessaires où il restait encore certaines choses à extraire ou filter. \r\n    <p>C'est ici que va entrer en jeux le DAX, comme vous aller le voir, ça va être une partie importantes de mon projet de stage.\r\n    Le DAX c'est quoi ? C'est en fait une collection de fonctions, d'opérateurs et de constatntes qui peuvent être utilisées dans une formule ou une expression, pour calculer et retourner une ou plusieurs valeurs. Le DAX va vous permettre de créer des informations à partir des données qui se trouvent déja dans votre modèle.\r\n\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120344.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120442.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120513.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>Exemple de DAX - utilisé pour de nombreux KPI</figcaption>\r\n    </div>\r\n\r\n    </p>En géneral je faisais une page pour un KPI que j'agrémmentais avec des tabelaux où encore des données qui me parraissait pertinantes, en plus des graphiques. Le défis sur cette partie à été de projeter la réalisation des KPI demandées sur la plateforme Power BI. La plus part était évidemment réalisable étant la large game proposé par Power BI.</p>\r\n    <p> Les données se trouvent comme vous pouvez le voir sur les illustrations, dans la section \"Données\" à droite de l'espace de travail. J'ai donc en fonction des KPI demandées, pris les données qui me semblais utilie pour les intégrer à celui-ci. Voici par exemple le fonctionnement de ce premier graphique. </p>\r\n\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 131747.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Interface Power BI - utilisé pour réaliser les KPI's</figcaption>\r\n\r\n    <p>Ensuite il y a des KPI ou je n'ai pas la données, ou elles sont tous simplement trop brute, aussi parfois il fallait la calculer à l'aide d'une autre données. Pour avoir un exemple concrets, voivi le graphique attendu et le KPI final, au vu des données que j'avais, j'ai utiliser du DAX, Les voicis: </p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120641.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120718.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 132305.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>KPI's attendu VS réalisé - à l'aide du DAX</figcaption>\r\n    </div>\r\n\r\n    <p> J'ai donc réalisé cela pour tous les KPI et mis en forme le rapport, vous pourrez trouver des captures ainsi que le lien télechargeable du rapport en bas de page. Ce projet est bien évidemment à continuer et ne demande que des améliorations, il est également possible de le déployer pour avoir une vu présentation grâce aux outils microsoft.</p>\r\n    <div class=\"stack\">\r\n      <strong>Technos :</strong>\r\n      <span>Excel</span><span>Power BI</span><span>Power Query</span><span>Python</span>\r\n    </div>\r\n  </div>\r\n</details>\r\n\r\n\r\n    <details class=\"project-item\" id=\"projet-3\">\r\n      <summary>Projet secondaire -  IA d’annotation automatique</summary>\r\n      <div class=\"project-content\">\r\n        <p>Quand je suis arrivé ici, d'autres étudiant IA travaillais déja sur un projet. Ce projet à pour but d'automatiser les annotations des schémas électrque par l'IA. (Ici folio du client TOTAL ENERGIES). Il fallait entrainer le modèle et l'aider à comprendre ce qu'il devait repéré sur les schémas, nous avons donc utilisé le logiciel roboflow qui est un outils d'étiquetage d'image. </p>\r\n        <p>C'est un processus plutôt long, de réaliser cela sur les nombreux folio d'entrainement, donc j'ai apporté de l'aide sur la première semaine sur cette partie annotation. Puis une fois ce processuce réalisé, ils ont técupéré les données et ont pu entrainer le modèles et apportées les modifications nécessaires.</p>\r\n        <img src=\"../icons/Capture d’écran 2025-09-02 101820.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Aperçu de l'outils Roboflow</figcaption>\r\n        <img src=\"../icons/yolo_example.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Outils de détection yolo</figcaption>\r\n        <p>Pour passer les données dans le modèle, l'outils utilisé était YOLO, qui est un véritable détecteur d'objets. Il est courrament utilisé car il est simple à installer, puissant et rapide.<p>\r\n        </p>Une fois ces données passé dans le modèle nous avions le résulats dans un fichier excel, pour voir si cela fonctionnais et surtous voir la précisions, comparer à nos données d'annotations réeels, repérer les différentes erreur et les annotées dans un tableaux. Cela a permis au étudiants de corriger leurs erreurs par la suite</p>\r\n        <img src=\"../icons/roboflow.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Tableau de détection des erreur du modèle</figcaption>\r\n        <div class=\"stack\">\r\n          <strong>Technos :</strong>\r\n          <span>YOLO</span><span>Roboflow</span><span>Python</span>\r\n        </div>\r\n      </div>\r\n    </details>\r\n    <p class=\"mt-2\"></p>\r\n    <a class=\"btn\" href=\"../pdf/Projet_Power_BI.pbix\" target=\"_blank\">Mon Projet Power BI</a>\r\n    </p>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n\r\n  <script>\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n    const params = new URLSearchParams(window.location.search);\r\n    const projet = params.get(\"projet\");\r\n\r\n    const projet1 = document.getElementById(\"projet-1\");\r\n    const projet3 = document.getElementById(\"projet-3\");\r\n\r\n    if (projet === \"1\") {\r\n      projet1.style.display = \"block\";\r\n      projet3.style.display = \"none\";\r\n    } else if (projet === \"3\") {\r\n      projet1.style.display = \"none\";\r\n      projet3.style.display = \"block\";\r\n    }\r\n  });\r\n </script>\r\n\r\n</body>\r\n</html>",
+          "title": "projet.html",
+          "tether_id": null
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "command": "context_stuff",
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "97941a16df98d0ae-ZRH",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "519a6e99-c9fb-40c6-aec1-8e333aa6b334",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "519a6e99-c9fb-40c6-aec1-8e333aa6b334",
+      "children": [
+        "b98fbebe-fde7-4964-8c37-a0be77ddaf74"
+      ]
+    },
+    "b98fbebe-fde7-4964-8c37-a0be77ddaf74": {
+      "id": "b98fbebe-fde7-4964-8c37-a0be77ddaf74",
+      "message": {
+        "id": "b98fbebe-fde7-4964-8c37-a0be77ddaf74",
+        "author": {
+          "role": "tool",
+          "name": "file_search",
+          "metadata": {}
+        },
+        "create_time": 1756890501.6418188,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "All the files uploaded by the user have been fully loaded. Searching won't provide additional information."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": false,
+          "request_id": "97941a16df98d0ae-ZRH",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "e320df87-8fdb-4235-8457-93424054d75a",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e320df87-8fdb-4235-8457-93424054d75a",
+      "children": [
+        "54f29ddb-9491-4837-91c4-1b746419a14b"
+      ]
+    },
+    "54f29ddb-9491-4837-91c4-1b746419a14b": {
+      "id": "54f29ddb-9491-4837-91c4-1b746419a14b",
+      "message": {
+        "id": "54f29ddb-9491-4837-91c4-1b746419a14b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756890501.598092,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes je vois 👍  \nDans ton `projet.html`, tu as placé ce bouton à la fin :  \n\n```html\n<p class=\"mt-2\"></p>\n<a class=\"btn\" href=\"../pdf/Projet_Power_BI.pbix\" target=\"_blank\">Mon Projet Power BI</a>\n</p>\n```\n【34†projet.html】\n\nLe souci ici :  \n- tu as des `<p>` ouverts/fermés n’importe où → ton `<a class=\"btn\">` n’est pas “contenu” dans un bloc centré.  \n- du coup le CSS `text-align:center;` appliqué sur `.mt-2` ne fonctionne pas.  \n\n---\n\n### ✅ Correction simple\nEntoure ton bouton dans un conteneur qui centre :  \n\n```html\n<div class=\"center-btn\">\n  <a class=\"btn\" href=\"../pdf/Projet_Power_BI.pbix\" target=\"_blank\">Mon Projet Power BI</a>\n</div>\n```\n\nEt dans ton `style.css` ajoute :  \n\n```css\n.center-btn {\n  text-align: center;\n  margin-top: 20px;\n}\n```\n\n---\n\n### 🔹 Si tu veux gérer plusieurs boutons\n```css\n.center-btn {\n  display: flex;\n  justify-content: center;\n  gap: 15px;\n  flex-wrap: wrap; /* utile si ça passe sur plusieurs lignes */\n  margin-top: 20px;\n}\n```\n\nComme ça, tu peux réutiliser `center-btn` partout (index, projet, compétences, etc.) et tes boutons seront toujours bien centrés.  \n\n---\n\n👉 Tu veux que je te refasse **toutes les occurrences de boutons (`.btn`) dans chaque page** avec ce système `center-btn`, ou tu préfères que je ne l’applique que dans `projet.html` pour l’instant ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [
+            {
+              "start_ix": 204,
+              "end_ix": 220,
+              "citation_format_type": "tether_og",
+              "metadata": {
+                "type": "file",
+                "name": "projet.html",
+                "id": "file-77WVhkRCBVZsqGtidNU4WY",
+                "source": "my_files",
+                "text": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Projets détaillés - Stage SEGULA</title>\r\n  <meta name=\"description\" content=\"Projets détaillés du stage : pipelines BI, modèle prédictif, IA Roboflow.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Projets de Stage</h1>\r\n    <button onclick=\"document.body.classList.toggle('dark-mode')\" class=\"dark-mode-toggle\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\" class=\"project-container\">\r\n\r\n    <details class=\"project-item\" id=\"projet-1\">\r\n  <summary>Projet principal - Création d'un outils d'analyse des données commerciales</summary>\r\n  <div class=\"project-content\">\r\n    <p>Ce projet à pour but de répondre à un besoins du service avant ventes. Toute les données classifier dans excel ne sont pas lié et difficillement exploitable et présentable. Mon sujet de stage à donc consister à développer un outils pour le suivi des performances des offres commerciales.<p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 125417.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    </div>\r\n\r\n    <figcaption>Aperçu d'une source de données</figcaption>\r\n    <p>Pour cela il était donc nécessaire que je récupère les données, ici ce sera celle de l'année 2024. Ensuite j'ai du analyser les données, essayer déja moi même de les comprendes pour aussi avoir une meilleur visualisation, il y avait évidemment plusieurs sources de données. Egalement essayer d'étudier les liens potentiels entre elles pour la suite. \r\n    Une fois cette étape et compte tenu des données, j'ai décider d'importer ces données dans Power BI qui est un logiciel réputé pour les projets à traitement de données et qui facilite grandement leur exploitation. Une fois importer j'ai utiliser Power Query, déja intégré à Power BI pour mettre en forme les données, suprimé les valeurs null, ajuster les valeurs ou format de données correcte. En fait il permet de passer de données brute à des données beaucoup plus exploitatble par la suite dans power BI. Cela ma aussi permis de réaliser des liens entre les différentes source de données.<p>\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 130448.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Power Query - utilisé pour la gestion des données</figcaption>\r\n    <p>Lorsqu'ont ma présenté le projet, le service avant ventes attendais des KPI particulier pour explloiter des données précises. Une fois ce premier processus fait, j'ai commencer à étudier la manière dont j'allais réaliser les graphiques, mais pour certains je n'avais pas les données nécessaires où il restait encore certaines choses à extraire ou filter. \r\n    <p>C'est ici que va entrer en jeux le DAX, comme vous aller le voir, ça va être une partie importantes de mon projet de stage.\r\n    Le DAX c'est quoi ? C'est en fait une collection de fonctions, d'opérateurs et de constatntes qui peuvent être utilisées dans une formule ou une expression, pour calculer et retourner une ou plusieurs valeurs. Le DAX va vous permettre de créer des informations à partir des données qui se trouvent déja dans votre modèle.\r\n\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120344.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120442.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120513.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>Exemple de DAX - utilisé pour de nombreux KPI</figcaption>\r\n    </div>\r\n\r\n    </p>En géneral je faisais une page pour un KPI que j'agrémmentais avec des tabelaux où encore des données qui me parraissait pertinantes, en plus des graphiques. Le défis sur cette partie à été de projeter la réalisation des KPI demandées sur la plateforme Power BI. La plus part était évidemment réalisable étant la large game proposé par Power BI.</p>\r\n    <p> Les données se trouvent comme vous pouvez le voir sur les illustrations, dans la section \"Données\" à droite de l'espace de travail. J'ai donc en fonction des KPI demandées, pris les données qui me semblais utilie pour les intégrer à celui-ci. Voici par exemple le fonctionnement de ce premier graphique. </p>\r\n\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 131747.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Interface Power BI - utilisé pour réaliser les KPI's</figcaption>\r\n\r\n    <p>Ensuite il y a des KPI ou je n'ai pas la données, ou elles sont tous simplement trop brute, aussi parfois il fallait la calculer à l'aide d'une autre données. Pour avoir un exemple concrets, voivi le graphique attendu et le KPI final, au vu des données que j'avais, j'ai utiliser du DAX, Les voicis: </p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120641.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120718.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 132305.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>KPI's attendu VS réalisé - à l'aide du DAX</figcaption>\r\n    </div>\r\n\r\n    <p> J'ai donc réalisé cela pour tous les KPI et mis en forme le rapport, vous pourrez trouver des captures ainsi que le lien télechargeable du rapport en bas de page. Ce projet est bien évidemment à continuer et ne demande que des améliorations, il est également possible de le déployer pour avoir une vu présentation grâce aux outils microsoft.</p>\r\n    <div class=\"stack\">\r\n      <strong>Technos :</strong>\r\n      <span>Excel</span><span>Power BI</span><span>Power Query</span><span>Python</span>\r\n    </div>\r\n  </div>\r\n</details>\r\n\r\n\r\n    <details class=\"project-item\" id=\"projet-3\">\r\n      <summary>Projet secondaire -  IA d’annotation automatique</summary>\r\n      <div class=\"project-content\">\r\n        <p>Quand je suis arrivé ici, d'autres étudiant IA travaillais déja sur un projet. Ce projet à pour but d'automatiser les annotations des schémas électrque par l'IA. (Ici folio du client TOTAL ENERGIES). Il fallait entrainer le modèle et l'aider à comprendre ce qu'il devait repéré sur les schémas, nous avons donc utilisé le logiciel roboflow qui est un outils d'étiquetage d'image. </p>\r\n        <p>C'est un processus plutôt long, de réaliser cela sur les nombreux folio d'entrainement, donc j'ai apporté de l'aide sur la première semaine sur cette partie annotation. Puis une fois ce processuce réalisé, ils ont técupéré les données et ont pu entrainer le modèles et apportées les modifications nécessaires.</p>\r\n        <img src=\"../icons/Capture d’écran 2025-09-02 101820.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Aperçu de l'outils Roboflow</figcaption>\r\n        <img src=\"../icons/yolo_example.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Outils de détection yolo</figcaption>\r\n        <p>Pour passer les données dans le modèle, l'outils utilisé était YOLO, qui est un véritable détecteur d'objets. Il est courrament utilisé car il est simple à installer, puissant et rapide.<p>\r\n        </p>Une fois ces données passé dans le modèle nous avions le résulats dans un fichier excel, pour voir si cela fonctionnais et surtous voir la précisions, comparer à nos données d'annotations réeels, repérer les différentes erreur et les annotées dans un tableaux. Cela a permis au étudiants de corriger leurs erreurs par la suite</p>\r\n        <img src=\"../icons/roboflow.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Tableau de détection des erreur du modèle</figcaption>\r\n        <div class=\"stack\">\r\n          <strong>Technos :</strong>\r\n          <span>YOLO</span><span>Roboflow</span><span>Python</span>\r\n        </div>\r\n      </div>\r\n    </details>\r\n    <p class=\"mt-2\"></p>\r\n    <a class=\"btn\" href=\"../pdf/Projet_Power_BI.pbix\" target=\"_blank\">Mon Projet Power BI</a>\r\n    </p>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n\r\n  <script>\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n    const params = new URLSearchParams(window.location.search);\r\n    const projet = params.get(\"projet\");\r\n\r\n    const projet1 = document.getElementById(\"projet-1\");\r\n    const projet3 = document.getElementById(\"projet-3\");\r\n\r\n    if (projet === \"1\") {\r\n      projet1.style.display = \"block\";\r\n      projet3.style.display = \"none\";\r\n    } else if (projet === \"3\") {\r\n      projet1.style.display = \"none\";\r\n      projet3.style.display = \"block\";\r\n    }\r\n  });\r\n </script>\r\n\r\n</body>\r\n</html>",
+                "extra": {
+                  "cited_message_idx": 34,
+                  "cited_message_id": "e320df87-8fdb-4235-8457-93424054d75a",
+                  "search_result_idx": null,
+                  "evidence_text": "projet.html",
+                  "cloud_doc_url": null,
+                  "authors_display": null,
+                  "doi": null,
+                  "publication_year": "None",
+                  "journal_name": null
+                }
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "【34†projet.html】",
+              "start_idx": 204,
+              "end_idx": 220,
+              "alt": null,
+              "type": "file",
+              "name": "projet.html",
+              "id": "file-77WVhkRCBVZsqGtidNU4WY",
+              "source": "my_files",
+              "snippet": "<!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>Projets détaillés - Stage SEGULA</title>\r\n  <meta name=\"description\" content=\"Projets détaillés du stage : pipelines BI, modèle prédictif, IA Roboflow.\" />\r\n  <link rel=\"stylesheet\" href=\"../css/style.css\" />\r\n</head>\r\n\r\n<body>\r\n  <a class=\"visually-hidden\" href=\"#main\">Aller au contenu</a>\r\n\r\n  <header>\r\n    <h1>Mes Projets de Stage</h1>\r\n    <button onclick=\"document.body.classList.toggle('dark-mode')\" class=\"dark-mode-toggle\">🌙 Mode sombre</button>\r\n    <nav>\r\n      <a href=\"index.html\">Accueil</a>\r\n      <a href=\"presentation.html\">Entreprise</a>\r\n      <a href=\"missions.html\">Missions</a>\r\n      <a href=\"projet.html\">Projets</a>\r\n      <a href=\"bilan.html\">Bilan</a>\r\n      <a href=\"blog.html\">Blog</a>\r\n      <a href=\"competence.html\">Compétences</a>\r\n      <a href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </header>\r\n\r\n  <main id=\"main\" class=\"project-container\">\r\n\r\n    <details class=\"project-item\" id=\"projet-1\">\r\n  <summary>Projet principal - Création d'un outils d'analyse des données commerciales</summary>\r\n  <div class=\"project-content\">\r\n    <p>Ce projet à pour but de répondre à un besoins du service avant ventes. Toute les données classifier dans excel ne sont pas lié et difficillement exploitable et présentable. Mon sujet de stage à donc consister à développer un outils pour le suivi des performances des offres commerciales.<p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 125417.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    </div>\r\n\r\n    <figcaption>Aperçu d'une source de données</figcaption>\r\n    <p>Pour cela il était donc nécessaire que je récupère les données, ici ce sera celle de l'année 2024. Ensuite j'ai du analyser les données, essayer déja moi même de les comprendes pour aussi avoir une meilleur visualisation, il y avait évidemment plusieurs sources de données. Egalement essayer d'étudier les liens potentiels entre elles pour la suite. \r\n    Une fois cette étape et compte tenu des données, j'ai décider d'importer ces données dans Power BI qui est un logiciel réputé pour les projets à traitement de données et qui facilite grandement leur exploitation. Une fois importer j'ai utiliser Power Query, déja intégré à Power BI pour mettre en forme les données, suprimé les valeurs null, ajuster les valeurs ou format de données correcte. En fait il permet de passer de données brute à des données beaucoup plus exploitatble par la suite dans power BI. Cela ma aussi permis de réaliser des liens entre les différentes source de données.<p>\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 130448.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Power Query - utilisé pour la gestion des données</figcaption>\r\n    <p>Lorsqu'ont ma présenté le projet, le service avant ventes attendais des KPI particulier pour explloiter des données précises. Une fois ce premier processus fait, j'ai commencer à étudier la manière dont j'allais réaliser les graphiques, mais pour certains je n'avais pas les données nécessaires où il restait encore certaines choses à extraire ou filter. \r\n    <p>C'est ici que va entrer en jeux le DAX, comme vous aller le voir, ça va être une partie importantes de mon projet de stage.\r\n    Le DAX c'est quoi ? C'est en fait une collection de fonctions, d'opérateurs et de constatntes qui peuvent être utilisées dans une formule ou une expression, pour calculer et retourner une ou plusieurs valeurs. Le DAX va vous permettre de créer des informations à partir des données qui se trouvent déja dans votre modèle.\r\n\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120344.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120442.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120513.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>Exemple de DAX - utilisé pour de nombreux KPI</figcaption>\r\n    </div>\r\n\r\n    </p>En géneral je faisais une page pour un KPI que j'agrémmentais avec des tabelaux où encore des données qui me parraissait pertinantes, en plus des graphiques. Le défis sur cette partie à été de projeter la réalisation des KPI demandées sur la plateforme Power BI. La plus part était évidemment réalisable étant la large game proposé par Power BI.</p>\r\n    <p> Les données se trouvent comme vous pouvez le voir sur les illustrations, dans la section \"Données\" à droite de l'espace de travail. J'ai donc en fonction des KPI demandées, pris les données qui me semblais utilie pour les intégrer à celui-ci. Voici par exemple le fonctionnement de ce premier graphique. </p>\r\n\r\n    <img src=\"../icons/Capture d’écran 2025-09-01 131747.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n    <figcaption>Interface Power BI - utilisé pour réaliser les KPI's</figcaption>\r\n\r\n    <p>Ensuite il y a des KPI ou je n'ai pas la données, ou elles sont tous simplement trop brute, aussi parfois il fallait la calculer à l'aide d'une autre données. Pour avoir un exemple concrets, voivi le graphique attendu et le KPI final, au vu des données que j'avais, j'ai utiliser du DAX, Les voicis: </p>\r\n    <div class=\"image-grid\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120641.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 120718.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <img src=\"../icons/Capture d’écran 2025-09-01 132305.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n      <figcaption>KPI's attendu VS réalisé - à l'aide du DAX</figcaption>\r\n    </div>\r\n\r\n    <p> J'ai donc réalisé cela pour tous les KPI et mis en forme le rapport, vous pourrez trouver des captures ainsi que le lien télechargeable du rapport en bas de page. Ce projet est bien évidemment à continuer et ne demande que des améliorations, il est également possible de le déployer pour avoir une vu présentation grâce aux outils microsoft.</p>\r\n    <div class=\"stack\">\r\n      <strong>Technos :</strong>\r\n      <span>Excel</span><span>Power BI</span><span>Power Query</span><span>Python</span>\r\n    </div>\r\n  </div>\r\n</details>\r\n\r\n\r\n    <details class=\"project-item\" id=\"projet-3\">\r\n      <summary>Projet secondaire -  IA d’annotation automatique</summary>\r\n      <div class=\"project-content\">\r\n        <p>Quand je suis arrivé ici, d'autres étudiant IA travaillais déja sur un projet. Ce projet à pour but d'automatiser les annotations des schémas électrque par l'IA. (Ici folio du client TOTAL ENERGIES). Il fallait entrainer le modèle et l'aider à comprendre ce qu'il devait repéré sur les schémas, nous avons donc utilisé le logiciel roboflow qui est un outils d'étiquetage d'image. </p>\r\n        <p>C'est un processus plutôt long, de réaliser cela sur les nombreux folio d'entrainement, donc j'ai apporté de l'aide sur la première semaine sur cette partie annotation. Puis une fois ce processuce réalisé, ils ont técupéré les données et ont pu entrainer le modèles et apportées les modifications nécessaires.</p>\r\n        <img src=\"../icons/Capture d’écran 2025-09-02 101820.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Aperçu de l'outils Roboflow</figcaption>\r\n        <img src=\"../icons/yolo_example.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Outils de détection yolo</figcaption>\r\n        <p>Pour passer les données dans le modèle, l'outils utilisé était YOLO, qui est un véritable détecteur d'objets. Il est courrament utilisé car il est simple à installer, puissant et rapide.<p>\r\n        </p>Une fois ces données passé dans le modèle nous avions le résulats dans un fichier excel, pour voir si cela fonctionnais et surtous voir la précisions, comparer à nos données d'annotations réeels, repérer les différentes erreur et les annotées dans un tableaux. Cela a permis au étudiants de corriger leurs erreurs par la suite</p>\r\n        <img src=\"../icons/roboflow.png\" alt=\"Python\" class=\"mission-img\" loading=\"lazy\">\r\n        <figcaption>Tableau de détection des erreur du modèle</figcaption>\r\n        <div class=\"stack\">\r\n          <strong>Technos :</strong>\r\n          <span>YOLO</span><span>Roboflow</span><span>Python</span>\r\n        </div>\r\n      </div>\r\n    </details>\r\n    <p class=\"mt-2\"></p>\r\n    <a class=\"btn\" href=\"../pdf/Projet_Power_BI.pbix\" target=\"_blank\">Mon Projet Power BI</a>\r\n    </p>\r\n  </main>\r\n\r\n  <footer>\r\n    <p>© 2025 - Théo Delporte</p>\r\n  </footer>\r\n\r\n  <script>\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n    const params = new URLSearchParams(window.location.search);\r\n    const projet = params.get(\"projet\");\r\n\r\n    const projet1 = document.getElementById(\"projet-1\");\r\n    const projet3 = document.getElementById(\"projet-3\");\r\n\r\n    if (projet === \"1\") {\r\n      projet1.style.display = \"block\";\r\n      projet3.style.display = \"none\";\r\n    } else if (projet === \"3\") {\r\n      projet1.style.display = \"none\";\r\n      projet3.style.display = \"block\";\r\n    }\r\n  });\r\n </script>\r\n\r\n</body>\r\n</html>",
+              "cloud_doc_url": null,
+              "medical_file_reference": {
+                "authors_display": null,
+                "doi": null,
+                "publication_year": "None",
+                "journal_name": null
+              },
+              "input_pointer": {
+                "message_index": 34,
+                "message_id": "e320df87-8fdb-4235-8457-93424054d75a",
+                "file_index": null,
+                "line_range_start": null,
+                "line_range_end": null
+              },
+              "fff_metadata": null
+            }
+          ],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "97941a16df98d0ae-ZRH",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "b98fbebe-fde7-4964-8c37-a0be77ddaf74",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b98fbebe-fde7-4964-8c37-a0be77ddaf74",
+      "children": [
+        "a133ca34-819e-45f6-be51-b6ece1511ba5"
+      ]
+    },
+    "a133ca34-819e-45f6-be51-b6ece1511ba5": {
+      "id": "a133ca34-819e-45f6-be51-b6ece1511ba5",
+      "message": {
+        "id": "a133ca34-819e-45f6-be51-b6ece1511ba5",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756891124.323,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "nn mon bouton n'est toujours pas centré"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "developer_mode_connector_ids": [],
+          "selected_sources": [],
+          "selected_github_repos": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "979429583d183cad-ZRH",
+          "message_source": null,
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "54f29ddb-9491-4837-91c4-1b746419a14b",
+      "children": [
+        "ff9ade45-32cd-4a91-9c30-c3fbd780bdb4"
+      ]
+    },
+    "ff9ade45-32cd-4a91-9c30-c3fbd780bdb4": {
+      "id": "ff9ade45-32cd-4a91-9c30-c3fbd780bdb4",
+      "message": {
+        "id": "ff9ade45-32cd-4a91-9c30-c3fbd780bdb4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1756891125.774647,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Parfait que tu me le dises 👍  \nTon problème vient d’un mélange : ton `<a class=\"btn\">` n’était pas dans un vrai bloc centré (tu avais des `<p>` mal fermés), donc même avec `.center-btn` il reste aligné à gauche.  \n\n---\n\n### ✅ Solution propre pour ton `projet.html`\n\nRemplace ce morceau :  \n```html\n<p class=\"mt-2\"></p>\n<a class=\"btn\" href=\"../pdf/Projet_Power_BI.pbix\" target=\"_blank\">Mon Projet Power BI</a>\n</p>\n```\n\npar :  \n```html\n<div class=\"center-btn\">\n  <a class=\"btn\" href=\"../pdf/Projet_Power_BI.pbix\" target=\"_blank\">Mon Projet Power BI</a>\n</div>\n```\n\n---\n\n### ✅ CSS à ajouter dans `style.css`\n\n```css\n.center-btn {\n  display: flex;\n  justify-content: center; /* centre horizontalement */\n  margin-top: 20px;\n}\n\n.center-btn .btn {\n  margin: 5px;\n}\n```\n\n---\n\nAvec ça :  \n- ton bouton sera **plein centre** de la page,  \n- si tu en ajoutes plusieurs, ils seront bien espacés et alignés,  \n- plus de problème de `<p>` qui casse ton centrage.  \n\n---\n\n👉 Veux-tu que je te refasse un extrait complet de `projet.html` corrigé avec le bouton bien centré (balises propres + `div.center-btn`) pour que tu puisses le coller direct ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+          "request_id": "979429583d183cad-ZRH",
+          "message_type": "next",
+          "model_slug": "gpt-5",
+          "default_model_slug": "gpt-5",
+          "parent_id": "a133ca34-819e-45f6-be51-b6ece1511ba5",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a133ca34-819e-45f6-be51-b6ece1511ba5",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "ff9ade45-32cd-4a91-9c30-c3fbd780bdb4",
+  "plugin_ids": null,
+  "conversation_id": "68b8006e-e494-8332-869d-fb7cdbcd93ce",
+  "conversation_template_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+  "gizmo_id": "g-p-68b7f4b16df08191a12e1d486cd0f135",
+  "gizmo_type": "snorlax",
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "details.style",
+    "window.location.search",
+    "https://github.com/theod-maker",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+    "https://www.linkedin.com/in/ton-profil",
+    "https://www.linkedin.com/in/th%C3%A9o-undefined-a157b3309/",
+    "https://formspree.io/f/movwoykz",
+    "https://github.com/openboxes/openboxes||||si",
+    "https://github.com/NanoFabricFX/openwms",
+    "https://theod-maker.github.io/merci.html"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5",
+  "conversation_origin": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "68b8006e-e494-8332-869d-fb7cdbcd93ce"
+}
