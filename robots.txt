@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://camcarre.github.io/website.io/sitemap.xml
-
-

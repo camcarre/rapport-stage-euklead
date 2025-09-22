@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicateurs de performance - Article</title>
+    <meta name="description" content="Mise en place d'alertes automatisées pour détecter les dépassements budgétaires et fiabiliser les analyses de coûts.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="rapport-stage-euklead.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="index.html" class="active">Articles</a>
+            <a href="bilan-stage.html">Bilan</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <h1 class="page-title" data-aos="fade-down">Indicateurs de performance</h1>
+        <p class="content-text" data-aos="fade-up" data-aos-delay="100">Système d'<strong>alertes automatisées</strong> pour identifier rapidement les dépassements budgétaires.</p>
+        <p class="content-text" data-aos="fade-up" data-aos-delay="200">Amélioration de la qualité des analyses de coûts et fiabilisation de la prise de décision.</p>
+
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="250">Architecture</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <ul class="content-list">
+                <li>Extraction hebdo des coûts (Excel/CSV)</li>
+                <li>Règles d'agrégation par catégories d'achats</li>
+                <li>Moteur d'alertes: seuils, variation glissante, min/max historiques</li>
+                <li>Export vers Power BI pour diffusion</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="350">Exemples d'alertes</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <ul class="content-list">
+                <li>Dépassement budget mensuel Télécoms > 10%</li>
+                <li>Coût moyen intérim semaine N supérieur à N-4</li>
+                <li>Écart fournisseur > 2 écarts-types vs médiane</li>
+            </ul>
+        </div>
+
+        <div class="btn-center" data-aos="fade-up" data-aos-delay="450">
+            <a href="index.html" class="btn">Retour aux articles</a>
+        </div>
+
+        <p class="content-text" data-aos="fade-up" data-aos-delay="500"><em>Désolé s'il n'y a pas de captures d'écran : pour des raisons de confidentialité, je n'étais pas autorisé à en partager.</em></p>
+
+        <footer class="footer">
+            <p>&copy; 2025 Camille Douaud – Blog de stage EUKLEAD</p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 500, easing: 'ease-out', once: true, offset: 50 });
+    </script>
+</body>
+</html>

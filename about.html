@@ -4,57 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - Camille DOUAUD</title>
-    <style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,sans-serif;margin:0;color:#111}.container{max-width:900px;margin:0 auto;padding:32px 20px}header{padding:16px 0;border-bottom:1px solid #eee}nav a{margin-right:16px;color:#111;text-decoration:none}h1{font-weight:500;margin:24px 0 8px}h2{font-weight:500;margin:32px 0 16px}.links a{margin-right:12px}.timeline{border-left:2px solid #eee;margin:16px 0 32px;padding-left:16px}.item{margin:12px 0}.cv{background:#fafafa;padding:16px;border:1px solid #eee}.hero{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.hero img{width:96px;height:96px;object-fit:cover;border-radius:50%;border:1px solid #eee}.btn{display:inline-block;padding:10px 14px;border:1px solid #111;text-decoration:none;color:#111}footer{text-align:center;padding:24px 0;border-top:1px solid #eee;margin-top:32px}</style>
-    <link rel="icon" href="data:,">
-    <meta name="description" content="À propos de Camille DOUAUD – CV, parcours, profils et compétences.">
-    <meta property="og:title" content="À propos - Camille DOUAUD">
-    <meta property="og:description" content="CV, parcours et liens LinkedIn/GitHub.">
-    <meta property="og:image" content="https://camcarre.github.io/website.io/source/share-600x315.jpg">
-    <link rel="preload" as="image" href="source/camilledouaud.jpeg">
+    <meta name="description" content="Présentation de Camille DOUAUD, étudiant en Bachelor Informatique spécialisé en Data Science et développement d'outils d'automatisation.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-    <header class="container">
-      <nav aria-label="Navigation principale">
+    <div class="container">
+        <nav class="nav">
         <a href="rapport-stage-euklead.html">Accueil</a>
-        <a href="about.html" aria-current="page">À propos</a>
-        <a href="articles/index.html">Articles</a>
+            <a href="about.html" class="active">À propos</a>
+            <a href="index.html">Articles</a>
+            <a href="bilan-stage.html">Bilan</a>
         <a href="contact.html">Contact</a>
       </nav>
-    </header>
-    <main class="container">
-      <h1>À propos</h1>
-      <div class="hero">
-        <img src="source/camilledouaud.jpeg" alt="Photo de Camille DOUAUD">
-        <p>Je suis <strong>Camille DOUAUD</strong>, étudiant en Bachelor Informatique (B2) à Ynov Campus Nantes, passionné par la data, l'automatisation et la création d'outils utiles.</p>
+
+        <h1 class="page-title" data-aos="fade-down">À propos de moi</h1>
+        
+        <img src="images/camilledouaud.jpeg" alt="Photo de Camille DOUAUD" class="profile-image" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="section-title">Camille DOUAUD</h2>
+            <div class="info-section">
+                <div class="info-item">
+                    <span class="info-label">Téléphone:</span><a href="tel:+33788994438" class="link">07 88 99 44 38</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span><a href="mailto:camille.douaud@ynov.com" class="link">camille.douaud@ynov.com</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Portfolio:</span><a href="https://camcarre.github.io/portefolio.io/" target="_blank" rel="noopener" class="link">camcarre.github.io/portefolio.io</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">GitHub:</span><a href="https://github.com/camcarre" target="_blank" rel="noopener" class="link">github.com/camcarre</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">LinkedIn:</span><a href="https://www.linkedin.com/in/camille-douaud" target="_blank" rel="noopener" class="link">linkedin.com/in/camille-douaud</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Statut:</span>Étudiant en Bachelor Informatique
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Campus:</span>Ynov Campus Nantes
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Filière:</span>Bachelor Informatique - Spécialisation Data Science
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Année:</span>3ème année
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="300">Profil</h2>
+        <p class="content-text">Passionné par la data science et l'automatisation des processus métiers, je me spécialise dans le développement d'outils d'analyse et d'optimisation. Mon stage chez <strong>EUKLEAD</strong> m'a permis de mettre en pratique mes compétences techniques dans le domaine du <strong>conseil en optimisation des achats indirects</strong>.</p>
+
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="0">Compétences Techniques</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="card-title">Développement</h3>
+            <ul class="content-list">
+                <li>VBA (Visual Basic for Applications)</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
+            <h3 class="card-title">Data & Analytics</h3>
+            <ul class="content-list">
+                <li>Power BI</li>
+                <li>DAX (Data Analysis Expressions)</li>
+                <li>Excel avancé</li>
+                <li>Algorithmes de traitement de données</li>
+            </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="card-title">Outils</h3>
+            <ul class="content-list">
+                <li>Git</li>
+                <li>Visual Studio Code</li>
+                <li>Microsoft Office Suite</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="0">Compétences Transverses</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <ul class="content-list">
+                <li><strong>Gestion de projet:</strong> Méthodologies Agile, itérations courtes</li>
+                <li><strong>Communication:</strong> Présentation client, documentation technique</li>
+                <li><strong>Analyse:</strong> Identification des besoins, optimisation des processus</li>
+                <li><strong>Autonomie:</strong> Recherche de solutions, auto-formation</li>
+            </ul>
       </div>
 
-      <h2>Profils</h2>
-      <p class="links">
-        <a href="https://linkedin.com/in/camille-douaud" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/camcarre" target="_blank" rel="noopener">GitHub</a>
-      </p>
+        <h2 class="section-title">Parcours</h2>
+        <div class="card">
+            <h3 class="card-title">Bachelor Informatique | Ynov Campus Nantes – Nantes</h3>
+            <div class="card-content">
+                <div class="info-item"><span class="info-label">Période:</span>En cours – 2ᵉ année (depuis 09/2023)</div>
+                <ul class="content-list">
+                    <li>Création de sites et d’applications web</li>
+                    <li>Études et implémentations d’algorithmes</li>
+                    <li>Développement en programmation structurée</li>
+                    <li>Introduction à l’IA, traitement de données et bases de données</li>
+                </ul>
+            </div>
+        </div>
 
-      <h2>CV</h2>
-      <div class="cv">
-        <p>Résumé: Data & Automatisation — Excel/VBA, Power BI (DAX), Python, JavaScript.</p>
-        <p>
-          <a class="btn" href="source/cv_camille_douaud.pdf" target="_blank" rel="noopener" download>
-            Télécharger le CV (PDF)
-          </a>
-        </p>
+        <div class="card">
+            <h3 class="card-title">Baccalauréat Option Système Numérique | Lycée François Arago – Nantes</h3>
+            <div class="card-content">
+                <div class="info-item"><span class="info-label">Période:</span>2019 – 2023</div>
+                <ul class="content-list">
+                    <li>Analyse et réparation de pannes informatiques</li>
+                    <li>Installation de dispositifs numériques et informatiques</li>
+                    <li>Projets techniques orientés réseau, matériel et automatisation</li>
+                </ul>
+            </div>
       </div>
 
-      <h2>Parcours</h2>
-      <div class="timeline">
-        <div class="item"><strong>2025</strong> — Stage chez EUKLEAD (Data & Automatisation, 6 semaines)</div>
-        <div class="item"><strong>2024–2026</strong> — Bachelor Informatique — Ynov Campus Nantes</div>
-        <div class="item"><strong>Avant</strong> — Projets personnels en Excel/VBA, Power BI, Python</div>
+        <h2 class="section-title">Projet Professionnel</h2>
+        <p class="content-text">Mon objectif est de me spécialiser dans le domaine de la data science et de l'automatisation des processus métiers. Je souhaite développer des solutions innovantes qui permettent aux entreprises d'optimiser leurs opérations grâce à l'analyse de données et à l'intelligence artificielle.</p>
+
+        <div class="btn-center">
+            <a href="docs/cv_camille_douaud.pdf" class="btn" target="_blank">Télécharger mon CV</a>
+            <a href="contact.html" class="btn">Me contacter</a>
       </div>
-    </main>
-    <footer>
-      <small>© 2025 Camille DOUAUD</small>
+
+        <p class="content-text" data-aos="fade-up" data-aos-delay="50"><em>Désolé s'il n'y a pas de captures d'écran : pour des raisons de confidentialité, je n'étais pas autorisé à en partager.</em></p>
+
+        <footer class="footer">
+            <p>&copy; 2025 Camille DOUAUD - Blog de Stage EUKLEAD</p>
     </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+            easing: 'ease-out',
+            once: true,
+            offset: 50
+        });
+    </script>
   </body>
 </html>
-
-

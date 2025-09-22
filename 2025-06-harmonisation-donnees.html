@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonisation des données d'achats - Article</title>
+    <meta name="description" content="Automatisation VBA et harmonisation des données d'achats indirects avec détection de doublons (Levenshtein).">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="rapport-stage-euklead.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="index.html" class="active">Articles</a>
+            <a href="bilan-stage.html">Bilan</a>
+            <a href="contact.html">Contact</a>
+    </nav>
+
+        <h1 class="page-title" data-aos="fade-down">Harmonisation des données d'achats</h1>
+        <p class="content-text" data-aos="fade-up" data-aos-delay="100">Développement d'un outil <strong>VBA</strong> pour automatiser le nettoyage et l'harmonisation des données d'achats indirects.</p>
+        <p class="content-text" data-aos="fade-up" data-aos-delay="200">Intégration d'un algorithme de similarité <strong>Levenshtein</strong> pour détecter et corriger les doublons dans les factures et contrats.</p>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="card-title">Résultat</h3>
+            <ul class="content-list">
+                <li>Données d'achats plus fiables</li>
+                <li>Gain de temps significatif pour les analyses de coûts</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="350">Détails techniques</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="card-title">Nettoyage et normalisation</h3>
+            <ul class="content-list">
+                <li>Uniformisation des libellés fournisseurs (majuscules, accents, trim)</li>
+                <li>Standardisation des formats (dates, montants, TVA)</li>
+                <li>Tables de correspondance pour alias connus (ex: "MICROSOFT FR" → "Microsoft")</li>
+            </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="450">
+            <h3 class="card-title">Détection de doublons (Levenshtein)</h3>
+            <p class="content-text">Calcul d'une distance d'édition sur les paires nom + SIRET + code postal avec un seuil de similarité ajustable (ex: 0.85).</p>
+            <ul class="content-list">
+                <li>Couplage blocage: même code postal pour réduire la complexité</li>
+                <li>Priorité aux correspondances exactes SIRET avant fuzzy-matching</li>
+                <li>Journal des fusions généré pour audit</li>
+            </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
+            <h3 class="card-title">Extrait VBA (pseudo-code)</h3>
+            <pre class="content-text">' Pour chaque fournisseur de référence
+For Each ref In fournisseurs
+  For Each cand In candidatsDansMemeCP(ref)
+    score = Levenshtein(ref.Nom, cand.Nom)
+    If cand.SIRET = ref.SIRET Or score > 0.85 Then Fusionner ref, cand
+  Next cand
+Next ref</pre>
+        </div>
+
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="550">Limites & prochaines étapes</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+            <ul class="content-list">
+                <li>Cas ambigus nécessitant une validation manuelle</li>
+                <li>Enrichissement futur par scores phonétiques (Soundex/Metaphone)</li>
+                <li>Export des fusions vers Power BI pour contrôle métier</li>
+            </ul>
+        </div>
+
+        <div class="btn-center" data-aos="fade-up" data-aos-delay="650">
+            <a href="index.html" class="btn">Retour aux articles</a>
+        </div>
+
+        <p class="content-text" data-aos="fade-up" data-aos-delay="700"><em>Désolé s'il n'y a pas de captures d'écran : pour des raisons de confidentialité, je n'étais pas autorisé à en partager.</em></p>
+
+        <footer class="footer">
+            <p>&copy; 2025 Camille Douaud – Blog de stage EUKLEAD</p>
+    </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 500, easing: 'ease-out', once: true, offset: 50 });
+    </script>
+</body>
+</html>

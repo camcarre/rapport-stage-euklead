@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observatoire des coûts RH - Article</title>
+    <meta name="description" content="Observatoire Power BI avec mesures DAX pour analyser les coûts RH (intérim, mutuelle).">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="rapport-stage-euklead.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="index.html" class="active">Articles</a>
+            <a href="bilan-stage.html">Bilan</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <h1 class="page-title" data-aos="fade-down">Observatoire des coûts RH</h1>
+        <p class="content-text" data-aos="fade-up" data-aos-delay="100">Conception d'un <strong>observatoire Power BI</strong> enrichi de mesures <strong>DAX</strong> pour analyser les tendances des coûts RH.</p>
+        <p class="content-text" data-aos="fade-up" data-aos-delay="200">Outil d'aide à la décision pour optimiser les budgets RH des clients.</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="250">Modèle de données</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <ul class="content-list">
+                <li>Tables: Missions, Agences, Factures, Salaires, Cotisations</li>
+                <li>Clés: Date, Agence, Métier, Client</li>
+                <li>Mesures DAX: Taux de marge, Coût moyen panier, Variation MoM</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="350">Exemples de mesures DAX</h2>
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <pre class="content-text">Taux Marge = DIVIDE([CA] - [Coûts], [CA])
+Var MoM = DIVIDE([Coût moyen] - CALCULATE([Coût moyen], DATEADD('Date'[Date], -1, MONTH)), CALCULATE([Coût moyen], DATEADD('Date'[Date], -1, MONTH)))</pre>
+        </div>
+
+        <div class="btn-center" data-aos="fade-up" data-aos-delay="450">
+            <a href="index.html" class="btn">Retour aux articles</a>
+        </div>
+
+        <p class="content-text" data-aos="fade-up" data-aos-delay="500"><em>Désolé s'il n'y a pas de captures d'écran : pour des raisons de confidentialité, je n'étais pas autorisé à en partager.</em></p>
+
+        <footer class="footer">
+            <p>&copy; 2025 Camille Douaud – Blog de stage EUKLEAD</p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 500, easing: 'ease-out', once: true, offset: 50 });
+    </script>
+</body>
